@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kateryna Havryliuk — Copywriter with a Tech Background</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF8F1; --paper-dim:#F1EADA; --ink:#221F1A; --ink-soft:#5C5646; --ink-faint:#948C76;
+    --rule:#E2D8BF; --insert:#1B5E3B; --insert-bg:#E3EEE4; --delete:#7A1E3D; --delete-bg:#F4E4EA; --gold:#B8862E;
+    --header-bg:rgba(251,248,241,0.92); --practice-fg:#8A6512; --practice-bg:#F3E7C6;
+    --before-fg:#7A1E3D; --after-fg:#1B5E3B; --avatar-grad:#3E7A57;
+    --max:1080px;
+  }
+  html[data-theme="dark"]{
+    --paper:#17150F; --paper-dim:#211E15; --ink:#F5EFDE; --ink-soft:#CBC2AA; --ink-faint:#8C846E;
+    --rule:#3B361F; --insert:#3FA873; --insert-bg:#1C3327; --delete:#DB7F9C; --delete-bg:#3A1E29; --gold:#E0B84D;
+    --header-bg:rgba(23,21,15,0.9); --practice-fg:#E0B84D; --practice-bg:#3A2E12;
+    --before-fg:#E4A0B5; --after-fg:#7FD9A8; --avatar-grad:#1F4433;
+  }
+  html{ transition:background-color .25s ease; }
+  body{ margin:0; background:var(--paper); color:var(--ink); font-family:'IBM Plex Sans',sans-serif; font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased; transition:background .25s ease,color .25s ease; }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  h1,h2,h3{ font-family:'Fraunces',serif; font-weight:600; margin:0; letter-spacing:-0.01em; }
+  a{ color:inherit; }
+  .mono{ font-family:'IBM Plex Mono',monospace; }
+  .wrap{ max-width:var(--max); margin:0 auto; padding:0 28px; }
+  section{ padding:100px 0; border-bottom:1px solid var(--rule); transition:border-color .25s ease; }
+  section:last-of-type{ border-bottom:none; }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--insert); outline-offset:3px; }
+
+  html[data-lang="en"] .lang-ua{ display:none; }
+  html[data-lang="ua"] .lang-en{ display:none; }
+
+  .reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease,transform .6s ease; }
+  .reveal.in-view{ opacity:1; transform:translateY(0); }
+  @media (prefers-reduced-motion:reduce){ .reveal{ opacity:1 !important; transform:none !important; transition:none !important; } }
+
+  header{ position:sticky; top:0; z-index:50; background:var(--header-bg); backdrop-filter:blur(6px); border-bottom:1px solid var(--rule); transition:background .25s ease,border-color .25s ease; }
+  .nav{ max-width:var(--max); margin:0 auto; padding:16px 28px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  .brand{ font-family:'Fraunces',serif; font-weight:600; font-size:19px; text-decoration:none; white-space:nowrap; }
+  .brand span{ color:var(--insert); transition:color .25s ease; }
+  .navlinks{ display:flex; gap:28px; align-items:center; flex-wrap:wrap; }
+  .navlinks a{ text-decoration:none; font-size:14.5px; color:var(--ink-soft); font-family:'IBM Plex Mono',monospace; transition:color .2s ease; }
+  .navlinks a:hover{ color:var(--ink); }
+  .nav-right{ display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .btn{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:13.5px; text-decoration:none; padding:9px 16px; border:1px solid var(--ink); border-radius:3px; color:var(--ink); transition:background .15s ease,color .15s ease,border-color .25s ease; cursor:pointer; background:transparent; }
+  .btn:hover{ background:var(--ink); color:var(--paper); }
+  .btn-solid{ background:var(--ink); color:var(--paper); }
+  .btn-solid:hover{ opacity:.85; }
+  #langToggle{ font-size:12.5px; padding:8px 12px; border-radius:20px; border-color:var(--rule); }
+  #themeToggle{ width:36px; height:36px; padding:0; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:15px; }
+
+  .hero{ padding:80px 0 96px; border-bottom:1px solid var(--rule); transition:border-color .25s ease; }
+  .hero-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:60px; align-items:center; }
+  .eyebrow{ font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--gold); letter-spacing:.06em; text-transform:uppercase; margin-bottom:16px; display:block; transition:color .25s ease; }
+  .hero h1{ font-size:clamp(32px,4.6vw,50px); line-height:1.1; }
+  .hero p.lead{ margin-top:20px; font-size:17.5px; color:var(--ink-soft); max-width:48ch; transition:color .25s ease; }
+  .greet{ margin-top:18px; font-family:'IBM Plex Mono',monospace; font-size:14px; color:var(--ink-faint); height:20px; transition:color .25s ease; }
+  .greet span{ color:var(--gold); transition:color .25s ease; }
+  .hero-ctas{ margin-top:30px; display:flex; gap:12px; flex-wrap:wrap; }
+  .local-time{ margin-top:8px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-faint); transition:color .25s ease; }
+  .local-time .dot{ display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--insert); margin-right:6px; animation:pulse 2s ease-in-out infinite; transition:background .25s ease; }
+  @keyframes pulse{ 0%,100%{ opacity:1; } 50%{ opacity:.35; } }
+  @media (prefers-reduced-motion:reduce){ .local-time .dot{ animation:none; } }
+
+  .redline-card{ background:var(--paper-dim); border:1px solid var(--rule); border-radius:6px; padding:26px 24px; transition:background .25s ease,border-color .25s ease; }
+  .redline-label{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.06em; margin-bottom:14px; display:block; transition:color .25s ease; }
+  .redline-before{ font-family:'Fraunces',serif; font-size:15.5px; line-height:1.55; color:var(--delete); text-decoration:line-through; text-decoration-thickness:1.5px; background:var(--delete-bg); padding:2px 4px; border-radius:2px; display:inline; transition:color .25s ease,background .25s ease; }
+  .redline-after{ font-family:'Fraunces',serif; font-size:18px; line-height:1.55; color:var(--insert); background:var(--insert-bg); padding:2px 4px; border-radius:2px; margin-top:12px; display:inline-block; transition:color .25s ease,background .25s ease; }
+  .redline-meta{ margin-top:18px; padding-top:14px; border-top:1px dashed var(--rule); font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-faint); transition:color .25s ease,border-color .25s ease; }
+
+  .sec-head{ margin-bottom:44px; }
+  .sec-num{ font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--ink-faint); display:block; margin-bottom:10px; transition:color .25s ease; }
+  .sec-head h2{ font-size:clamp(24px,3.2vw,32px); }
+  .sec-head p.dek{ margin-top:12px; color:var(--ink-soft); max-width:60ch; font-size:15.5px; transition:color .25s ease; }
+
+  .about-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:56px; }
+  .about-grid p{ color:var(--ink-soft); margin:0 0 15px; max-width:58ch; transition:color .25s ease; }
+  .cred-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:12px; }
+  .cred-list li{ font-family:'IBM Plex Mono',monospace; font-size:13px; border:1px solid var(--rule); border-radius:4px; padding:11px 13px; color:var(--ink-soft); background:var(--paper-dim); transition:color .25s ease,border-color .25s ease,background .25s ease; }
+  .cred-list li b{ color:var(--ink); display:block; font-family:'IBM Plex Sans'; font-size:14px; margin-bottom:3px; transition:color .25s ease; }
+
+  .sample{ border:1px solid var(--rule); border-radius:6px; margin-bottom:24px; background:var(--paper); overflow:hidden; transition:border-color .25s ease,background .25s ease,transform .25s ease,box-shadow .25s ease; }
+  .sample:hover{ transform:translateY(-2px); box-shadow:0 4px 20px rgba(0,0,0,0.06); }
+  html[data-theme="dark"] .sample:hover{ box-shadow:0 4px 20px rgba(0,0,0,0.3); }
+  .sample-head{ display:flex; align-items:center; justify-content:space-between; gap:14px; padding:16px 22px; background:var(--paper-dim); border-bottom:1px solid var(--rule); flex-wrap:wrap; transition:background .25s ease,border-color .25s ease; }
+  .tag{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--insert); background:var(--insert-bg); padding:5px 10px; border-radius:3px; transition:color .25s ease,background .25s ease; }
+  .tag.practice{ color:var(--practice-fg); background:var(--practice-bg); }
+  .sample-context{ font-size:13px; color:var(--ink-faint); font-family:'IBM Plex Mono',monospace; transition:color .25s ease; }
+  .sample-body{ padding:24px 22px 26px; }
+  .sample-body h3{ font-size:20px; margin-bottom:6px; }
+  .sample-body h4.sub{ font-family:'IBM Plex Sans'; font-weight:500; font-size:15px; color:var(--ink-soft); margin:0 0 16px; transition:color .25s ease; }
+  .sample-body p{ margin:0 0 13px; color:var(--ink-soft); transition:color .25s ease; }
+  .pull{ font-family:'Fraunces',serif; font-style:italic; font-size:17px; color:var(--ink); border-left:2px solid var(--insert); padding-left:16px; margin:14px 0; transition:color .25s ease,border-color .25s ease; }
+  .result-line{ font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--insert); margin-top:6px; transition:color .25s ease; }
+
+  .before-after{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:6px; }
+  .ba-col{ padding:13px 15px; border-radius:4px; font-size:14px; transition:background .25s ease,color .25s ease; }
+  .ba-col.before{ background:var(--delete-bg); color:var(--before-fg); }
+  .ba-col.after{ background:var(--insert-bg); color:var(--after-fg); }
+  .ba-label{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:.05em; margin-bottom:8px; display:block; opacity:.75; }
+  .ba-item{ margin-bottom:9px; }
+  .ba-item:last-child{ margin-bottom:0; }
+
+  .skills-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:6px; overflow:hidden; transition:background .25s ease,border-color .25s ease; }
+  .skill-col{ background:var(--paper); padding:24px 22px; transition:background .25s ease; }
+  .skill-col h3{ font-size:15px; font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint); margin-bottom:14px; transition:color .25s ease; }
+  .skill-tags{ display:flex; flex-wrap:wrap; gap:7px; }
+  .skill-tags span{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; background:var(--paper-dim); border:1px solid var(--rule); padding:4px 9px; border-radius:3px; color:var(--ink-soft); transition:color .25s ease,border-color .25s ease,background .25s ease; }
+  .lang-level{ font-size:11px; color:var(--ink-faint); transition:color .25s ease; }
+
+  .meters-grid{ display:grid; grid-template-columns:1fr 0.9fr; gap:40px; align-items:center; }
+  .meters{ display:flex; flex-direction:column; gap:20px; max-width:520px; }
+  .meter-row{ }
+  .meter-label{ display:flex; justify-content:space-between; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--ink-soft); margin-bottom:8px; transition:color .25s ease; }
+  .meter-track{ height:8px; border-radius:4px; background:var(--paper-dim); border:1px solid var(--rule); overflow:hidden; transition:background .25s ease,border-color .25s ease; }
+  .meter-fill{ height:100%; width:0%; background:var(--insert); border-radius:4px; transition:width 1.2s cubic-bezier(.22,1,.36,1); }
+
+  .avatar-scene{ display:flex; align-items:center; justify-content:center; }
+  .avatar-scene img{ width:100%; max-width:240px; height:auto; border-radius:12px; }
+
+  .facts-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+  .fact{ border:1px solid var(--rule); border-radius:6px; padding:20px 20px; background:var(--paper-dim); transition:border-color .25s ease,background .25s ease; }
+  .fact .pull{ margin-top:10px; margin-bottom:0; font-size:15.5px; }
+  .fact h4{ font-family:'IBM Plex Sans'; font-weight:500; font-size:14.5px; margin:0 0 4px; color:var(--ink); transition:color .25s ease; }
+
+  .services-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:6px; overflow:hidden; transition:background .25s ease,border-color .25s ease; }
+  .service{ background:var(--paper); padding:24px 22px; transition:background .25s ease; }
+  .service h3{ font-size:17px; margin-bottom:8px; }
+  .service p{ margin:0; color:var(--ink-soft); font-size:14.5px; transition:color .25s ease; }
+
+  .contact-wrap{ display:flex; align-items:flex-end; justify-content:space-between; gap:36px; flex-wrap:wrap; }
+  .contact-wrap h2{ font-size:clamp(26px,3.8vw,40px); max-width:15ch; }
+  .contact-links{ display:flex; flex-direction:column; gap:11px; }
+  .contact-links a{ text-decoration:none; font-family:'IBM Plex Mono',monospace; font-size:14.5px; color:var(--ink-soft); transition:color .2s ease; }
+  .contact-links a:hover{ color:var(--insert); }
+
+  .playground{ border:1px solid var(--rule); border-radius:6px; background:var(--paper-dim); padding:26px 24px; transition:border-color .25s ease,background .25s ease; }
+  .playground textarea{ width:100%; min-height:90px; resize:vertical; font-family:'IBM Plex Sans',sans-serif; font-size:15px; padding:14px; border-radius:4px; border:1px solid var(--rule); background:var(--paper); color:var(--ink); transition:border-color .25s ease,background .25s ease,color .25s ease; }
+  .playground textarea:focus-visible{ outline:2px solid var(--insert); outline-offset:2px; }
+  .playground-row{ display:flex; justify-content:space-between; align-items:center; margin-top:12px; gap:12px; flex-wrap:wrap; }
+  .playground-note{ margin-top:14px; padding:14px 16px; border-radius:4px; background:var(--insert-bg); color:var(--ink); font-family:'IBM Plex Mono',monospace; font-size:13.5px; display:none; transition:background .25s ease,color .25s ease; }
+  .playground-note.show{ display:block; }
+  .wc{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--ink-faint); transition:color .25s ease; }
+
+  footer{ padding:30px 0; }
+  footer .wrap{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+  footer p{ margin:0; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-faint); transition:color .25s ease; }
+
+  @media (max-width:860px){
+    section{ padding:60px 0; }
+    .hero{ padding:52px 0 60px; }
+    .hero-grid{ grid-template-columns:1fr; gap:36px; }
+    .about-grid{ grid-template-columns:1fr; gap:30px; }
+    .skills-grid{ grid-template-columns:1fr; }
+    .services-grid{ grid-template-columns:1fr; }
+    .facts-grid{ grid-template-columns:1fr; }
+    .meters-grid{ grid-template-columns:1fr; }
+    .before-after{ grid-template-columns:1fr; }
+    .navlinks{ display:none; }
+    .avatar-scene img{ max-width:160px; }
+  }
+  @media (max-width:480px){
+    .nav{ padding:12px 16px; }
+    .brand{ font-size:16px; }
+    .btn{ font-size:12px; padding:6px 12px; }
+    #themeToggle{ width:30px; height:30px; font-size:12px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#top">Kateryna<span>.</span></a>
+    <nav class="navlinks">
+      <a href="#work" class="lang-en">Work</a><a href="#work" class="lang-ua">Роботи</a>
+      <a href="#about" class="lang-en">About</a><a href="#about" class="lang-ua">Про мене</a>
+      <a href="#services" class="lang-en">Services</a><a href="#services" class="lang-ua">Послуги</a>
+      <a href="#contact" class="lang-en">Contact</a><a href="#contact" class="lang-ua">Контакти</a>
+    </nav>
+    <div class="nav-right">
+      <button id="themeToggle" class="btn" onclick="toggleTheme()" aria-label="Toggle dark mode">🌙</button>
+      <button id="langToggle" class="btn mono" onclick="toggleLang()">UA</button>
+      <a class="btn" href="https://drive.google.com/file/d/1FnRNMeG1gDUroYGQ41CEWuvoAs55lp7y/view?usp=sharing" target="_blank" download>
+        <span class="lang-en">Resume ↓</span><span class="lang-ua">Резюме ↓</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow lang-en">Copywriter &amp; Content Writer — Tech Background</span>
+        <span class="eyebrow lang-ua">Копірайтерка — з технічним бекграундом</span>
+        <h1 class="lang-en">Words that make complex things make sense.</h1>
+        <h1 class="lang-ua">Слова, що роблять складне зрозумілим.</h1>
+        <p class="lead lang-en">I'm a Computer Science graduate (with Honors, GPA 4.87/5.0) who writes copy, UX text, and content for digital products. Before I studied sentences, I studied systems — that's still how I write them.</p>
+        <p class="lead lang-ua">Я випускниця комп'ютерних наук (з відзнакою, GPA 4.87/5.0), яка пише тексти, UX-текст та контент для технологічних продуктів. Перш ніж вивчати речення, я вивчала системи — і досі пишу так само.</p>
+        <div class="greet mono"><span class="lang-en">Hi in a few languages: </span><span class="lang-ua">Привіт кількома мовами: </span><span id="greetWord">Hello</span></div>
+        <div class="local-time"><span class="dot"></span><span class="lang-en">Lutsk time: </span><span class="lang-ua">Луцьк: </span><span id="clock">--:--</span></div>
+        <div class="hero-ctas">
+          <a class="btn btn-solid" href="#work"><span class="lang-en">View work</span><span class="lang-ua">Дивитись роботи</span></a>
+          <a class="btn" href="#contact"><span class="lang-en">Get in touch</span><span class="lang-ua">Написати</span></a>
+        </div>
+      </div>
+
+      <div class="redline-card reveal">
+        <span class="redline-label mono lang-en">// from a real project — Safe Place</span>
+        <span class="redline-label mono lang-ua">// з реального проєкту — Safe Place</span>
+        <div class="lang-en">
+          <span class="redline-before">Users interact with an emotionally-aware natural language processing interface that leverages sentiment analysis algorithms.</span>
+          <span class="redline-after">Type how you're feeling. The app listens and gently checks in if something feels heavier than usual.</span>
+        </div>
+        <div class="lang-ua">
+          <span class="redline-before">Користувач взаємодіє з інтерфейсом на основі аналізу тональності природної мови.</span>
+          <span class="redline-after">Напиши, що відчуваєш. Застосунок вислухає і турботливо перевірить, якщо тобі зараз важче, ніж зазвичай.</span>
+        </div>
+        <div class="redline-meta">
+          <span class="lang-en">Same feature. One explains the tech. The other talks to the person using it.</span>
+          <span class="lang-ua">Та сама функція. Перша пояснює технологію. Друга — говорить з людиною.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num mono lang-en">About</span>
+        <span class="sec-num mono lang-ua">Про мене</span>
+        <h2 class="lang-en">A writer who reads the changelog before the brief.</h2>
+        <h2 class="lang-ua">Авторка, яка читає журнал змін перед написанням брифу.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="reveal">
+
+          <div style="display:flex; align-items:flex-start; gap:24px; margin-bottom:16px; flex-wrap:wrap;">
+            <div style="flex-shrink:0; width:120px; height:auto; line-height:0;">
+              <img src="avatar.png" alt="Kateryna" 
+                  style="width:100%; height:auto; display:block;"
+                  onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'font-size:28px;font-family:Fraunces,serif;color:var(--ink-soft);\'>KH</span>'">
+            </div>
+            <div style="flex:1; min-width:200px; text-align:justify;">
+              <div class="lang-en">
+                <p style="margin-top:0;"><strong>Kateryna Havryliuk</strong> — Computer Science graduate (GPA 4.87/5.0, with Honors) from Lesya Ukrainka Volyn National University. Gold Medalist in secondary education. I build software, and increasingly, I write about it.</p>
+              </div>
+              <div class="lang-ua">
+                <p style="margin-top:0;"><strong>Катерина Гаврилюк</strong> — випускниця комп'ютерних наук (GPA 4.87/5.0, з відзнакою), Волинський національний університет. Золота медалістка. Я створюю ПЗ, а тепер дедалі більше — пишу про нього.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lang-en" style="text-align:justify;">
+            <p>I built <b>Safe Place</b>, a web app for psycho-emotional support that analyzes the emotional tone of text and gently flags when someone might need support. I also designed a 2026 bank budget plan approved with distinction, built <b>KORstudy</b> (a Korean-learning platform), and developed a <b>3D warehouse visualization system</b> integrated with 1C and Excel during my internships.</p>
+            <p>I've published <b>4 research papers</b> at international conferences, won <b>1st place</b> in the University Scientific Research Competition, and presented my work as an <b>oral speaker</b>. I don't have a "copywriter" job title yet — but I've shipped systems real people use, documented them for non-developers, edited real documents under deadlines, and led project teams at university.</p>
+            <p>Outside of code: I read constantly, study languages (seven so far), play guitar, and write poetry. I read interface copy the way others read poetry — closely, and more than once.</p>
+          </div>
+
+          <div class="lang-ua" style="text-align:justify;">
+            <p>Я створила <b>Safe Place</b> — застосунок для психоемоційної підтримки, який аналізує емоційний тон тексту й обережно підказує, коли людині може знадобитись підтримка. Також розробила бюджетний план банку на 2026 рік, який затвердили з відзнакою, побудувала <b>KORstudy</b> (платформу для вивчення корейської), і <b>3D-візуалізацію складу</b> з інтеграцією 1С та Excel під час практик.</p>
+            <p>Я опублікувала <b>4 наукові роботи</b> на міжнародних конференціях, виграла <b>1 місце</b> в університетському конкурсі наукових робіт і виступала з <b>усними доповідями</b>. У мене поки немає запису «копірайтер» у трудовій — але є досвід запуску систем, якими реально користуються люди, документація для нетехнарів, реальне редагування під дедлайн і керівництво командами в університеті.</p>
+            <p>Поза кодом: багато читаю, вивчаю мови (наразі сім), граю на гітарі, пишу вірші. Я читаю інтерфейсні тексти так, як інші читають поезію — уважно й не один раз.</p>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN — UPDATED with all achievements -->
+        <ul class="cred-list reveal">
+          <li class="lang-en"><b>Education</b>B.Sc. Computer Science &amp; IT, with Honors — GPA 4.87/5.0<br><span style="font-size:12px; color:var(--ink-faint);">Gold Medalist (secondary education) · Diploma with Distinction</span></li>
+          <li class="lang-ua"><b>Освіта</b>Бакалавр «Комп'ютерні науки та ІТ», з відзнакою — GPA 4.87/5.0<br><span style="font-size:12px; color:var(--ink-faint);">Золота медаль · Диплом з відзнакою</span></li>
+          <li><b class="lang-en">Research</b><b class="lang-ua">Наука</b><span class="lang-en"><strong>4 peer-reviewed papers</strong> · Oral presentations at international conferences · Winner of University Scientific Competition (1st place)</span><span class="lang-ua"><strong>4 наукові публікації</strong> · Усні доповіді на міжнародних конференціях · Переможниця університетського конкурсу наукових робіт (1 місце)</span></li>
+          <li>
+            <b class="lang-en">Certifications</b>
+            <b class="lang-ua">Сертифікати</b>
+            <span class="lang-en">
+              <strong>GCI World — University of Tokyo</strong> (2026)<br>
+              <span style="font-size:12px; color:var(--ink-faint);">Selected among 25,000+ applicants from 120+ countries · 3-month intensive: Python, Pandas, SQL, ML, Time Series</span><br>
+              HarvardX (Data Science: ML), IBM (Generative AI), Data Engineering Summer School, Git (Linux Foundation), Critical Thinking, Media Literacy, Creative Thinking
+            </span>
+            <span class="lang-ua">
+              <strong>GCI World — University of Tokyo</strong> (2026)<br>
+              <span style="font-size:12px; color:var(--ink-faint);">Відбір серед 25,000+ заявників зі 120+ країн · 3-місячний інтенсив: Python, Pandas, SQL, ML, Time Series</span><br>
+              HarvardX (Data Science: ML), IBM (Generative AI), літня школа Data Engineering, Git (Linux Foundation), критичне мислення, медіаграмотність, креативне мислення
+            </span>
+          </li>
+          <li><b class="lang-en">Languages</b><b class="lang-ua">Мови</b><span class="lang-en">Ukrainian (native), English (B1+), Polish (B1), Korean, Japanese, Chinese, German (A1-A2)</span><span class="lang-ua">Українська (рідна), англійська (B1+), польська (B1), корейська, японська, китайська, німецька (A1-A2)</span></li>
+          <li><b class="lang-en">Awards</b><b class="lang-ua">Нагороди</b><span class="lang-en">🏆 1st place — University Scientific Research Competition · 🥇 Gold Medal (secondary education) · 📜 Letter of Appreciation from Faculty</span><span class="lang-ua">🏆 1 місце — університетський конкурс наукових робіт · 🥇 Золота медаль · 📜 Подяка від факультету</span></li>
+          <li><b class="lang-en">Leadership</b><b class="lang-ua">Лідерство</b><span class="lang-en">Team lead on group projects; class monitor (elected group representative)</span><span class="lang-ua">Тімлід у групових проєктах; староста групи</span></li>
+          <li class="lang-en"><b>Builds what she writes about</b>github.com/Kateryna-Havryliuk</li>
+          <li class="lang-ua"><b>Створює те, про що пише</b>github.com/Kateryna-Havryliuk</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num mono lang-en">Selected work</span><span class="sec-num mono lang-ua">Обрані роботи</span>
+        <h2 class="lang-en">Real projects and the writing behind them.</h2>
+        <h2 class="lang-ua">Реальні проєкти і текст, що за ними стоїть.</h2>
+        <p class="dek lang-en">Everything below is real: shipped projects, internship work, research papers, and writing exercises.</p>
+        <p class="dek lang-ua">Все нижче — реальне: завершені проєкти, робота на практиці, наукові публікації та вправи з письма.</p>
+      </div>
+
+      <!-- Safe Place -->
+      <article class="sample reveal">
+        <div class="sample-head">
+          <span class="tag lang-en">Product / UX Writing</span><span class="tag lang-ua">Продукт / UX-текст</span>
+          <span class="sample-context lang-en">Own project — 2025–2026</span><span class="sample-context lang-ua">Власний проєкт — 2025–2026</span>
+        </div>
+        <div class="sample-body">
+          <div class="lang-en">
+            <h3>Safe Place — an emotional check-in app</h3>
+            <h4 class="sub">The challenge: write copy for a tool that talks to people about their mental state, without sounding clinical or careless.</h4>
+            <p>Full web app with generative AI backend that reads emotional tone and flags patterns suggesting stress, anxiety, or depression. I wrote every string in the interface — from the daily check-in prompt to the moment it gently suggests reaching out for support.</p>
+            <p class="pull">"Sounds like today's been a lot. Want to write more, or just sit with it for a minute?"</p>
+            <p class="result-line">→ Working prototype with end-to-end system design, data handling, and AI integration.</p>
+            <p class="result-line" style="margin-top:4px;">→ Published research paper &amp; oral presentation at XI Interuniversity Seminar (2026)</p>
+          </div>
+          <div class="lang-ua">
+            <h3>Safe Place — застосунок для емоційного чекіну</h3>
+            <h4 class="sub">Завдання: написати текст для інструменту, що говорить з людьми про їхній стан, не звучачи клінічно чи байдуже.</h4>
+            <p>Повноцінний застосунок з генеративним ШІ, що аналізує емоційний тон і підказує, коли патерн вказує на стрес чи тривожність. Я написала кожен текстовий рядок в інтерфейсі — від щоденного чекіну до моменту, коли застосунок обережно пропонує звернутись по підтримку.</p>
+            <p class="pull">«Схоже, сьогодні було непросто. Хочеш написати більше, чи просто побути з цим хвилинку?»</p>
+            <p class="result-line">→ Робочий прототип з наскрізним дизайном системи, роботою з даними та інтеграцією ШІ.</p>
+            <p class="result-line" style="margin-top:4px;">→ Опубліковано наукову роботу та усну доповідь на XI Міжвузівському семінарі (2026)</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRACTICE: BetterMe Fitness Descriptions -->
+      <article class="sample reveal">
+        <div class="sample-head">
+          <span class="tag practice lang-en">Practice — Fitness Copy</span>
+          <span class="tag practice lang-ua">Практика — Фітнес-тексти</span>
+          <span class="sample-context lang-en">Practice for BetterMe — 2026</span>
+          <span class="sample-context lang-ua">Практика для BetterMe — 2026</span>
+        </div>
+        <div class="sample-body">
+          <div class="lang-en">
+            <h3>Three workout descriptions — Gym, Pilates, Yoga</h3>
+            <h4 class="sub">Written to match BetterMe's tone: warm, human, empowering. No fluff. No fitness jargon.</h4>
+
+            <div style="margin-bottom:24px; padding-bottom:20px; border-bottom:1px solid var(--rule);">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint);">Gym</span>
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; background:var(--insert-bg); color:var(--insert); padding:2px 8px; border-radius:3px;">Strength &amp; Power</span>
+              </div>
+              <p style="font-family:'Fraunces',serif; font-size:18px; color:var(--ink); margin:0 0 4px;">"You're not here to look like someone else. You're here to be stronger than you were last week."</p>
+              <p style="margin:0; color:var(--ink-soft); font-size:14.5px;">This isn't about ego. It's about showing up, picking up something heavy, and putting it down with control. Each set builds more than muscle — it builds discipline. Track your reps. Add a little more weight. Rest 60 seconds. Repeat. By week four, you'll notice the difference in your posture, your energy, and the way you carry yourself.</p>
+              <div style="display:flex; gap:16px; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); flex-wrap:wrap;">
+                <span>⏱ 45–60 min</span>
+                <span>🏋️ Dumbbells or barbell</span>
+                <span>📊 All levels</span>
+              </div>
+            </div>
+
+            <div style="margin-bottom:24px; padding-bottom:20px; border-bottom:1px solid var(--rule);">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint);">Pilates</span>
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; background:var(--insert-bg); color:var(--insert); padding:2px 8px; border-radius:3px;">Core &amp; Control</span>
+              </div>
+              <p style="font-family:'Fraunces',serif; font-size:18px; color:var(--ink); margin:0 0 4px;">"Move with intention, not momentum."</p>
+              <p style="margin:0; color:var(--ink-soft); font-size:14.5px;">Pilates isn't about how fast you move — it's about how precisely you control each motion. Every inhale prepares you; every exhale engages your deep core. This is where posture improves, back pain fades, and you finally understand what "alignment" actually means. No rushing. No ego. Just you, your mat, and a deeper connection to your body.</p>
+              <div style="display:flex; gap:16px; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); flex-wrap:wrap;">
+                <span>⏱ 30–40 min</span>
+                <span>🧘 Mat</span>
+                <span>📊 All levels</span>
+              </div>
+            </div>
+
+            <div>
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint);">Yoga</span>
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; background:var(--insert-bg); color:var(--insert); padding:2px 8px; border-radius:3px;">Flow &amp; Let Go</span>
+              </div>
+              <p style="font-family:'Fraunces',serif; font-size:18px; color:var(--ink); margin:0 0 4px;">"Your practice, your pace."</p>
+              <p style="margin:0; color:var(--ink-soft); font-size:14.5px;">Step onto the mat, close your eyes, and breathe. This isn't about touching your toes — it's about the journey there. Each pose asks you to be present, patient, and honest with yourself. Some days you'll flow effortlessly; other days you'll rest in child's pose. Both are progress. Both are enough.</p>
+              <div style="display:flex; gap:16px; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); flex-wrap:wrap;">
+                <span>⏱ 30–50 min</span>
+                <span>🧘 Mat</span>
+                <span>📊 All levels</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="lang-ua">
+            <h3>Три описи тренувань — Gym, Pilates, Yoga</h3>
+            <h4 class="sub">Написано в тоні BetterMe: тепло, людяно, надихаюче. Без зайвих слів і фітнес-жаргону.</h4>
+
+            <div style="margin-bottom:24px; padding-bottom:20px; border-bottom:1px solid var(--rule);">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint);">Тренажерний зал</span>
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; background:var(--insert-bg); color:var(--insert); padding:2px 8px; border-radius:3px;">Сила &amp; витривалість</span>
+              </div>
+              <p style="font-family:'Fraunces',serif; font-size:18px; color:var(--ink); margin:0 0 4px;">"Ти тут не для того, щоб стати кимось іншим. Ти тут, щоб стати сильнішим, ніж минулого тижня."</p>
+              <p style="margin:0; color:var(--ink-soft); font-size:14.5px;">Це не про его. Це про те, щоб прийти, взяти щось важке й контролювати кожен рух. Кожен підхід будує не лише м'язи — він будує дисципліну. Відстежуй повторення. Додавай трохи більше ваги. Відпочивай 60 секунд. Повторюй. Через чотири тижні ти помітиш різницю в поставі, енергії та тому, як ти тримаєш себе.</p>
+              <div style="display:flex; gap:16px; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); flex-wrap:wrap;">
+                <span>⏱ 45–60 хв</span>
+                <span>🏋️ Гантелі або штанга</span>
+                <span>📊 Будь-який рівень</span>
+              </div>
+            </div>
+
+            <div style="margin-bottom:24px; padding-bottom:20px; border-bottom:1px solid var(--rule);">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint);">Пілатес</span>
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; background:var(--insert-bg); color:var(--insert); padding:2px 8px; border-radius:3px;">Кор &amp; контроль</span>
+              </div>
+              <p style="font-family:'Fraunces',serif; font-size:18px; color:var(--ink); margin:0 0 4px;">"Рухайся з наміром, а не з інерцією."</p>
+              <p style="margin:0; color:var(--ink-soft); font-size:14.5px;">Пілатес — це не про швидкість, а про точність кожного руху. Кожен вдих готує тебе; кожен видих активує глибокі м'язи кора. Саме тут покращується постава, зникає біль у спині, і ти нарешті розумієш, що таке «правильне вирівнювання». Без поспіху. Без его. Лише ти, килимок і глибший зв'язок із власним тілом.</p>
+              <div style="display:flex; gap:16px; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); flex-wrap:wrap;">
+                <span>⏱ 30–40 хв</span>
+                <span>🧘 Килимок</span>
+                <span>📊 Будь-який рівень</span>
+              </div>
+            </div>
+
+            <div>
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint);">Йога</span>
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; background:var(--insert-bg); color:var(--insert); padding:2px 8px; border-radius:3px;">Потік &amp; відпускання</span>
+              </div>
+              <p style="font-family:'Fraunces',serif; font-size:18px; color:var(--ink); margin:0 0 4px;">"Твоя практика — твій темп."</p>
+              <p style="margin:0; color:var(--ink-soft); font-size:14.5px;">Стань на килимок, заплющ очі й дихай. Це не про те, щоб дотягнутися до пальців ніг — це про сам шлях. Кожна поза запрошує тебе бути присутнім, терплячим і чесним із собою. Одного дня ти плинеш легко; іншого — відпочиваєш у дитячій позі. Обидва варіанти — це прогрес. Обидва достатні.</p>
+              <div style="display:flex; gap:16px; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); flex-wrap:wrap;">
+                <span>⏱ 30–50 хв</span>
+                <span>🧘 Килимок</span>
+                <span>📊 Будь-який рівень</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+      <!-- 3D Warehouse -->
+      <article class="sample reveal">
+        <div class="sample-head">
+          <span class="tag lang-en">Technical Documentation</span><span class="tag lang-ua">Технічна документація</span>
+          <span class="sample-context lang-en">Internship — manufacturing company</span><span class="sample-context lang-ua">Практика — приватне підприємство</span>
+        </div>
+        <div class="sample-body">
+          <div class="lang-en">
+            <h3>3D Warehouse Visualization System</h3>
+            <h4 class="sub">The challenge: build a tool non-technical warehouse staff could actually use, then write the instructions that made that true.</h4>
+            <p>During my internship at a company manufacturing trailers, car carriers, and auto parts, I designed a 3D visualization of the warehouse integrated with 1C and Excel — so staff could search, edit, and take inventory quickly. I wrote the accompanying documentation and user guide myself.</p>
+            <p class="result-line">→ Working internal tool + documentation written for people who'd never opened 1C's back end.</p>
+          </div>
+          <div class="lang-ua">
+            <h3>3D-візуалізація складу</h3>
+            <h4 class="sub">Завдання: створити систему, якою реально користуватимуться нетехнічні працівники складу, а тоді написати інструкцію.</h4>
+            <p>Під час практики на підприємстві з виготовлення лавет, автопричепів і продажу автозапчастин я розробила 3D-візуалізацію складу з інтеграцією 1С та Excel — щоб працівники могли швидко шукати, редагувати позиції та проводити інвентаризацію. Супровідну документацію та інструкцію написала сама.</p>
+            <p class="result-line">→ Робочий внутрішній інструмент + документація для людей, які раніше не відкривали 1С зсередини.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Bank Budget -->
+      <article class="sample reveal">
+        <div class="sample-head">
+          <span class="tag lang-en">Business / Analytical Writing</span><span class="tag lang-ua">Ділове / аналітичне письмо</span>
+          <span class="sample-context lang-en">Academic project — 2025</span><span class="sample-context lang-ua">Навчальний проєкт — 2025</span>
+        </div>
+        <div class="sample-body">
+          <div class="lang-en">
+            <h3>2026 Bank Budget Plan</h3>
+            <h4 class="sub">The challenge: turn a dense financial model into a document clear enough for industry experts to follow in one read.</h4>
+            <p>Built a full 2026 budget plan covering income, expenses, inventory, and supply chain, applying optimization methods. The modeling was the technical half; structuring the narrative for non-specialists was the writing half.</p>
+            <p class="result-line">→ Approved with distinction, presented to invited industry experts.</p>
+          </div>
+          <div class="lang-ua">
+            <h3>Бюджетний план банку на 2026 рік</h3>
+            <h4 class="sub">Завдання: перетворити щільну фінансову модель на документ, зрозумілий для експертів галузі за одне прочитання.</h4>
+            <p>Розробила повний бюджетний план на 2026 рік — доходи, витрати, запаси, ланцюг постачання — із застосуванням методів оптимізації. Моделювання було технічною частиною; структурування розповіді для нефахівців — текстовою.</p>
+            <p class="result-line">→ Затверджено з відзнакою, презентовано запрошеним експертам галузі.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- KORstudy -->
+      <article class="sample reveal">
+        <div class="sample-head">
+          <span class="tag lang-en">Educational Content</span><span class="tag lang-ua">Освітній контент</span>
+          <span class="sample-context lang-en">Personal project — 2024</span><span class="sample-context lang-ua">Особистий проєкт — 2024</span>
+        </div>
+        <div class="sample-body">
+          <div class="lang-en">
+            <h3>KORstudy — a Korean-learning platform</h3>
+            <h4 class="sub">Started as fandom, became a real teaching tool.</h4>
+            <p>Designed and built a full educational website — structured courses, pricing tiers, lesson content — for people learning Korean at any level. Writing the course descriptions and onboarding copy taught me that UX writing is teaching: anticipate the question, answer it before it's asked.</p>
+          </div>
+          <div class="lang-ua">
+            <h3>KORstudy — платформа для вивчення корейської</h3>
+            <h4 class="sub">Почалось із фандому, стало повноцінним навчальним інструментом.</h4>
+            <p>Розробила повноцінний освітній сайт — структуровані курси, тарифні плани, навчальний контент — для людей, що вивчають корейську на будь-якому рівні. Написання описів курсів навчило мене, що UX-текст — це переважно навчання: передбачити питання і відповісти на нього раніше, ніж воно виникне.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Library editing -->
+      <article class="sample reveal">
+        <div class="sample-head">
+          <span class="tag lang-en">Real Editing Experience</span><span class="tag lang-ua">Реальний досвід редагування</span>
+          <span class="sample-context lang-en">Internship — Volyn Youth Library</span><span class="sample-context lang-ua">Практика — Волинська бібліотека для юнацтва</span>
+        </div>
+        <div class="sample-body">
+          <div class="lang-en">
+            <h3>Reviewing visitor applications and letters</h3>
+            <h4 class="sub">Part of my library internship — alongside registering users and cataloging the book database.</h4>
+            <p>I regularly checked and rewrote applications and letters submitted by visitors — fixing unclear wording before they were processed. It's real editing under a deadline, for readers who weren't going to read a second draft.</p>
+            <p style="font-size:13px; color:var(--ink-faint);">(For privacy, I'm not reproducing a specific visitor document here — this describes the task.)</p>
+          </div>
+          <div class="lang-ua">
+            <h3>Перевірка заяв і листів від відвідувачів</h3>
+            <h4 class="sub">Частина бібліотечної практики — поряд з реєстрацією користувачів і веденням бази книг.</h4>
+            <p>Я регулярно перевіряла і переписувала заяви та листи від відвідувачів — виправляла нечіткі формулювання перед тим, як документи йшли в обробку. Це реальне редагування під дедлайн, для читачів, які не збиралися читати другий чернетковий варіант.</p>
+            <p style="font-size:13px; color:var(--ink-faint);">(З міркувань приватності я не наводжу тут конкретний документ відвідувача — це опис завдання.)</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRACTICE: UX Microcopy -->
+      <article class="sample reveal">
+        <div class="sample-head">
+          <span class="tag practice lang-en">Practice — UX Microcopy</span><span class="tag practice lang-ua">Практика — UX-мікрокопі</span>
+          <span class="sample-context lang-en">Revisiting my own 2023 project</span><span class="sample-context lang-ua">Повернення до проєкту 2023 року</span>
+        </div>
+        <div class="sample-body">
+          <div class="lang-en">
+            <h3>Rewriting my own to-do list app</h3>
+            <h4 class="sub">Self-directed practice, not a client project.</h4>
+            <div class="before-after">
+              <div class="ba-col before">
+                <span class="ba-label">Before (2023, beginner labels)</span>
+                <div class="ba-item">"Task 1"</div>
+                <div class="ba-item">"Save" / "Delete"</div>
+                <div class="ba-item">"No tasks."</div>
+              </div>
+              <div class="ba-col after">
+                <span class="ba-label">After (today)</span>
+                <div class="ba-item">"Cook dinner — 7:00 PM"</div>
+                <div class="ba-item">"Add to today" / "Done, remove it"</div>
+                <div class="ba-item">"Nothing on your list yet. Add your first task."</div>
+              </div>
+            </div>
+          </div>
+          <div class="lang-ua">
+            <h3>Переписую власний ToDo List</h3>
+            <h4 class="sub">Самостійна практика, не клієнтський проєкт.</h4>
+            <div class="before-after">
+              <div class="ba-col before">
+                <span class="ba-label">До (2023, підписи новачка)</span>
+                <div class="ba-item">«Завдання 1»</div>
+                <div class="ba-item">«Зберегти» / «Видалити»</div>
+                <div class="ba-item">«Немає завдань.»</div>
+              </div>
+              <div class="ba-col after">
+                <span class="ba-label">Після (сьогодні)</span>
+                <div class="ba-item">«Приготувати вечерю — 19:00»</div>
+                <div class="ba-item">«Додати на сьогодні» / «Готово, прибрати»</div>
+                <div class="ba-item">«Поки що порожньо. Додай перше завдання.»</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRACTICE: Essay -->
+      <article class="sample reveal">
+        <div class="sample-head">
+          <span class="tag practice lang-en">Practice — Essay</span><span class="tag practice lang-ua">Практика — есе</span>
+          <span class="sample-context lang-en">Own writing, 2026</span><span class="sample-context lang-ua">Власний текст, 2026</span>
+        </div>
+        <div class="sample-body">
+          <div class="lang-en">
+            <h3>Notes from someone who writes in two languages: code, and everything else</h3>
+            <p>My code reads like it has a personality, and my interface copy has more rhythm than it strictly needs. I think that's because I don't see a line between them — writing a function and writing a sentence are the same problem, stated differently: say exactly what's true, cut what isn't, and leave room for the next person to understand it without you in the room. Seven languages, seven programming languages — each one changes the shape of what you can say.</p>
+          </div>
+          <div class="lang-ua">
+            <h3>Нотатки людини, яка пише двома мовами: код і все інше</h3>
+            <p>Мій код читається так, наче має характер, а мій інтерфейсний текст має більше ритму, ніж потрібно. Думаю, це тому, що я не бачу межі між ними — написати функцію і написати речення це та сама задача, сформульована по-різному: сказати точно те, що правда, прибрати зайве і залишити місце, щоб наступна людина зрозуміла це без мене поруч. Сім мов, сім мов програмування — кожна змінює форму того, що можна сказати.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRACTICE: Bookstore -->
+      <article class="sample reveal">
+        <div class="sample-head">
+          <span class="tag practice lang-en">Practice — Social Copy</span><span class="tag practice lang-ua">Практика — соціальний контент</span>
+          <span class="sample-context lang-en">Imaginary client — independent bookstore</span><span class="sample-context lang-ua">Вигаданий клієнт — книгарня</span>
+        </div>
+        <div class="sample-body">
+          <div class="lang-en">
+            <h3>Instagram captions for a small bookstore</h3>
+            <h4 class="sub">Written for practice — no real client involved.</h4>
+            <p>"We restock at 10am. By 11, half this table is gone. Come see what's left."</p>
+            <p>"A staff pick is just a recommendation from someone who read it at 1am and couldn't put it down. This week: three of those."</p>
+            <p>"Not every book needs a plot twist. Some just need you to sit with a good sentence for a while. Aisle 3 has a few."</p>
+          </div>
+          <div class="lang-ua">
+            <h3>Дописи для Instagram маленької книгарні</h3>
+            <h4 class="sub">Написано для практики — реального клієнта немає.</h4>
+            <p>«Поповнюємо полиці о 10:00. До 11:00 половини цього столу вже нема. Приходь подивитись, що лишилось.»</p>
+            <p>«Вибір продавця — це просто рекомендація від людини, яка читала це о першій ночі й не могла відірватись. Цього тижня таких три.»</p>
+            <p>«Не кожній книжці потрібен твіст. Деяким досить, щоб ти просто посидів з гарним реченням. У третьому ряду є кілька таких.»</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRACTICE: Language Exchange / Real Experience -->
+      <article class="sample reveal">
+        <div class="sample-head">
+          <span class="tag practice lang-en">Practice — Community &amp; Language Exchange</span>
+          <span class="tag practice lang-ua">Практика — Спілкування та мовний обмін</span>
+          <span class="sample-context lang-en">Real experience — 2024–2026</span>
+          <span class="sample-context lang-ua">Реальний досвід — 2024–2026</span>
+        </div>
+        <div class="sample-body">
+          <div class="lang-en">
+            <h3>Language exchange &amp; international communication</h3>
+            <h4 class="sub">Real practice: daily conversations with native speakers through apps and social media.</h4>
+            <p>Since 2024, I've been actively practicing foreign languages through real conversations with native speakers from around the world. I use apps like Tandem, HelloTalk, and social media platforms to connect with people, exchange cultures, and improve my speaking and writing skills.</p>
+            <p>These aren't just vocabulary drills — they're real, unscripted conversations. I've discussed everything from daily life to mental health, technology, and AI. This experience taught me to adapt my communication style to different cultural contexts and language levels.</p>
+            <p class="pull">"Every conversation is a chance to understand someone else's world — and to express my own more clearly."</p>
+          </div>
+          <div class="lang-ua">
+            <h3>Мовний обмін та міжнародне спілкування</h3>
+            <h4 class="sub">Реальна практика: щоденні розмови з носіями мов у додатках та соцмережах.</h4>
+            <p>З 2024 року я активно практикую іноземні мови через реальні розмови з носіями з усього світу. Я використовую додатки Tandem, HelloTalk та соціальні мережі, щоб спілкуватися, обмінюватися культурами та покращувати свої навички усного й письмового мовлення.</p>
+            <p>Це не просто вправи на словниковий запас — це справжні, незаплановані розмови. Ми говорили про все: від повсякденного життя до ментального здоров'я, технологій та ШІ. Цей досвід навчив мене адаптувати стиль спілкування до різних культурних контекстів і рівнів володіння мовою.</p>
+            <p class="pull">«Кожна розмова — це шанс зрозуміти чийсь світ — і чіткіше висловити свій.»</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PLAYGROUND -->
+  <section id="playground">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num mono lang-en">Try it</span><span class="sec-num mono lang-ua">Спробуй сам</span>
+        <h2 class="lang-en">Drop in a sentence you're stuck on.</h2>
+        <h2 class="lang-ua">Встав речення, з яким не можеш дати ради.</h2>
+        <p class="dek lang-en">A small, honest toy — not real AI editing, just a few rules of thumb I actually use, applied live.</p>
+        <p class="dek lang-ua">Маленька чесна іграшка — не справжнє AI-редагування, а кілька правил, якими я реально користуюсь, застосовані наживо.</p>
+      </div>
+      <div class="playground reveal">
+        <textarea id="pgInput" class="lang-en" placeholder="e.g. Our solution leverages best-in-class technology to deliver synergistic value to enterprise stakeholders."></textarea>
+        <textarea id="pgInputUa" class="lang-ua" placeholder="напр. Наше рішення використовує найкращі технології для надання синергетичної цінності корпоративним стейкхолдерам."></textarea>
+        <div class="playground-row">
+          <span class="wc"><span id="wcCount">0</span> <span class="lang-en">words</span><span class="lang-ua">слів</span></span>
+          <button class="btn btn-solid" onclick="editIt()"><span class="lang-en">Get a note</span><span class="lang-ua">Отримати нотатку</span></button>
+        </div>
+        <div id="pgNote" class="playground-note mono"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num mono lang-en">Skills</span><span class="sec-num mono lang-ua">Навички</span>
+        <h2 class="lang-en">Technical fluency, human fluency.</h2>
+        <h2 class="lang-ua">Технічна вправність, людська вправність.</h2>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-col">
+          <h3 class="lang-en">Writing &amp; content</h3><h3 class="lang-ua">Письмо і контент</h3>
+          <div class="skill-tags">
+            <span class="lang-en">UX &amp; microcopy</span><span class="lang-ua">UX і мікрокопі</span>
+            <span class="lang-en">Product copy</span><span class="lang-ua">Продуктовий текст</span>
+            <span class="lang-en">Educational content</span><span class="lang-ua">Освітній контент</span>
+            <span class="lang-en">Technical documentation</span><span class="lang-ua">Технічна документація</span>
+            <span class="lang-en">Analytical writing</span><span class="lang-ua">Аналітичне письмо</span>
+            <span class="lang-en">Academic writing</span><span class="lang-ua">Академічне письмо</span>
+          </div>
+        </div>
+        <div class="skill-col">
+          <h3 class="lang-en">Technical</h3><h3 class="lang-ua">Технічне</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>JavaScript</span><span>HTML/CSS</span><span>SQL</span>
+            <span>Flask</span><span>Git</span><span>1C</span><span>Excel</span>
+          </div>
+        </div>
+        <div class="skill-col">
+          <h3 class="lang-en">Languages</h3><h3 class="lang-ua">Мови</h3>
+          <div class="skill-tags">
+            <span>Ukrainian <span class="lang-level">C2</span></span>
+            <span>English <span class="lang-level">B1+</span></span>
+            <span>Polish <span class="lang-level">B1</span></span>
+            <span>Korean <span class="lang-level">A1-A2</span></span>
+            <span>Japanese <span class="lang-level">A1-A2</span></span>
+            <span>Chinese <span class="lang-level">A1-A2</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METERS + AVATAR -->
+  <section id="meters">
+    <div class="wrap meters-grid">
+      <div>
+        <div class="sec-head reveal">
+          <span class="sec-num mono lang-en">Self-assessment</span><span class="sec-num mono lang-ua">Самооцінка</span>
+          <h2 class="lang-en">Where I'd rate myself today.</h2>
+          <h2 class="lang-ua">Як я оцінюю себе сьогодні.</h2>
+        </div>
+        <div class="meters reveal">
+          <div class="meter-row">
+            <div class="meter-label"><span class="lang-en">Programming</span><span class="lang-ua">Програмування</span><span>91%</span></div>
+            <div class="meter-track"><div class="meter-fill" data-value="91"></div></div>
+          </div>
+          <div class="meter-row">
+            <div class="meter-label"><span class="lang-en">Writing &amp; editing</span><span class="lang-ua">Письмо і редагування</span><span>87%</span></div>
+            <div class="meter-track"><div class="meter-fill" data-value="87"></div></div>
+          </div>
+          <div class="meter-row">
+            <div class="meter-label"><span class="lang-en">Web design</span><span class="lang-ua">Веб-дизайн</span><span>81%</span></div>
+            <div class="meter-track"><div class="meter-fill" data-value="81"></div></div>
+          </div>
+          <div class="meter-row">
+            <div class="meter-label"><span class="lang-en">Languages</span><span class="lang-ua">Мови</span><span>73%</span></div>
+            <div class="meter-track"><div class="meter-fill" data-value="73"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="avatar-scene reveal" aria-hidden="true">
+        <img src="me.png" alt="Avatar of Kateryna" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'font-size:14px;color:var(--ink-faint);text-align:center;\'>My avatar...</div>'">
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTS -->
+  <section id="facts">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num mono lang-en">A few things worth knowing</span>
+        <span class="sec-num mono lang-ua">Кілька фактів про мене</span>
+        <h2 class="lang-en">Not on most resumes, but true.</h2>
+        <h2 class="lang-ua">Про це не пишуть у резюме — але це правда.</h2>
+      </div>
+      <div class="facts-grid reveal">
+
+        <div class="fact">
+          <h4 class="lang-en">Poet of bytes and words</h4>
+          <h4 class="lang-ua">Поет байтів і слів</h4>
+          <p class="pull lang-en">"I like writing poems after 100 lines of code. Both are about building worlds from nothing."</p>
+          <p class="pull lang-ua">«Я люблю писати вірші після 100 рядків коду. І те, і те — про створення світів з нуля.»</p>
+        </div>
+
+        <div class="fact">
+          <h4 class="lang-en">Studies psychology, informally</h4>
+          <h4 class="lang-ua">Вивчає психологію — неформально</h4>
+          <p class="pull lang-en">"I study people as carefully as API documentation — to find the right interface for talking to them."</p>
+          <p class="pull lang-ua">«Вивчаю людей так само ретельно, як документацію до API — щоб знайти ідеальний інтерфейс для спілкування.»</p>
+        </div>
+
+        <div class="fact">
+          <h4 class="lang-en">Plays guitar, writes poetry</h4>
+          <h4 class="lang-ua">Грає на гітарі, пише вірші</h4>
+          <p class="pull lang-en">"Music and poetry taught me rhythm — the same rhythm I look for in every sentence I write."</p>
+          <p class="pull lang-ua">«Музика й поезія навчили мене ритму — того ж ритму, який я шукаю в кожному реченні.»</p>
+        </div>
+
+        <div class="fact">
+          <h4 class="lang-en">7 languages, 7 ways to think</h4>
+          <h4 class="lang-ua">7 мов — 7 способів мислити</h4>
+          <p class="pull lang-en">"Every language I learn changes the shape of what I can say — and how I connect with people."</p>
+          <p class="pull lang-ua">«Кожна мова, яку я вивчаю, змінює форму того, що я можу сказати — і як я спілкуюся з людьми.»</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap contact-wrap reveal">
+      <h2 class="lang-en">Let's write something clear together.</h2>
+      <h2 class="lang-ua">Напишімо щось чітке разом.</h2>
+      <div class="contact-links">
+        <a href="mailto:katyagko2004@gmail.com">katyagko2004@gmail.com</a>
+        <a href="https://github.com/Kateryna-Havryliuk">github.com/Kateryna-Havryliuk</a>
+        <a href="www.linkedin.com/in/kateryna-havryliuk-065395351" target="_blank">linkedin.com/in/kateryna-havryliuk</a>
+        <a href="https://github.com/Kateryna-Havryliuk/copywriting-portfolio" target="_blank">Copywriting Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="lang-en">© <span class="yr"></span> Kateryna Havryliuk. Built by hand, edited by hand.</p>
+    <p class="lang-ua">© <span class="yr"></span> Катерина Гаврилюк. Зроблено вручну, відредаговано вручну.</p>
+    <p class="lang-en">Based in Lutsk, Ukraine · Available for remote work</p>
+    <p class="lang-ua">Луцьк, Україна · Доступна для віддаленої роботи</p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.yr').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+  function toggleLang(){
+    var html = document.documentElement;
+    var current = html.getAttribute('data-lang');
+    var next = current === 'en' ? 'ua' : 'en';
+    html.setAttribute('data-lang', next);
+    html.setAttribute('lang', next === 'en' ? 'en' : 'uk');
+    document.getElementById('langToggle').textContent = next === 'en' ? 'UA' : 'EN';
+  }
+
+  var greetings = ['Hello','Привіт','안녕하세요','こんにちは','你好','Hallo','Cześć'];
+  var gi = 0;
+  var greetEl = document.getElementById('greetWord');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduceMotion){
+    setInterval(function(){
+      gi = (gi + 1) % greetings.length;
+      greetEl.style.opacity = 0;
+      setTimeout(function(){
+        greetEl.textContent = greetings[gi];
+        greetEl.style.transition = 'opacity .3s ease';
+        greetEl.style.opacity = 1;
+      }, 250);
+    }, 1900);
+  }
+
+  function meterFillCallback(el){
+    var fills = el.querySelectorAll('.meter-fill');
+    fills.forEach(function(f){ f.style.width = f.getAttribute('data-value') + '%'; });
+  }
+
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.classList.add('in-view');
+          if(e.target.querySelector('.meter-fill')){ meterFillCallback(e.target); }
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in-view'); });
+    document.querySelectorAll('.meter-fill').forEach(function(f){ f.style.width = f.getAttribute('data-value') + '%'; });
+  }
+
+  function toggleTheme(){
+    var html = document.documentElement;
+    var isDark = html.getAttribute('data-theme') === 'dark';
+    html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    document.getElementById('themeToggle').textContent = isDark ? '🌙' : '☀️';
+    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  }
+
+  (function(){
+    var saved = localStorage.getItem('theme');
+    if(saved === 'dark'){
+      document.documentElement.setAttribute('data-theme', 'dark');
+      document.getElementById('themeToggle').textContent = '☀️';
+    }
+  })();
+
+  function updateClock(){
+    var el = document.getElementById('clock');
+    if(!el) return;
+    var fmt = new Intl.DateTimeFormat('en-GB', { timeZone:'Europe/Kyiv', hour:'2-digit', minute:'2-digit', second:'2-digit' });
+    el.textContent = fmt.format(new Date());
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+
+  var pgTipsEn = [
+    "Cut the adverbs — most of them are apologizing for a weak verb.",
+    "Read it out loud. If you run out of breath, it's two sentences, not one.",
+    "Find the noun doing the least work and delete it.",
+    "Say what it does, not what it's 'designed to' do.",
+    "If a robot could have written this line, rewrite it.",
+    "Shorter subject, shorter verb, shorter sentence. Try again."
+  ];
+  var pgTipsUa = [
+    "Прибери прислівники — більшість із них виправдовує слабке дієслово.",
+    "Прочитай уголос. Якщо забракло повітря — це два речення, а не одне.",
+    "Знайди іменник, який працює найменше, і викресли його.",
+    "Скажи, що це робить, а не що воно 'покликане робити'.",
+    "Якщо цей рядок міг написати робот — перепиши його.",
+    "Коротший підмет, коротше дієслово, коротше речення. Спробуй ще раз."
+  ];
+  function currentLang(){ return document.documentElement.getAttribute('data-lang') || 'en'; }
+  function countWords(str){ return (str.trim().match(/\S+/g) || []).length; }
+  function updateWordCount(){
+    var lang = currentLang();
+    var val = lang === 'en' ? document.getElementById('pgInput').value : document.getElementById('pgInputUa').value;
+    document.getElementById('wcCount').textContent = countWords(val);
+  }
+  document.getElementById('pgInput').addEventListener('input', updateWordCount);
+  document.getElementById('pgInputUa').addEventListener('input', updateWordCount);
+  function editIt(){
+    var lang = currentLang();
+    var val = lang === 'en' ? document.getElementById('pgInput').value : document.getElementById('pgInputUa').value;
+    var words = countWords(val);
+    var note = document.getElementById('pgNote');
+    var tips = lang === 'en' ? pgTipsEn : pgTipsUa;
+    var pick = tips[Math.floor(Math.random() * tips.length)];
+    var prefix = lang === 'en'
+      ? (words === 0 ? "Type something first — even a bad sentence." : words + ' words. ' + pick)
+      : (words === 0 ? "Спершу щось напиши — хоч невдале речення." : words + ' слів. ' + pick);
+    note.textContent = prefix;
+    note.classList.add('show');
+  }
+</script>
+
+</body>
+</html>
