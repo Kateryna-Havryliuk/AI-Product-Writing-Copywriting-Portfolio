@@ -1,0 +1,24 @@
+KORstudy — Korean Learning Platform Copy
+Project: Personal project, 2024
+Goal: Write course descriptions, pricing-tier copy, and onboarding text for a Korean-learning platform that started as a fan project and grew into a real teaching tool
+Tone: Encouraging, clear, no filler
+
+I designed and built a full educational website for people learning Korean at any level — structured courses, pricing tiers, and lesson content. Writing the course descriptions and onboarding copy was where I learned that UX writing is mostly teaching: anticipate the question a learner has before they ask it, and answer it in the copy itself.
+
+## What the copy had to do
+
+- Tell a total beginner exactly what "Level 1" actually covers, without assuming they already know Korean learning terminology
+- Make pricing tiers comparable at a glance — what's different, not just what's included
+- Reduce the moment of hesitation right before someone commits to a course
+
+## Result
+
+The course descriptions and onboarding flow shipped as part of a working educational platform, used by real learners studying Korean independently — not a design exercise, a live product.
+
+## Why This Works
+
+- **Teaches before it sells** — a learner should understand what they're getting before they're asked to pay for it
+- **No inflated promises** — describes what a level actually covers instead of "master Korean fast"
+- **Assumes zero prior knowledge** — every term a beginner might not know gets explained in plain language, once, where it's first used
+
+Started as a fandom project. Turned out to be the first real lesson in writing for people who don't yet know what they don't know.
