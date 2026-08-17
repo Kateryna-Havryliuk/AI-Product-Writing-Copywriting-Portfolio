@@ -140,6 +140,26 @@
   .contact-links a{ text-decoration:none; font-family:'IBM Plex Mono',monospace; font-size:14.5px; color:var(--ink-soft); transition:color .2s ease; }
   .contact-links a:hover{ color:var(--insert); }
 
+  .spec-intro{border:1px solid var(--rule); border-radius:6px; background:var(--paper-dim); padding:22px 24px; margin-bottom:24px;}
+  .spec-intro strong{color:var(--ink);}
+  .spec-kicker{font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--gold); margin-bottom:9px; display:block;}
+  .platform-row{display:flex; gap:8px; flex-wrap:wrap; margin:14px 0 0;}
+  .platform-row span{font-family:'IBM Plex Mono',monospace; font-size:11px; padding:4px 8px; border:1px solid var(--rule); border-radius:3px; color:var(--ink-soft); background:var(--paper);}
+  .post-copy{max-width:760px; margin:0 auto; padding:4px 0;}
+  .post-copy p{font-size:16px; line-height:1.75; color:var(--ink); margin:0 0 15px;}
+  .post-copy .hook{font-family:'Fraunces',serif; font-size:25px; line-height:1.35; margin-bottom:20px;}
+  .thread{display:flex; flex-direction:column; gap:0; max-width:760px; margin:0 auto;}
+  .thread-post{padding:18px 0; border-bottom:1px solid var(--rule);}
+  .thread-post:last-child{border-bottom:0;}
+  .thread-num{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); margin-bottom:7px;}
+  .thread-post p{margin:0; color:var(--ink); font-size:15.5px; line-height:1.7;}
+  .script{max-width:760px; margin:0 auto;}
+  .script-row{display:grid; grid-template-columns:110px 1fr; gap:18px; padding:14px 0; border-bottom:1px solid var(--rule);}
+  .script-row:last-child{border-bottom:0;}
+  .script-label{font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--gold);}
+  .script-text{color:var(--ink); font-size:15.5px; line-height:1.7;}
+  .spec-note{margin-top:20px; padding-top:16px; border-top:1px dashed var(--rule); font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-faint);}
+  .why-line{font-family:'Fraunces',serif; font-size:20px; line-height:1.45; color:var(--ink); border-left:2px solid var(--gold); padding-left:16px; margin-top:20px;}
   .playground{ border:1px solid var(--rule); border-radius:6px; background:var(--paper-dim); padding:26px 24px; transition:border-color .25s ease,background .25s ease; }
   .playground textarea{ width:100%; min-height:90px; resize:vertical; font-family:'IBM Plex Sans',sans-serif; font-size:15px; padding:14px; border-radius:4px; border:1px solid var(--rule); background:var(--paper); color:var(--ink); transition:border-color .25s ease,background .25s ease,color .25s ease; }
   .playground textarea:focus-visible{ outline:2px solid var(--insert); outline-offset:2px; }
@@ -180,6 +200,7 @@
     <a class="brand" href="#top">Kateryna<span>.</span></a>
     <nav class="navlinks">
       <a href="#work" class="lang-en">Work</a><a href="#work" class="lang-ua">Роботи</a>
+      <a href="#adcubator" class="lang-en">Writing Samples</a><a href="#adcubator" class="lang-ua">Writing Samples</a>
       <a href="#about" class="lang-en">About</a><a href="#about" class="lang-ua">Про мене</a>
       <a href="#services" class="lang-en">Services</a><a href="#services" class="lang-ua">Послуги</a>
       <a href="#contact" class="lang-en">Contact</a><a href="#contact" class="lang-ua">Контакти</a>
@@ -312,9 +333,161 @@
         <span class="sec-num mono lang-en">Selected work</span><span class="sec-num mono lang-ua">Обрані роботи</span>
         <h2 class="lang-en">Real projects and the writing behind them.</h2>
         <h2 class="lang-ua">Реальні проєкти і текст, що за ними стоїть.</h2>
-        <p class="dek lang-en">Everything below is real: shipped projects, internship work, research papers, and writing exercises.</p>
-        <p class="dek lang-ua">Все нижче — реальне: завершені проєкти, робота на практиці, наукові публікації та вправи з письма.</p>
+        <p class="dek lang-en">Everything below is clearly labeled: real projects, internship work, research, and original spec writing.</p>
+        <p class="dek lang-ua">Усе нижче чітко позначено: реальні проєкти, практика, наукові роботи та оригінальні демонстраційні тексти.</p>
       </div>
+
+      <!-- AD CUBATOR-FOCUSED SPEC SAMPLES -->
+      <div id="adcubator" class="spec-intro reveal">
+        <span class="spec-kicker lang-en">Founder &amp; social copy — selected application samples</span>
+        <span class="spec-kicker lang-ua">Founder &amp; social copy — спеціально відібрані роботи для заявки</span>
+        <div class="lang-en">
+          <strong>Three pieces written to show how I approach founder-led content.</strong>
+          <p style="margin:7px 0 0; color:var(--ink-soft); font-size:14.5px;">
+            These are original spec pieces, not client work. I wrote them to demonstrate voice, research-led thinking, direct-response instincts, and the ability to adapt one idea across platforms.
+          </p>
+          <div class="platform-row"><span>LinkedIn</span><span>X / Twitter</span><span>Instagram</span><span>DTC</span><span>Google Ads</span></div>
+          <div class="why-line">Generic content makes me uncomfortable because it usually says what everyone already knows — just with more words.</div>
+        </div>
+        <div class="lang-ua">
+          <strong>Три тексти, що показують мій підхід до founder-led контенту.</strong>
+          <p style="margin:7px 0 0; color:var(--ink-soft); font-size:14.5px;">
+            Це оригінальні демонстраційні роботи, а не клієнтські проєкти. Я написала їх, щоб показати роботу з голосом бренду, дослідницьке мислення, direct-response підхід і вміння адаптувати одну ідею під різні платформи.
+          </p>
+          <div class="platform-row"><span>LinkedIn</span><span>X / Twitter</span><span>Instagram</span><span>DTC</span><span>Google Ads</span></div>
+          <div class="why-line">Мені некомфортний generic content, бо він часто просто говорить те, що всі вже знають, — тільки більшою кількістю слів.</div>
+        </div>
+      </div>
+
+      <!-- SPEC SAMPLE 1 -->
+      <article class="sample reveal">
+        <div class="sample-head">
+          <span class="tag practice lang-en">Spec — Founder LinkedIn</span>
+          <span class="tag practice lang-ua">Демонстраційна робота — Founder LinkedIn</span>
+          <span class="sample-context lang-en">DTC / Google Ads · 2026</span>
+          <span class="sample-context lang-ua">DTC / Google Ads · 2026</span>
+        </div>
+        <div class="sample-body">
+          <div class="lang-en">
+            <h3>Most ecommerce brands don't have a traffic problem.</h3>
+            <h4 class="sub">Founder-style LinkedIn post · thought leadership</h4>
+            <div class="post-copy">
+              <p class="hook">Most ecommerce brands don't have a traffic problem.</p>
+              <p>They have a “give me more traffic” problem.</p>
+              <p>When sales slow down, the reflex is predictable: increase spend, test another audience, change the campaign, blame the algorithm.</p>
+              <p>Sometimes the account is fine.</p>
+              <p>The offer isn't.</p>
+              <p>Google can put your product in front of someone who is already looking for it. It can't make a weak reason to buy suddenly feel compelling.</p>
+              <p>So before I touch bids or budgets, I want to know:</p>
+              <p>Would I stop for this ad?<br>
+              Would I understand the offer in five seconds?<br>
+              Would I know why this product instead of the ten sitting next to it?</p>
+              <p>If the answer is no, another 20% in ad spend isn't a growth strategy.</p>
+              <p>It's a more expensive way to find the same problem.</p>
+              <div class="spec-note">Spec work — an original sample created for this application. Not client work or claimed ghostwriting experience.</div>
+            </div>
+          </div>
+          <div class="lang-ua">
+            <h3>У більшості e-commerce брендів проблема не в трафіку.</h3>
+            <h4 class="sub">Пост від імені засновника · thought leadership</h4>
+            <div class="post-copy">
+              <p class="hook">У більшості e-commerce брендів проблема не в трафіку.</p>
+              <p>Проблема в постійному «дайте нам більше трафіку».</p>
+              <p>Коли продажі падають, реакція зазвичай передбачувана: збільшити бюджет, протестувати іншу аудиторію, змінити кампанію, звинуватити алгоритм.</p>
+              <p>Іноді з рекламним акаунтом усе гаразд.</p>
+              <p>Проблема — у пропозиції.</p>
+              <p>Google може показати ваш продукт людині, яка вже його шукає. Але він не може зробити слабку причину для покупки переконливою.</p>
+              <p>Тому перш ніж змінювати ставки чи бюджети, я хочу знати:</p>
+              <p>Я сам зупинився б на цій рекламі?<br>
+              Я зрозумів би пропозицію за п'ять секунд?<br>
+              Я зрозумів би, чому обрати цей продукт, а не десять інших поруч?</p>
+              <p>Якщо відповідь «ні», ще 20% рекламного бюджету — це не стратегія зростання.</p>
+              <p>Це просто дорожчий спосіб знайти ту саму проблему.</p>
+              <div class="spec-note">Демонстраційна робота — оригінальний текст, створений спеціально для цієї заявки. Не є клієнтською роботою та не видається за досвід ghostwriting.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SPEC SAMPLE 2 -->
+      <article class="sample reveal">
+        <div class="sample-head">
+          <span class="tag practice lang-en">Spec — X / Twitter Thread</span>
+          <span class="tag practice lang-ua">Демонстраційна робота — X / Twitter Thread</span>
+          <span class="sample-context lang-en">DTC / Direct response · 2026</span>
+          <span class="sample-context lang-ua">DTC / Direct response · 2026</span>
+        </div>
+        <div class="sample-body">
+          <div class="lang-en">
+            <h3>Your Google Ads account can be healthy and still lose money.</h3>
+            <h4 class="sub">Founder-style X thread · concise operator perspective</h4>
+            <div class="thread">
+              <div class="thread-post"><div class="thread-num">01 / 08</div><p>Your Google Ads account can be healthy and still lose money.</p></div>
+              <div class="thread-post"><div class="thread-num">02 / 08</div><p>Good CTR. Clean structure. Plenty of conversions. Nothing obviously broken.</p></div>
+              <div class="thread-post"><div class="thread-num">03 / 08</div><p>And the business is still asking, “Where did the margin go?”</p></div>
+              <div class="thread-post"><div class="thread-num">04 / 08</div><p>The mistake is treating the ad account like the business.</p></div>
+              <div class="thread-post"><div class="thread-num">05 / 08</div><p>Ads can optimize for the conversion you give them. They can't decide whether that conversion is actually valuable.</p></div>
+              <div class="thread-post"><div class="thread-num">06 / 08</div><p>If your best-selling product has the worst margin, scaling it harder doesn't make the problem disappear. It scales the problem.</p></div>
+              <div class="thread-post"><div class="thread-num">07 / 08</div><p>The better question isn't “How do we get more conversions?”</p></div>
+              <div class="thread-post"><div class="thread-num">08 / 08</div><p>It's “Which customers, products and offers are worth buying more of — and can the account see the difference?”</p></div>
+            </div>
+            <div class="spec-note">Spec work — an original sample created for this application.</div>
+          </div>
+          <div class="lang-ua">
+            <h3>Ваш Google Ads акаунт може бути в чудовому стані — і все одно втрачати гроші.</h3>
+            <h4 class="sub">Тред від імені засновника · лаконічний операторський підхід</h4>
+            <div class="thread">
+              <div class="thread-post"><div class="thread-num">01 / 08</div><p>Ваш Google Ads акаунт може бути в чудовому стані — і все одно втрачати гроші.</p></div>
+              <div class="thread-post"><div class="thread-num">02 / 08</div><p>Хороший CTR. Чітка структура. Достатньо конверсій. Нічого очевидно не зламано.</p></div>
+              <div class="thread-post"><div class="thread-num">03 / 08</div><p>А бізнес усе одно запитує: «Куди поділася маржа?»</p></div>
+              <div class="thread-post"><div class="thread-num">04 / 08</div><p>Помилка — сприймати рекламний акаунт як сам бізнес.</p></div>
+              <div class="thread-post"><div class="thread-num">05 / 08</div><p>Реклама може оптимізуватися під ту конверсію, яку ви їй дали. Але вона не може вирішити, чи ця конверсія насправді цінна.</p></div>
+              <div class="thread-post"><div class="thread-num">06 / 08</div><p>Якщо ваш товар-бестселер має найгіршу маржу, масштабування не вирішить проблему. Воно просто її масштабує.</p></div>
+              <div class="thread-post"><div class="thread-num">07 / 08</div><p>Краще питання не «Як отримати більше конверсій?»</p></div>
+              <div class="thread-post"><div class="thread-num">08 / 08</div><p>А «Яких клієнтів, які товари й пропозиції нам справді варто купувати більше — і чи бачить це рекламний акаунт?»</p></div>
+            </div>
+            <div class="spec-note">Демонстраційна робота — оригінальний текст, створений спеціально для цієї заявки.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SPEC SAMPLE 3 -->
+      <article class="sample reveal">
+        <div class="sample-head">
+          <span class="tag practice lang-en">Spec — Instagram Video Script</span>
+          <span class="tag practice lang-ua">Демонстраційна робота — Instagram Video Script</span>
+          <span class="sample-context lang-en">Founder video · 45–60 sec · 2026</span>
+          <span class="sample-context lang-ua">Founder video · 45–60 с · 2026</span>
+        </div>
+        <div class="sample-body">
+          <div class="lang-en">
+            <h3>If your agency starts with CTR, ask one question.</h3>
+            <h4 class="sub">Short-form script · direct-response thought leadership</h4>
+            <div class="script">
+              <div class="script-row"><div class="script-label">Hook</div><div class="script-text">If your Google Ads agency starts the meeting with CTR, ask them one question: “So what?”</div></div>
+              <div class="script-row"><div class="script-label">Beat 1</div><div class="script-text">CTR is useful. I look at it too. But a click isn't the goal. Revenue is. Profit is. Growth you can actually keep is.</div></div>
+              <div class="script-row"><div class="script-label">Beat 2</div><div class="script-text">You can have a beautiful dashboard full of green numbers while the business underneath it is getting worse.</div></div>
+              <div class="script-row"><div class="script-label">Beat 3</div><div class="script-text">So when someone tells you, “CTR is up 18%,” don't celebrate yet.</div></div>
+              <div class="script-row"><div class="script-label">Payoff</div><div class="script-text">Ask: “Did the extra clicks make us more money?” That's the number I'd rather build a strategy around.</div></div>
+              <div class="script-row"><div class="script-label">Close</div><div class="script-text">Optimize the account, sure. Just don't forget you're running a business, not a spreadsheet.</div></div>
+            </div>
+            <div class="spec-note">Spec work — an original founder-led Instagram concept created for this application.</div>
+          </div>
+          <div class="lang-ua">
+            <h3>Якщо ваше агентство починає розмову з CTR, поставте одне питання.</h3>
+            <h4 class="sub">Сценарій короткого відео · direct-response thought leadership</h4>
+            <div class="script">
+              <div class="script-row"><div class="script-label">Hook</div><div class="script-text">Якщо ваше Google Ads агентство починає зустріч із CTR, поставте одне питання: «І що?»</div></div>
+              <div class="script-row"><div class="script-label">Крок 1</div><div class="script-text">CTR важливий. Я теж на нього дивлюся. Але клік — не мета. Мета — дохід. Прибуток. Зростання, яке можна втримати.</div></div>
+              <div class="script-row"><div class="script-label">Крок 2</div><div class="script-text">У вас може бути красивий дашборд, повний зелених цифр, поки сам бізнес під ним стає слабшим.</div></div>
+              <div class="script-row"><div class="script-label">Крок 3</div><div class="script-text">Тому коли вам кажуть: «CTR виріс на 18%», не поспішайте святкувати.</div></div>
+              <div class="script-row"><div class="script-label">Payoff</div><div class="script-text">Запитайте: «Ці додаткові кліки принесли нам більше грошей?» Саме навколо цієї цифри я б будувала стратегію.</div></div>
+              <div class="script-row"><div class="script-label">Close</div><div class="script-text">Оптимізувати акаунт — так. Просто не забувайте: ви керуєте бізнесом, а не таблицею.</div></div>
+            </div>
+            <div class="spec-note">Демонстраційна робота — оригінальна концепція founder-led відео, створена спеціально для цієї заявки.</div>
+          </div>
+        </div>
+      </article>
 
       <!-- Safe Place -->
       <article class="sample reveal">
@@ -453,14 +626,14 @@
       <article class="sample reveal">
         <div class="sample-head">
           <span class="tag lang-en">Technical Documentation</span><span class="tag lang-ua">Технічна документація</span>
-          <span class="sample-context lang-en">Internship — manufacturing company</span><span class="sample-context lang-ua">Практика — приватне підприємство</span>
+          <span class="sample-context lang-en">Internship — private manufacturing company</span><span class="sample-context lang-ua">Практика — приватне виробниче підприємство</span>
         </div>
         <div class="sample-body">
           <div class="lang-en">
             <h3>3D Warehouse Visualization System</h3>
             <h4 class="sub">The challenge: build a tool non-technical warehouse staff could actually use, then write the instructions that made that true.</h4>
             <p>During my internship at a company manufacturing trailers, car carriers, and auto parts, I designed a 3D visualization of the warehouse integrated with 1C and Excel — so staff could search, edit, and take inventory quickly. I wrote the accompanying documentation and user guide myself.</p>
-            <p class="result-line">→ Working internal tool + documentation written for people who'd never opened 1C's back end.</p>
+            <p class="result-line">→ Working internal tool + documentation written for people who'd never opened 1C's back end.</p><p style="font-size:13px; color:var(--ink-faint);">The documentation was prepared as part of the internship and reviewed during the practical work.</p>
           </div>
           <div class="lang-ua">
             <h3>3D-візуалізація складу</h3>
@@ -524,7 +697,7 @@
             <h3>Reviewing visitor applications and letters</h3>
             <h4 class="sub">Part of my library internship — alongside registering users and cataloging the book database.</h4>
             <p>I regularly checked and rewrote applications and letters submitted by visitors — fixing unclear wording before they were processed. It's real editing under a deadline, for readers who weren't going to read a second draft.</p>
-            <p style="font-size:13px; color:var(--ink-faint);">(For privacy, I'm not reproducing a specific visitor document here — this describes the task.)</p>
+            <p style="font-size:13px; color:var(--ink-faint);">(For privacy, I'm not reproducing a specific visitor document here — this describes the task.)</p><p style="font-size:13px; color:var(--ink-faint);">The work was completed and checked during the internship; original visitor documents are not reproduced for privacy.</p>
           </div>
           <div class="lang-ua">
             <h3>Перевірка заяв і листів від відвідувачів</h3>
@@ -931,6 +1104,14 @@
     note.classList.add('show');
   }
 </script>
+
+
+  <div class="lang-en" style="max-width:1100px;margin:20px auto 0;padding:0 24px 30px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-faint);">
+    Spec work is clearly labeled. Real internship work is presented as internship experience; no client relationship is implied where there was none.
+  </div>
+  <div class="lang-ua" style="max-width:1100px;margin:20px auto 0;padding:0 24px 30px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-faint);">
+    Демонстраційні роботи чітко позначені. Реальні роботи з практики подані саме як досвід практики; там, де клієнтських відносин не було, вони не заявляються.
+  </div>
 
 </body>
 </html>
