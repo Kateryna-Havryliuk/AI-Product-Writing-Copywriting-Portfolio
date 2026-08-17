@@ -73,8 +73,8 @@ I built **Safe Place** (a mental health web app with AI), documented a **3D ware
 **Sample:**
 > "We restock at 10am. By 11, half this table is gone. Come see what's left."
 
-#### Founder & Social Copy — Adcubator Application Samples
-- [View samples](./social-media/adcubator-founder-social-samples.md)
+#### Founder & Social Copy — Application Spec Samples
+- [View samples](./social-media/founder-social-samples.md)
 - Spec work: LinkedIn post, X/Twitter thread, and Instagram video script written in a founder-led, direct-response voice
 - Original pieces created to demonstrate platform-adaptive writing — not client work or claimed ghostwriting experience
 
@@ -103,7 +103,7 @@ I have **4 peer-reviewed research papers** presented at international conference
 ## Contact
 - **Email:** katyagko2004@gmail.com
 - **LinkedIn:** [linkedin.com/in/kateryna-havryliuk-link](https://linkedin.com/in/kateryna-havryliuk-link)
-- **Portfolio:** [kateryna-havryliuk.github.io-copywriting-portfolio](https://kateryna-havryliuk.github.io-copywriting-portfolio)
+- **Portfolio:** [github.com/Kateryna-Havryliuk/copywriting-portfolio](https://github.com/Kateryna-Havryliuk/copywriting-portfolio)
 - **GitHub:** [github.com/Kateryna-Havryliuk](https://github.com/Kateryna-Havryliuk)
 
 ---
