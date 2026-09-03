@@ -146,7 +146,7 @@ Safe Place is an emotion-aware AI web app that analyzes text and voice to unders
 ## Contact
 - **Email:** katyagko2004@gmail.com
 - **LinkedIn:** [linkedin.com/in/kateryna-havryliuk-link](https://linkedin.com/in/kateryna-havryliuk-link)
-- **Portfolio:** [github.com/Kateryna-Havryliuk/copywriting-portfolio](https://github.com/Kateryna-Havryliuk/copywriting-portfolio)
+- **Portfolio:** [github.com/Kateryna-Havryliuk/AI-Product-Writing-Copywriting-Portfolio](https://kateryna-havryliuk.github.io/AI-Product-Writing-Copywriting-Portfolio/)
 - **GitHub:** [github.com/Kateryna-Havryliuk](https://github.com/Kateryna-Havryliuk)
 
 ---
