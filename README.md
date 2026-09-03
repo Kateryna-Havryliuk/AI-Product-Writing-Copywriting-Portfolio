@@ -143,6 +143,17 @@ Safe Place is an emotion-aware AI web app that analyzes text and voice to unders
 
 ---
 
+## Certificates
+
+| Certificate | Organization | Year |
+|---|---|---|
+| [GCI World 2026 April](certificates/GCI-World-2026-April-University-of-Tokyo.pdf) | University of Tokyo | 2026 |
+| [HarvardX: Data Science — Machine Learning](certificates/HarvardX-Data-Science-Machine-Learning.pdf) | HarvardX | 2025 |
+| [IBM: Generative AI](certificates/IBM-Generative-AI.pdf) | IBM | 2025 |
+| [Data Engineering Summer School](certificates/Data-Engineering-Summer-School.pdf) | Data Engineering | 2025 |
+
+---
+
 ## Contact
 - **Email:** katyagko2004@gmail.com
 - **LinkedIn:** [linkedin.com/in/kateryna-havryliuk-link](https://linkedin.com/in/kateryna-havryliuk-link)
