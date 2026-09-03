@@ -1,105 +1,148 @@
-# Kateryna Havryliuk — Copywriting Portfolio
-Welcome to my copywriting portfolio. I'm a Computer Science graduate who writes copy, UX text, and content for digital products. Before I studied sentences, I studied systems — that's still how I write them.
+# Kateryna Havryliuk — AI Product Writing & Copywriting Portfolio
 
-📌 **Available for remote work.** Let's write something clear together.
+Welcome to my portfolio!
+I'm an AI Product Writer & Developer with a Computer Science degree (GPA 4.87/5.0, with Honors). I design, build, and write for AI products — from system prompts and conversational flows to UX microcopy and technical documentation.
+
+Creator of **Safe Place**, a multimodal emotion-aware AI web app. Published 4 research papers. GCI World — University of Tokyo.
+
+📌 **Available for remote work worldwide.** Let's write something clear together.
 
 ---
+
 ## About Me
-I built **Safe Place** (a mental health web app with AI), documented a **3D warehouse system** for non-technical staff, and wrote a **bank budget plan** approved with distinction. I don't have a "copywriter" job title yet — but I've shipped systems real people use, documented them for non-developers, edited real documents under deadlines, and led project teams at university.
 
-- **Education:** B.Sc. Computer Science & IT, with Honors (GPA 4.87/5.0)
-- **Languages:** Ukrainian (Native), English (Professional), Polish, Korean, Japanese, Chinese
-- **Certifications:** GCI World (University of Tokyo), HarvardX (ML), IBM (Generative AI)
+I specialize in:
+- **AI Product Writing** — system prompts, conversational flows, voice UI
+- **NLP & Emotion Recognition** — multimodal analysis, sentiment detection
+- **Copywriting** — email, landing pages, social media
+- **Editing** — corporate jargon → clear human copy
+- **Technical Documentation** — user guides for non-technical staff
+
+**Education:** B.Sc. Computer Science & IT, with Honors (GPA 4.87/5.0) · Gold Medalist
+**Certifications:** GCI World (University of Tokyo) · HarvardX (ML) · IBM (Generative AI)
+**Languages:** Ukrainian (Native) · English (B2) · Polish (B1) · Korean, Japanese, Chinese (A1-A2)
 
 ---
+
+## Featured Project: Safe Place
+
+### AI Product Writing · NLP · Emotion Recognition
+
+Safe Place is an emotion-aware AI web app that analyzes text and voice to understand emotional state.
+
+**Development:**
+- Full-stack: Flask, Google Gemini API, 18 REST endpoints, JWT auth
+- Multimodal emotion recognition: text + voice with paralinguistic features
+- Rule-based fusion algorithm — O(1), zero false positives on critical cases
+
+**Writing:**
+- Every UI string — from check-ins to crisis intervention
+- Complete system prompt — CBT, empathetic tone, crisis protocols
+- 10 self-help techniques · 4 blog articles · Crisis support page
+
+**Research:**
+- 2 published papers (oral presentations, 2026)
+- 1st place, University Scientific Research Competition
+- +17% accuracy vs text-only analysis
+
+---
+
 ## Writing Samples
 
-### UX Writing & Microcopy
+### AI Product Writing
 
-#### Safe Place — Mental Health Web App
-- [View full case study](./ux-writing/safe-place-samples.md)
-- Wrote every UI string — from daily check-in prompts to crisis detection protocols
-- All copy written for human connection, not clinical jargon
+#### Safe Place — System Prompt & UX Strings
+- [View full case study](./ai-product/safe-place.md)
+- System prompt design, conversational flows, crisis protocols
+- Every UI string written for human connection
 
-**Sample:**
-> "Sounds like today's been a lot. Want to write more, or just sit with it for a minute?"
-
-#### Rewriting My Own To-Do List App
-- [View before/after](./ux-writing/todo-list-microcopy.md)
-- Self-directed practice: revisiting a 2023 beginner project with today's UX-writing instincts
-- Same interface, same code — only the copy changed
+#### UX Microcopy — Before/After
+- [View samples](./ai-product/ux-microcopy.md)
+- Auth errors, empty states, buttons, actions
 
 **Sample:**
-> Before: "No tasks." → After: "Nothing on your list yet. Add your first task."
+> Before: "Authentication failed."
+> After: "That password does not match. Try again."
 
 ---
-### Product Copy
 
-#### Workout Descriptions (BetterMe-style)
-- [View samples](./product-copy/workout-descriptions.md)
-- Three workout descriptions — Gym, Pilates, Yoga
-- Warm, human, empowering tone. No fluff. No fitness jargon.
+### Copywriting
 
-**Sample (Yoga):**
-> "Your practice, your pace. Step onto the mat, close your eyes, and breathe. This isn't about touching your toes — it's about the journey there."
+#### Email: Coffee Subscription (B2B)
+- [View email](./copywriting/coffee-email.md)
+- Subject: "Coffee for the office — never runs out again"
 
-#### KORstudy — Korean Learning Platform Copy
-- [View samples](./product-copy/korstudy-course-copy.md)
-- Course descriptions, pricing tiers, and onboarding copy for a self-built educational platform
-- Started as a fandom project, shipped as a real product used by learners
+#### Landing Page: IT Agency
+- [View copy](./copywriting/it-agency-landing.md)
+- "Your website — your success"
+
+#### LinkedIn Post: Why I Don't Take Feedback Personally
+- [View post](./copywriting/linkedin-feedback.md)
+- Short-form thought leadership
 
 ---
+
+### Editing & Rewriting
+
+#### Corporate Jargon → Clear Copy
+- [View before/after](./editing/editing-samples.md)
+- 3 examples: 65 words → 38 words (40% shorter)
+
+#### News Rewrite: Meta Pays $16B
+- [View rewrite](./editing/news-rewrite.md)
+- Bloomberg article → clear summary with headline
+
+---
+
+### Article & Social Carousel
+
+#### Why Technical Education Makes You a Stronger Copywriter
+- [View full article](./journalism/technical-education-article.md)
+- 600-word article + 22-slide social carousel
+
+---
+
 ### Technical Documentation
 
 #### 3D Warehouse Visualization System
-- [View user guide](./technical-docs/3d-warehouse-guide.md)
-- Wrote documentation for non-technical warehouse staff
-- User-friendly guides for employees who had never opened 1C's back end
+- [View user guide](./technical-docs/3d-warehouse.md)
+- Documentation for non-technical warehouse staff
+- Integration with 1C and Excel
 
 ---
+
 ### Analytical Writing
 
 #### 2026 Bank Budget Plan
-- [View summary](./analytical-writing/bank-budget-plan.md)
-- Turned complex financial data into a clear, readable document
-- Presented to invited industry experts — approved with distinction
+- [View summary](./analytical/bank-budget.md)
+- Approved with distinction · Presented to industry experts
 
 ---
-### Social Media Copy
 
-#### Instagram Captions — Independent Bookstore
-- [View samples](./social-media/bookstore-captions.md)
+## Research & Publications
 
-**Sample:**
-> "We restock at 10am. By 11, half this table is gone. Come see what's left."
+4 peer-reviewed papers presented at international conferences:
 
-#### Founder & Social Copy — Application Spec Samples
-- [View samples](./social-media/founder-social-samples.md)
-- Spec work: LinkedIn post, X/Twitter thread, and Instagram video script written in a founder-led, direct-response voice
-- Original pieces created to demonstrate platform-adaptive writing — not client work or claimed ghostwriting experience
-
-**Sample:**
-> "Most ecommerce brands don't have a traffic problem. They have a 'give me more traffic' problem."
-
----
-### Research & Publications
-I have **4 peer-reviewed research papers** presented at international conferences:
-1. *Interpreted Rule-Based Multimodal Fusion for Emotion Recognition* (2026) — Oral presentation
-2. *Development of Virtual Conversation App "Safe Place" Using Generative AI* (2026) — Oral presentation
-3. *Analysis of Dark Mode and Brutalism Aesthetics Impact on Emotional State* (2026)
-4. *The Impact of Cyber Hackathons on Cybersecurity Training* (2025)
+1. **Interpreted Rule-Based Multimodal Fusion for Emotion Recognition** (2026) — Oral presentation
+2. **Development of Virtual Conversation App "Safe Place" Using Generative AI** (2026) — Oral presentation
+3. **Analysis of Dark Mode and Brutalism Aesthetics Impact on Emotional State** (2026)
+4. **The Impact of Cyber Hackathons on Cybersecurity Training** (2025)
 
 [View all publications](./research/publications.md)
 
 ---
+
 ## What I Can Write For Your Team
-- Landing & Product Pages
+
+- AI Product Writing (system prompts, conversational flows, voice UI)
 - UX & Product Copy (microcopy, error states, onboarding)
-- Educational Content & Long-form Articles
+- Email Sequences & Landing Pages
 - Technical Documentation
-- Analytical & Business Writing
+- Articles & Social Media Content
+- Editing & Rewriting
 
 ---
+
 ## Contact
 - **Email:** katyagko2004@gmail.com
 - **LinkedIn:** [linkedin.com/in/kateryna-havryliuk-link](https://linkedin.com/in/kateryna-havryliuk-link)
@@ -107,4 +150,5 @@ I have **4 peer-reviewed research papers** presented at international conference
 - **GitHub:** [github.com/Kateryna-Havryliuk](https://github.com/Kateryna-Havryliuk)
 
 ---
+
 *Built by hand, edited by hand.*
