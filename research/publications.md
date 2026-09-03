@@ -27,7 +27,7 @@
 
 If you have questions about my research or would like to collaborate, please reach out via:
 - **Email:** katyagko2004@gmail.com
-- **LinkedIn:** [linkedin.com/in/kateryna-havryliuk](www.linkedin.com/in/kateryna-havryliuk-link)
+- **LinkedIn:** [linkedin.com/in/kateryna-havryliuk](https://linkedin.com/in/kateryna-havryliuk-link)
 
 ---
 
