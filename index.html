@@ -3,213 +3,1500 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kateryna Havryliuk — Copywriter with a Tech Background</title>
+<title>Kateryna Havryliuk — AI Product Writer · NLP · UX Writer</title>
+<meta name="description" content="Portfolio of Kateryna Havryliuk — AI Product Writer, NLP specialist, and UX writer. Emotion recognition, conversational AI, copywriting, technical documentation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#FBF8F1; --paper-dim:#F1EADA; --ink:#221F1A; --ink-soft:#5C5646; --ink-faint:#948C76;
-    --rule:#E2D8BF; --insert:#1B5E3B; --insert-bg:#E3EEE4; --delete:#7A1E3D; --delete-bg:#F4E4EA; --gold:#B8862E;
-    --header-bg:rgba(251,248,241,0.92); --practice-fg:#8A6512; --practice-bg:#F3E7C6;
-    --before-fg:#7A1E3D; --after-fg:#1B5E3B; --avatar-grad:#3E7A57;
-    --max:1080px;
+    --bg:#F7F5F0;
+    --surface:#FDFBF7;
+    --ink:#1A1A1A;
+    --ink-soft:#4A4540;
+    --ink-faint:#8A8478;
+    --rule:#E5E0D5;
+    --accent:#8B9A6D;
+    --accent-soft:#A8B894;
+    --gold:#C9A96E;
+    --gold-soft:#D4BC94;
+    --rose:#B5838D;
+    --rose-soft:#D4A8B0;
+    --blush:#F5E8E8;
+    --typewriter:#2C2C2C;
+    --paper-line:#EDE8DE;
+    --header-bg:rgba(247,245,240,0.92);
+    --max:1100px;
+    --shadow-soft:0 2px 16px rgba(26,26,26,0.04);
+    --shadow-medium:0 8px 40px rgba(26,26,26,0.08);
+    --radius:12px;
   }
   html[data-theme="dark"]{
-    --paper:#17150F; --paper-dim:#211E15; --ink:#F5EFDE; --ink-soft:#CBC2AA; --ink-faint:#8C846E;
-    --rule:#3B361F; --insert:#3FA873; --insert-bg:#1C3327; --delete:#DB7F9C; --delete-bg:#3A1E29; --gold:#E0B84D;
-    --header-bg:rgba(23,21,15,0.9); --practice-fg:#E0B84D; --practice-bg:#3A2E12;
-    --before-fg:#E4A0B5; --after-fg:#7FD9A8; --avatar-grad:#1F4433;
+    --bg:#141210;
+    --surface:#1C1B18;
+    --ink:#F0EBE0;
+    --ink-soft:#B8B0A0;
+    --ink-faint:#6A6458;
+    --rule:#2E2C26;
+    --accent:#A8B894;
+    --accent-soft:#C4D4B0;
+    --gold:#D4BC94;
+    --gold-soft:#E8D8B8;
+    --rose:#D4A8B0;
+    --rose-soft:#E8C8D0;
+    --blush:#3A2828;
+    --typewriter:#E0DCD0;
+    --paper-line:#2A2824;
+    --header-bg:rgba(20,18,16,0.92);
+    --shadow-soft:0 2px 16px rgba(0,0,0,0.2);
+    --shadow-medium:0 8px 40px rgba(0,0,0,0.3);
   }
-  html{ transition:background-color .25s ease; }
-  body{ margin:0; background:var(--paper); color:var(--ink); font-family:'IBM Plex Sans',sans-serif; font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased; transition:background .25s ease,color .25s ease; }
-  *{ box-sizing:border-box; }
-  html{ scroll-behavior:smooth; }
-  h1,h2,h3{ font-family:'Fraunces',serif; font-weight:600; margin:0; letter-spacing:-0.01em; }
-  a{ color:inherit; }
-  .mono{ font-family:'IBM Plex Mono',monospace; }
-  .wrap{ max-width:var(--max); margin:0 auto; padding:0 28px; }
-  section{ padding:100px 0; border-bottom:1px solid var(--rule); transition:border-color .25s ease; }
-  section:last-of-type{ border-bottom:none; }
-  a:focus-visible, button:focus-visible{ outline:2px solid var(--insert); outline-offset:3px; }
+  html{
+    transition:background-color .4s ease;
+    scroll-behavior:smooth;
+  }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    transition:background .4s ease,color .4s ease;
+  }
+  *{
+    box-sizing:border-box;
+  }
+  ::selection{
+    background:var(--gold-soft);
+    color:var(--ink);
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',serif;
+    font-weight:400;
+    margin:0;
+    letter-spacing:-0.02em;
+    line-height:1.15;
+  }
+  a{
+    color:inherit;
+    text-decoration:none;
+  }
+  .mono{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+  }
+  .wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 32px;
+  }
+  section{
+    padding:80px 0;
+    border-bottom:1px solid var(--rule);
+    transition:border-color .4s ease;
+  }
+  section:last-of-type{
+    border-bottom:none;
+  }
+  a:focus-visible,
+  button:focus-visible{
+    outline:2px solid var(--gold);
+    outline-offset:3px;
+  }
 
-  html[data-lang="en"] .lang-ua{ display:none; }
-  html[data-lang="ua"] .lang-en{ display:none; }
+  html[data-lang="en"] .lang-ua{
+    display:none;
+  }
+  html[data-lang="ua"] .lang-en{
+    display:none;
+  }
 
-  .reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease,transform .6s ease; }
-  .reveal.in-view{ opacity:1; transform:translateY(0); }
-  @media (prefers-reduced-motion:reduce){ .reveal{ opacity:1 !important; transform:none !important; transition:none !important; } }
+  .reveal{
+    opacity:0;
+    transform:translateY(24px);
+    transition:opacity .8s cubic-bezier(.22,1,.36,1),
+               transform .8s cubic-bezier(.22,1,.36,1);
+  }
+  .reveal.in-view{
+    opacity:1;
+    transform:translateY(0);
+  }
+  @media (prefers-reduced-motion:reduce){
+    .reveal{
+      opacity:1 !important;
+      transform:none !important;
+      transition:none !important;
+    }
+  }
 
-  header{ position:sticky; top:0; z-index:50; background:var(--header-bg); backdrop-filter:blur(6px); border-bottom:1px solid var(--rule); transition:background .25s ease,border-color .25s ease; }
-  .nav{ max-width:var(--max); margin:0 auto; padding:16px 28px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
-  .brand{ font-family:'Fraunces',serif; font-weight:600; font-size:19px; text-decoration:none; white-space:nowrap; }
-  .brand span{ color:var(--insert); transition:color .25s ease; }
-  .navlinks{ display:flex; gap:28px; align-items:center; flex-wrap:wrap; }
-  .navlinks a{ text-decoration:none; font-size:14.5px; color:var(--ink-soft); font-family:'IBM Plex Mono',monospace; transition:color .2s ease; }
-  .navlinks a:hover{ color:var(--ink); }
-  .nav-right{ display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
-  .btn{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:13.5px; text-decoration:none; padding:9px 16px; border:1px solid var(--ink); border-radius:3px; color:var(--ink); transition:background .15s ease,color .15s ease,border-color .25s ease; cursor:pointer; background:transparent; }
-  .btn:hover{ background:var(--ink); color:var(--paper); }
-  .btn-solid{ background:var(--ink); color:var(--paper); }
-  .btn-solid:hover{ opacity:.85; }
-  #langToggle{ font-size:12.5px; padding:8px 12px; border-radius:20px; border-color:var(--rule); }
-  #themeToggle{ width:36px; height:36px; padding:0; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:15px; }
+  /* ===== HEADER ===== */
+  header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:var(--header-bg);
+    backdrop-filter:blur(12px) saturate(1.2);
+    border-bottom:1px solid var(--rule);
+    transition:background .4s ease,border-color .4s ease;
+  }
+  .nav{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:16px 32px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .brand{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:20px;
+    text-decoration:none;
+    white-space:nowrap;
+    letter-spacing:-0.03em;
+  }
+  .brand span{
+    color:var(--rose);
+    transition:color .3s ease;
+  }
+  .navlinks{
+    display:flex;
+    gap:32px;
+    align-items:center;
+    flex-wrap:wrap;
+  }
+  .navlinks a{
+    text-decoration:none;
+    font-size:12px;
+    color:var(--ink-soft);
+    font-family:'IBM Plex Mono',monospace;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    transition:color .25s ease;
+    position:relative;
+  }
+  .navlinks a::after{
+    content:'';
+    position:absolute;
+    bottom:-4px;
+    left:0;
+    width:0;
+    height:1.5px;
+    background:var(--gold);
+    transition:width .3s ease;
+  }
+  .navlinks a:hover{
+    color:var(--ink);
+  }
+  .navlinks a:hover::after{
+    width:100%;
+  }
+  .nav-right{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .btn{
+    display:inline-block;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    text-decoration:none;
+    padding:10px 18px;
+    border:1px solid var(--ink);
+    border-radius:4px;
+    color:var(--ink);
+    transition:all .25s ease;
+    cursor:pointer;
+    background:transparent;
+  }
+  .btn:hover{
+    background:var(--ink);
+    color:var(--bg);
+  }
+  .btn-solid{
+    background:var(--ink);
+    color:var(--bg);
+  }
+  .btn-solid:hover{
+    background:var(--gold);
+    border-color:var(--gold);
+    color:var(--ink);
+  }
+  .btn-ghost{
+    border-color:var(--rule);
+    color:var(--ink-faint);
+  }
+  .btn-ghost:hover{
+    border-color:var(--gold);
+    color:var(--gold);
+    background:transparent;
+  }
+  #langToggle{
+    font-size:11px;
+    padding:8px 14px;
+    border-color:var(--rule);
+  }
+  #themeToggle{
+    width:36px;
+    height:36px;
+    padding:0;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:14px;
+    border-color:var(--rule);
+  }
+  @media (max-width:780px){
+    .navlinks{
+      display:none;
+    }
+    .nav{
+      padding:14px 20px;
+    }
+  }
 
-  .hero{ padding:80px 0 96px; border-bottom:1px solid var(--rule); transition:border-color .25s ease; }
-  .hero-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:60px; align-items:center; }
-  .eyebrow{ font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--gold); letter-spacing:.06em; text-transform:uppercase; margin-bottom:16px; display:block; transition:color .25s ease; }
-  .hero h1{ font-size:clamp(32px,4.6vw,50px); line-height:1.1; }
-  .hero p.lead{ margin-top:20px; font-size:17.5px; color:var(--ink-soft); max-width:48ch; transition:color .25s ease; }
-  .greet{ margin-top:18px; font-family:'IBM Plex Mono',monospace; font-size:14px; color:var(--ink-faint); height:20px; transition:color .25s ease; }
-  .greet span{ color:var(--gold); transition:color .25s ease; }
-  .hero-ctas{ margin-top:30px; display:flex; gap:12px; flex-wrap:wrap; }
-  .local-time{ margin-top:8px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-faint); transition:color .25s ease; }
-  .local-time .dot{ display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--insert); margin-right:6px; animation:pulse 2s ease-in-out infinite; transition:background .25s ease; }
-  @keyframes pulse{ 0%,100%{ opacity:1; } 50%{ opacity:.35; } }
-  @media (prefers-reduced-motion:reduce){ .local-time .dot{ animation:none; } }
+  /* ===== HERO ===== */
+  .hero{
+    padding:0;
+    border-bottom:1px solid var(--rule);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-inner{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:100px 32px 80px;
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:60px;
+    align-items:center;
+    position:relative;
+    z-index:2;
+  }
+  .typewriter-paper{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:4px;
+    padding:40px 34px;
+    box-shadow:var(--shadow-medium);
+    position:relative;
+  }
+  .typewriter-paper::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:60px;
+    right:60px;
+    height:1px;
+    background:var(--rose-soft);
+    opacity:.4;
+  }
+  .typewriter-text{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13.5px;
+    line-height:28px;
+    color:var(--typewriter);
+    min-height:150px;
+    position:relative;
+    z-index:1;
+  }
+  .typewriter-cursor{
+    display:inline-block;
+    width:2px;
+    height:18px;
+    background:var(--typewriter);
+    margin-left:2px;
+    vertical-align:middle;
+    animation:cursor-blink 1.1s step-end infinite;
+  }
+  @keyframes cursor-blink{
+    0%,
+    100%{
+      opacity:1;
+    }
+    50%{
+      opacity:0;
+    }
+  }
+  .typewriter-meta{
+    margin-top:16px;
+    padding-top:12px;
+    border-top:1px dashed var(--rule);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    color:var(--ink-faint);
+    letter-spacing:0.04em;
+  }
+  .typewriter-meta span{
+    margin-right:16px;
+  }
+  .hero-left{
+    position:relative;
+    z-index:2;
+  }
+  .hero-eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--gold);
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    margin-bottom:18px;
+    display:block;
+  }
+  .hero h1{
+    font-size:clamp(32px,4.6vw,54px);
+    line-height:1.05;
+    font-weight:300;
+  }
+  .hero h1 em{
+    font-style:italic;
+    font-weight:400;
+    color:var(--rose);
+  }
+  .hero .lead{
+    margin-top:20px;
+    font-size:17px;
+    color:var(--ink-soft);
+    max-width:44ch;
+    line-height:1.7;
+    font-weight:300;
+    text-align:justify;
+  }
+  .hero-ctas{
+    margin-top:32px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .hero-details{
+    margin-top:28px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .hero-detail{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--ink-faint);
+    letter-spacing:0.04em;
+  }
+  .hero-detail .dot{
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:var(--accent);
+    animation:pulse 2.5s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,
+    100%{
+      opacity:1;
+    }
+    50%{
+      opacity:.3;
+    }
+  }
+  .greeting-machine{
+    margin-top:14px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    color:var(--ink-faint);
+  }
+  .greeting-machine span{
+    color:var(--gold);
+  }
+  .local-time-hero{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--ink-faint);
+    letter-spacing:0.04em;
+    margin-bottom:4px;
+  }
+  .local-time-hero .dot{
+    display:inline-block;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:var(--accent);
+    margin-right:8px;
+    animation:pulse 2.5s ease-in-out infinite;
+  }
+  .deco-rose{
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:radial-gradient(circle,var(--blush) 0%,transparent 70%);
+    opacity:.5;
+    filter:blur(60px);
+    pointer-events:none;
+  }
+  .deco-rose.top-right{
+    top:-100px;
+    right:-100px;
+  }
+  .deco-rose.bottom-left{
+    bottom:-80px;
+    left:-80px;
+    width:200px;
+    height:200px;
+    background:radial-gradient(circle,var(--gold-soft) 0%,transparent 70%);
+  }
+  @media (max-width:900px){
+    .hero-inner{
+      grid-template-columns:1fr;
+      gap:40px;
+      padding:40px 20px 50px;
+    }
+    .typewriter-paper{
+      padding:24px 20px;
+    }
+  }
 
-  .redline-card{ background:var(--paper-dim); border:1px solid var(--rule); border-radius:6px; padding:26px 24px; transition:background .25s ease,border-color .25s ease; }
-  .redline-label{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.06em; margin-bottom:14px; display:block; transition:color .25s ease; }
-  .redline-before{ font-family:'Fraunces',serif; font-size:15.5px; line-height:1.55; color:var(--delete); text-decoration:line-through; text-decoration-thickness:1.5px; background:var(--delete-bg); padding:2px 4px; border-radius:2px; display:inline; transition:color .25s ease,background .25s ease; }
-  .redline-after{ font-family:'Fraunces',serif; font-size:18px; line-height:1.55; color:var(--insert); background:var(--insert-bg); padding:2px 4px; border-radius:2px; margin-top:12px; display:inline-block; transition:color .25s ease,background .25s ease; }
-  .redline-meta{ margin-top:18px; padding-top:14px; border-top:1px dashed var(--rule); font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-faint); transition:color .25s ease,border-color .25s ease; }
+  /* ===== SECTION HEADERS ===== */
+  .sec-head{
+    margin-bottom:44px;
+  }
+  .sec-num{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--ink-faint);
+    display:block;
+    margin-bottom:8px;
+    letter-spacing:0.1em;
+  }
+  .sec-head h2{
+    font-size:clamp(24px,3vw,38px);
+    font-weight:300;
+  }
+  .sec-head h2 em{
+    font-style:italic;
+    color:var(--rose);
+  }
+  .sec-head p.dek{
+    margin-top:12px;
+    color:var(--ink-soft);
+    max-width:52ch;
+    font-size:16px;
+    line-height:1.7;
+    font-weight:300;
+    text-align:justify;
+  }
 
-  .sec-head{ margin-bottom:44px; }
-  .sec-num{ font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--ink-faint); display:block; margin-bottom:10px; transition:color .25s ease; }
-  .sec-head h2{ font-size:clamp(24px,3.2vw,32px); }
-  .sec-head p.dek{ margin-top:12px; color:var(--ink-soft); max-width:60ch; font-size:15.5px; transition:color .25s ease; }
+  /* ===== ABOUT ===== */
+  .about-wrap{
+    display:grid;
+    grid-template-columns:200px 1fr;
+    gap:40px;
+    align-items:start;
+  }
+  .about-left{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  .about-avatar{
+    width:180px;
+    height:180px;
+    overflow:hidden;
+  }
+  .about-avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .about-avatar-label{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    color:var(--ink-faint);
+    letter-spacing:0.08em;
+    text-align:center;
+  }
+  .about-text{
+    text-align:justify;
+  }
+  .about-text p{
+    color:var(--ink-soft);
+    margin:0 0 16px;
+    line-height:1.8;
+    font-weight:300;
+    text-align:justify;
+  }
+  .about-text p strong{
+    color:var(--ink);
+    font-weight:500;
+  }
+  .lang-block{
+    padding:18px 20px;
+    border:1px solid var(--rule);
+    border-radius:8px;
+    background:var(--surface);
+  }
+  .lang-block h4{
+    font-family:'Inter',sans-serif;
+    font-size:11px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    margin-bottom:8px;
+    color:var(--ink);
+  }
+  .lang-chips{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+  }
+  .lang-chip{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    padding:4px 12px;
+    border:1px solid var(--rule);
+    border-radius:100px;
+    color:var(--ink-soft);
+    background:var(--bg);
+    letter-spacing:0.04em;
+    transition:all .2s ease;
+  }
+  .lang-chip:hover{
+    border-color:var(--gold);
+    color:var(--gold);
+  }
+  .lang-chip b{
+    color:var(--ink);
+    font-weight:500;
+  }
+  .cred-list{
+    list-style:none;
+    margin:16px 0 0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .cred-item{
+    border:1px solid var(--rule);
+    border-radius:8px;
+    padding:14px 18px;
+    background:var(--surface);
+    transition:all .3s ease;
+  }
+  .cred-item:hover{
+    border-color:var(--gold-soft);
+    transform:translateX(4px);
+  }
+  .cred-item h4{
+    font-family:'Inter',sans-serif;
+    font-size:11px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    margin-bottom:3px;
+    color:var(--ink);
+  }
+  .cred-item p{
+    margin:0;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    line-height:1.6;
+    font-weight:300;
+    text-align:justify;
+  }
+  .cred-item .small{
+    font-size:11px;
+    color:var(--ink-faint);
+    margin-top:3px;
+    display:block;
+    font-family:'IBM Plex Mono',monospace;
+    text-transform:none;
+    letter-spacing:0;
+  }
+  @media (max-width:700px){
+    .about-wrap{
+      grid-template-columns:1fr;
+      gap:24px;
+    }
+    .about-avatar{
+      width:140px;
+      height:140px;
+      margin:0 auto;
+    }
+  }
 
-  .about-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:56px; }
-  .about-grid p{ color:var(--ink-soft); margin:0 0 15px; max-width:58ch; transition:color .25s ease; }
-  .cred-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:12px; }
-  .cred-list li{ font-family:'IBM Plex Mono',monospace; font-size:13px; border:1px solid var(--rule); border-radius:4px; padding:11px 13px; color:var(--ink-soft); background:var(--paper-dim); transition:color .25s ease,border-color .25s ease,background .25s ease; }
-  .cred-list li b{ color:var(--ink); display:block; font-family:'IBM Plex Sans'; font-size:14px; margin-bottom:3px; transition:color .25s ease; }
-
-  .sample{ border:1px solid var(--rule); border-radius:6px; margin-bottom:24px; background:var(--paper); overflow:hidden; transition:border-color .25s ease,background .25s ease,transform .25s ease,box-shadow .25s ease; }
-  .sample:hover{ transform:translateY(-2px); box-shadow:0 4px 20px rgba(0,0,0,0.06); }
-  html[data-theme="dark"] .sample:hover{ box-shadow:0 4px 20px rgba(0,0,0,0.3); }
-  .sample-head{ display:flex; align-items:center; justify-content:space-between; gap:14px; padding:16px 22px; background:var(--paper-dim); border-bottom:1px solid var(--rule); flex-wrap:wrap; transition:background .25s ease,border-color .25s ease; }
-  .tag{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--insert); background:var(--insert-bg); padding:5px 10px; border-radius:3px; transition:color .25s ease,background .25s ease; }
-  .tag.practice{ color:var(--practice-fg); background:var(--practice-bg); }
-  .sample-context{ font-size:13px; color:var(--ink-faint); font-family:'IBM Plex Mono',monospace; transition:color .25s ease; }
-  .sample-body{ padding:24px 22px 26px; }
-  .sample-body h3{ font-size:20px; margin-bottom:6px; }
-  .sample-body h4.sub{ font-family:'IBM Plex Sans'; font-weight:500; font-size:15px; color:var(--ink-soft); margin:0 0 16px; transition:color .25s ease; }
-  .sample-body p{ margin:0 0 13px; color:var(--ink-soft); transition:color .25s ease; }
-  .pull{ font-family:'Fraunces',serif; font-style:italic; font-size:17px; color:var(--ink); border-left:2px solid var(--insert); padding-left:16px; margin:14px 0; transition:color .25s ease,border-color .25s ease; }
-  .result-line{ font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--insert); margin-top:6px; transition:color .25s ease; }
-
-  .before-after{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:6px; }
-  .ba-col{ padding:13px 15px; border-radius:4px; font-size:14px; transition:background .25s ease,color .25s ease; }
-  .ba-col.before{ background:var(--delete-bg); color:var(--before-fg); }
-  .ba-col.after{ background:var(--insert-bg); color:var(--after-fg); }
-  .ba-label{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:.05em; margin-bottom:8px; display:block; opacity:.75; }
-  .ba-item{ margin-bottom:9px; }
-  .ba-item:last-child{ margin-bottom:0; }
-
-  .skills-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:6px; overflow:hidden; transition:background .25s ease,border-color .25s ease; }
-  .skill-col{ background:var(--paper); padding:24px 22px; transition:background .25s ease; }
-  .skill-col h3{ font-size:15px; font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint); margin-bottom:14px; transition:color .25s ease; }
-  .skill-tags{ display:flex; flex-wrap:wrap; gap:7px; }
-  .skill-tags span{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; background:var(--paper-dim); border:1px solid var(--rule); padding:4px 9px; border-radius:3px; color:var(--ink-soft); transition:color .25s ease,border-color .25s ease,background .25s ease; }
-  .lang-level{ font-size:11px; color:var(--ink-faint); transition:color .25s ease; }
-
-  .meters-grid{ display:grid; grid-template-columns:1fr 0.9fr; gap:40px; align-items:center; }
-  .meters{ display:flex; flex-direction:column; gap:20px; max-width:520px; }
-  .meter-row{ }
-  .meter-label{ display:flex; justify-content:space-between; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--ink-soft); margin-bottom:8px; transition:color .25s ease; }
-  .meter-track{ height:8px; border-radius:4px; background:var(--paper-dim); border:1px solid var(--rule); overflow:hidden; transition:background .25s ease,border-color .25s ease; }
-  .meter-fill{ height:100%; width:0%; background:var(--insert); border-radius:4px; transition:width 1.2s cubic-bezier(.22,1,.36,1); }
-
-  .avatar-scene{ display:flex; align-items:center; justify-content:center; }
-  .avatar-scene img{ width:100%; max-width:240px; height:auto; border-radius:12px; }
-
-  .facts-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
-  .fact{ border:1px solid var(--rule); border-radius:6px; padding:20px 20px; background:var(--paper-dim); transition:border-color .25s ease,background .25s ease; }
-  .fact .pull{ margin-top:10px; margin-bottom:0; font-size:15.5px; }
-  .fact h4{ font-family:'IBM Plex Sans'; font-weight:500; font-size:14.5px; margin:0 0 4px; color:var(--ink); transition:color .25s ease; }
-
-  .services-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:6px; overflow:hidden; transition:background .25s ease,border-color .25s ease; }
-  .service{ background:var(--paper); padding:24px 22px; transition:background .25s ease; }
-  .service h3{ font-size:17px; margin-bottom:8px; }
-  .service p{ margin:0; color:var(--ink-soft); font-size:14.5px; transition:color .25s ease; }
-
-  .contact-wrap{ display:flex; align-items:flex-end; justify-content:space-between; gap:36px; flex-wrap:wrap; }
-  .contact-wrap h2{ font-size:clamp(26px,3.8vw,40px); max-width:15ch; }
-  .contact-links{ display:flex; flex-direction:column; gap:11px; }
-  .contact-links a{ text-decoration:none; font-family:'IBM Plex Mono',monospace; font-size:14.5px; color:var(--ink-soft); transition:color .2s ease; }
-  .contact-links a:hover{ color:var(--insert); }
-
-  .spec-intro{border:1px solid var(--rule); border-radius:6px; background:var(--paper-dim); padding:22px 24px; margin-bottom:24px;}
-  .spec-intro strong{color:var(--ink);}
-  .spec-kicker{font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--gold); margin-bottom:9px; display:block;}
-  .platform-row{display:flex; gap:8px; flex-wrap:wrap; margin:14px 0 0;}
-  .platform-row span{font-family:'IBM Plex Mono',monospace; font-size:11px; padding:4px 8px; border:1px solid var(--rule); border-radius:3px; color:var(--ink-soft); background:var(--paper);}
-  .post-copy{max-width:760px; margin:0 auto; padding:4px 0;}
-  .post-copy p{font-size:16px; line-height:1.75; color:var(--ink); margin:0 0 15px;}
-  .post-copy .hook{font-family:'Fraunces',serif; font-size:25px; line-height:1.35; margin-bottom:20px;}
-  .thread{display:flex; flex-direction:column; gap:0; max-width:760px; margin:0 auto;}
-  .thread-post{padding:18px 0; border-bottom:1px solid var(--rule);}
-  .thread-post:last-child{border-bottom:0;}
-  .thread-num{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); margin-bottom:7px;}
-  .thread-post p{margin:0; color:var(--ink); font-size:15.5px; line-height:1.7;}
-  .script{max-width:760px; margin:0 auto;}
-  .script-row{display:grid; grid-template-columns:110px 1fr; gap:18px; padding:14px 0; border-bottom:1px solid var(--rule);}
-  .script-row:last-child{border-bottom:0;}
-  .script-label{font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--gold);}
-  .script-text{color:var(--ink); font-size:15.5px; line-height:1.7;}
-  .spec-note{margin-top:20px; padding-top:16px; border-top:1px dashed var(--rule); font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-faint);}
-  .why-line{font-family:'Fraunces',serif; font-size:20px; line-height:1.45; color:var(--ink); border-left:2px solid var(--gold); padding-left:16px; margin-top:20px;}
-  .playground{ border:1px solid var(--rule); border-radius:6px; background:var(--paper-dim); padding:26px 24px; transition:border-color .25s ease,background .25s ease; }
-  .playground textarea{ width:100%; min-height:90px; resize:vertical; font-family:'IBM Plex Sans',sans-serif; font-size:15px; padding:14px; border-radius:4px; border:1px solid var(--rule); background:var(--paper); color:var(--ink); transition:border-color .25s ease,background .25s ease,color .25s ease; }
-  .playground textarea:focus-visible{ outline:2px solid var(--insert); outline-offset:2px; }
-  .playground-row{ display:flex; justify-content:space-between; align-items:center; margin-top:12px; gap:12px; flex-wrap:wrap; }
-  .playground-note{ margin-top:14px; padding:14px 16px; border-radius:4px; background:var(--insert-bg); color:var(--ink); font-family:'IBM Plex Mono',monospace; font-size:13.5px; display:none; transition:background .25s ease,color .25s ease; }
-  .playground-note.show{ display:block; }
-  .wc{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--ink-faint); transition:color .25s ease; }
-
-  footer{ padding:30px 0; }
-  footer .wrap{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
-  footer p{ margin:0; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-faint); transition:color .25s ease; }
-
+  /* ===== EXPERTISE ===== */
+  .expertise-row{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1px;
+    background:var(--rule);
+    border:1px solid var(--rule);
+    border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .expertise-cell{
+    background:var(--surface);
+    padding:28px 24px;
+    transition:background .3s ease;
+  }
+  .expertise-cell:hover{
+    background:var(--bg);
+  }
+  .expertise-cell h3{
+    font-family:'Fraunces',serif;
+    font-size:17px;
+    margin-bottom:6px;
+    font-weight:500;
+  }
+  .expertise-cell p{
+    margin:0;
+    font-size:14px;
+    color:var(--ink-soft);
+    line-height:1.65;
+    font-weight:300;
+    text-align:justify;
+  }
+  .expertise-num{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    color:var(--gold);
+    margin-bottom:6px;
+    display:block;
+    letter-spacing:0.1em;
+  }
   @media (max-width:860px){
-    section{ padding:60px 0; }
-    .hero{ padding:52px 0 60px; }
-    .hero-grid{ grid-template-columns:1fr; gap:36px; }
-    .about-grid{ grid-template-columns:1fr; gap:30px; }
-    .skills-grid{ grid-template-columns:1fr; }
-    .services-grid{ grid-template-columns:1fr; }
-    .facts-grid{ grid-template-columns:1fr; }
-    .meters-grid{ grid-template-columns:1fr; }
-    .before-after{ grid-template-columns:1fr; }
-    .navlinks{ display:none; }
-    .avatar-scene img{ max-width:160px; }
+    .expertise-row{
+      grid-template-columns:1fr 1fr;
+    }
   }
   @media (max-width:480px){
-    .nav{ padding:12px 16px; }
-    .brand{ font-size:16px; }
-    .btn{ font-size:12px; padding:6px 12px; }
-    #themeToggle{ width:30px; height:30px; font-size:12px; }
+    .expertise-row{
+      grid-template-columns:1fr;
+    }
+  }
+
+  /* ===== FILTERS ===== */
+  .filters{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:32px;
+  }
+  .filter-btn{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    padding:8px 16px;
+    border:1px solid var(--rule);
+    border-radius:100px;
+    background:transparent;
+    color:var(--ink-soft);
+    cursor:pointer;
+    transition:all .3s ease;
+  }
+  .filter-btn:hover{
+    border-color:var(--gold);
+    color:var(--gold);
+  }
+  .filter-btn.active{
+    background:var(--gold-soft);
+    border-color:var(--gold);
+    color:var(--ink);
+  }
+  html[data-theme="dark"] .filter-btn.active{
+    background:var(--gold);
+    color:var(--bg);
+  }
+
+  /* ===== WORK LIST ===== */
+  .work-list{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+  }
+  .project-card{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:var(--radius);
+    overflow:hidden;
+    transition:all .4s cubic-bezier(.22,1,.36,1);
+    display:flex;
+    flex-direction:column;
+  }
+  .project-card.hidden{
+    display:none;
+  }
+  .project-card:hover{
+    transform:translateY(-4px);
+    box-shadow:var(--shadow-medium);
+    border-color:var(--gold-soft);
+  }
+  .project-card-inner{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:0;
+  }
+  .project-body{
+    padding:28px 32px;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+  }
+  .project-meta{
+    display:flex;
+    gap:8px;
+    margin-bottom:12px;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  .tag{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:9px;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    padding:4px 10px;
+    border-radius:3px;
+    background:var(--accent-soft);
+    color:var(--surface);
+  }
+  html[data-theme="dark"] .tag{
+    color:var(--ink);
+  }
+  .tag.gold{
+    background:var(--gold-soft);
+    color:var(--ink);
+  }
+  .tag.practice{
+    background:transparent;
+    color:var(--ink-faint);
+    border:1px solid var(--rule);
+  }
+  .project-body h3{
+    font-size:20px;
+    margin-bottom:4px;
+    font-weight:500;
+  }
+  .project-body h3 em{
+    font-style:italic;
+    color:var(--rose);
+  }
+  .project-body .sub{
+    font-size:14px;
+    color:var(--ink-soft);
+    margin:0 0 10px;
+    line-height:1.6;
+    font-weight:300;
+    text-align:justify;
+  }
+  .project-body p{
+    margin:0 0 10px;
+    color:var(--ink-soft);
+    font-size:14px;
+    line-height:1.7;
+    font-weight:300;
+    text-align:justify;
+  }
+  .project-body .pull{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-size:19px;
+    color:var(--ink);
+    border-left:2px solid var(--rose-soft);
+    padding-left:16px;
+    margin:12px 0;
+    line-height:1.45;
+    font-weight:400;
+    text-align:justify;
+  }
+  .result-line{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    color:var(--accent);
+    margin-top:auto;
+    padding-top:12px;
+    letter-spacing:0.04em;
+    border-top:1px solid var(--rule);
+  }
+  .spec-note{
+    margin-top:auto;
+    padding-top:12px;
+    border-top:1px dashed var(--rule);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    color:var(--ink-faint);
+    letter-spacing:0.04em;
+  }
+  .expandable{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .5s cubic-bezier(.22,1,.36,1),
+               opacity .4s ease;
+    opacity:0;
+  }
+  .expandable.expanded{
+    max-height:12000px;
+    opacity:1;
+  }
+  .expandable p{
+    margin-bottom:12px;
+  }
+  .read-toggle{
+    margin-top:14px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    padding:8px 16px;
+    border:1px solid var(--gold-soft);
+    border-radius:4px;
+    background:transparent;
+    color:var(--gold);
+    cursor:pointer;
+    transition:all .3s ease;
+    align-self:flex-start;
+  }
+  .read-toggle:hover{
+    background:var(--gold-soft);
+    color:var(--ink);
+  }
+  .read-toggle::after{
+    content:' +';
+    font-size:14px;
+    margin-left:4px;
+  }
+  .read-toggle.expanded::after{
+    content:' −';
+  }
+  .read-toggle.expanded{
+    background:var(--gold-soft);
+    color:var(--ink);
+  }
+  @media (max-width:860px){
+    .project-card-inner{
+      grid-template-columns:1fr;
+    }
+    .project-body{
+      padding:22px 24px;
+    }
+  }
+  @media (max-width:480px){
+    .project-body{
+      padding:18px 18px;
+    }
+  }
+
+  /* ===== CAROUSEL ===== */
+  .project-carousel{
+    position:relative;
+    overflow:hidden;
+    background:var(--bg);
+  }
+  .carousel-track{
+    display:flex;
+    transition:transform .5s cubic-bezier(.22,1,.36,1);
+  }
+  .carousel-slide{
+    min-width:100%;
+    aspect-ratio:16/10;
+    position:relative;
+    overflow:hidden;
+    cursor:zoom-in;
+  }
+  .carousel-slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:transform .6s cubic-bezier(.22,1,.36,1);
+  }
+  .carousel-slide:hover img{
+    transform:scale(1.02);
+  }
+  .carousel-controls{
+    position:absolute;
+    bottom:12px;
+    right:12px;
+    display:flex;
+    gap:6px;
+    z-index:5;
+  }
+  .carousel-btn{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.6);
+    background:rgba(0,0,0,0.4);
+    color:#fff;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:14px;
+    transition:all .25s ease;
+    backdrop-filter:blur(4px);
+  }
+  .carousel-btn:hover{
+    background:rgba(0,0,0,0.7);
+    border-color:#fff;
+  }
+  .carousel-dots{
+    position:absolute;
+    bottom:12px;
+    left:12px;
+    display:flex;
+    gap:4px;
+    z-index:5;
+  }
+  .carousel-dot{
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.4);
+    border:none;
+    cursor:pointer;
+    padding:0;
+    transition:all .3s ease;
+  }
+  .carousel-dot.active{
+    background:#fff;
+    width:18px;
+    border-radius:3px;
+  }
+  .carousel-counter{
+    position:absolute;
+    top:12px;
+    right:12px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:9px;
+    color:#fff;
+    background:rgba(0,0,0,0.5);
+    padding:3px 8px;
+    border-radius:3px;
+    letter-spacing:0.04em;
+    z-index:5;
+  }
+
+  /* ===== LIGHTBOX ===== */
+  .lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.92);
+    z-index:1000;
+    display:none;
+    align-items:center;
+    justify-content:center;
+  }
+  .lightbox.active{
+    display:flex;
+  }
+  .lightbox img{
+    max-width:85vw;
+    max-height:80vh;
+    object-fit:contain;
+    border-radius:4px;
+  }
+  .lightbox-close{
+    position:absolute;
+    top:20px;
+    right:20px;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.5);
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    cursor:pointer;
+    font-size:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:all .25s ease;
+    z-index:1001;
+  }
+  .lightbox-close:hover{
+    background:rgba(255,255,255,0.9);
+    color:#000;
+    border-color:#fff;
+  }
+  .lightbox-prev,
+  .lightbox-next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.4);
+    background:rgba(0,0,0,0.4);
+    color:#fff;
+    cursor:pointer;
+    font-size:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:all .25s ease;
+    z-index:1001;
+  }
+  .lightbox-prev:hover,
+  .lightbox-next:hover{
+    background:rgba(255,255,255,0.9);
+    color:#000;
+  }
+  .lightbox-prev{
+    left:20px;
+  }
+  .lightbox-next{
+    right:20px;
+  }
+  .lightbox-counter{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:#fff;
+    letter-spacing:0.06em;
+    z-index:1001;
+  }
+  @media (max-width:600px){
+    .lightbox-prev{
+      left:10px;
+      width:36px;
+      height:36px;
+      font-size:16px;
+    }
+    .lightbox-next{
+      right:10px;
+      width:36px;
+      height:36px;
+      font-size:16px;
+    }
+    .lightbox-close{
+      top:10px;
+      right:10px;
+      width:36px;
+      height:36px;
+      font-size:18px;
+    }
+  }
+
+  /* ===== EMAIL ===== */
+  .email-sequence{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:12px;
+  }
+  .email-card{
+    border:1px solid var(--rule);
+    border-radius:6px;
+    padding:14px 16px;
+    background:var(--bg);
+    transition:border-color .3s ease;
+  }
+  .email-card:hover{
+    border-color:var(--gold-soft);
+  }
+  .email-subject{
+    font-family:'Cormorant Garamond',serif;
+    font-size:16px;
+    color:var(--ink);
+    margin:0 0 3px;
+    font-weight:500;
+  }
+  .email-body{
+    color:var(--ink-soft);
+    font-size:13px;
+    line-height:1.7;
+    margin:0;
+    font-weight:300;
+    text-align:justify;
+  }
+  .email-cta{
+    display:inline-block;
+    margin-top:6px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:9px;
+    color:var(--gold);
+    border:1px solid var(--gold-soft);
+    padding:4px 12px;
+    border-radius:3px;
+    letter-spacing:0.06em;
+  }
+
+  /* ===== GUIDE ===== */
+  .guide-box{
+    padding:18px 20px;
+    border:1px solid var(--rule);
+    border-radius:6px;
+    background:var(--bg);
+    margin-top:14px;
+  }
+  .guide-box .guide-title{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:9px;
+    color:var(--gold);
+    margin-bottom:12px;
+    display:block;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+  }
+  .guide-step{
+    margin-bottom:12px;
+  }
+  .guide-step:last-child{
+    margin-bottom:0;
+  }
+  .guide-step h4{
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:12px;
+    margin:0 0 3px;
+    color:var(--ink);
+  }
+  .guide-step ul{
+    margin:3px 0 0;
+    padding-left:18px;
+    color:var(--ink-soft);
+    font-size:13px;
+    line-height:1.7;
+    font-weight:300;
+  }
+  .guide-step li{
+    margin-bottom:2px;
+  }
+  .callout{
+    padding:10px 14px;
+    border-radius:4px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    line-height:1.6;
+    margin:8px 0;
+  }
+  .callout.warn{
+    background:var(--blush);
+    color:var(--rose);
+    border-left:2px solid var(--rose);
+  }
+  .callout.ok{
+    background:var(--accent-soft);
+    color:var(--surface);
+    border-left:2px solid var(--accent);
+  }
+  html[data-theme="dark"] .callout.ok{
+    color:var(--ink);
+    background:rgba(139,154,109,0.15);
+  }
+
+  /* ===== TABLE ===== */
+  .strings-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    font-size:13px;
+  }
+  .strings-table th,
+  .strings-table td{
+    text-align:left;
+    padding:8px 12px;
+    border-bottom:1px solid var(--rule);
+    font-size:13px;
+  }
+  .strings-table th{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:9px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--ink-faint);
+    font-weight:400;
+    background:var(--bg);
+  }
+  .strings-table td{
+    color:var(--ink-soft);
+    vertical-align:top;
+    font-weight:300;
+    text-align:justify;
+  }
+  .strings-table .voice-before{
+    color:var(--rose);
+    text-decoration:line-through;
+    text-decoration-thickness:1px;
+    opacity:.7;
+  }
+  .strings-table .voice-after{
+    color:var(--accent);
+    font-weight:500;
+  }
+  @media (max-width:600px){
+    .strings-table{
+      font-size:12px;
+    }
+    .strings-table td,
+    .strings-table th{
+      padding:6px 8px;
+    }
+  }
+
+  /* ===== PUBLICATIONS ===== */
+  .pub-list{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:10px;
+  }
+  .pub-item{
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
+    padding:14px 18px;
+    border:1px solid var(--rule);
+    border-radius:8px;
+    background:var(--surface);
+    transition:all .3s ease;
+    text-decoration:none;
+  }
+  .pub-item:hover{
+    border-color:var(--gold-soft);
+    transform:translateX(4px);
+  }
+  .pub-num{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--gold);
+    min-width:28px;
+    text-align:center;
+    padding-top:2px;
+  }
+  .pub-content h4{
+    font-family:'Inter',sans-serif;
+    font-size:14px;
+    font-weight:500;
+    margin:0 0 3px;
+    color:var(--ink);
+  }
+  .pub-content p{
+    margin:0;
+    font-size:12.5px;
+    color:var(--ink-soft);
+    font-weight:300;
+  }
+  .pub-link-arrow{
+    margin-left:auto;
+    color:var(--gold);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:14px;
+    opacity:0;
+    transition:opacity .3s ease;
+  }
+  .pub-item:hover .pub-link-arrow{
+    opacity:1;
+  }
+
+  /* ===== PLAYGROUND ===== */
+  .playground{
+    border:1px solid var(--rule);
+    border-radius:var(--radius);
+    background:var(--surface);
+    padding:26px 28px;
+  }
+  .playground textarea{
+    width:100%;
+    min-height:85px;
+    resize:vertical;
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    padding:14px 16px;
+    border-radius:6px;
+    border:1px solid var(--rule);
+    background:var(--bg);
+    color:var(--ink);
+    transition:border-color .3s ease;
+    font-weight:300;
+  }
+  .playground textarea:focus-visible{
+    outline:2px solid var(--gold);
+    outline-offset:2px;
+  }
+  .playground-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:12px;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .playground-note{
+    margin-top:14px;
+    padding:14px 18px;
+    border-radius:6px;
+    background:var(--gold-soft);
+    color:var(--ink);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    display:none;
+    line-height:1.6;
+  }
+  .playground-note.show{
+    display:block;
+  }
+  .wc{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--ink-faint);
+    letter-spacing:0.04em;
+  }
+
+  /* ===== CONTACT ===== */
+  .contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:end;
+  }
+  .contact-grid h2{
+    font-size:clamp(26px,3.4vw,42px);
+    max-width:14ch;
+    font-weight:300;
+  }
+  .contact-grid h2 em{
+    font-style:italic;
+    color:var(--rose);
+  }
+  .contact-links{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .contact-links a{
+    text-decoration:none;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    color:var(--ink-soft);
+    transition:all .25s ease;
+    border-bottom:1px solid var(--rule);
+    padding-bottom:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .contact-links a:last-child{
+    border-bottom:none;
+  }
+  .contact-links a:hover{
+    color:var(--gold);
+    border-color:var(--gold-soft);
+    padding-left:8px;
+  }
+  .contact-links a::after{
+    content:'→';
+    opacity:0;
+    transition:opacity .25s ease;
+  }
+  .contact-links a:hover::after{
+    opacity:1;
+  }
+  @media (max-width:860px){
+    .contact-grid{
+      grid-template-columns:1fr;
+      gap:28px;
+    }
+  }
+
+  /* ===== FOOTER ===== */
+  footer{
+    padding:32px 0;
+    border-top:1px solid var(--rule);
+  }
+  footer .wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  footer p{
+    margin:0;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    color:var(--ink-faint);
+    letter-spacing:0.06em;
+  }
+  .disclaimer{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 32px 36px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    color:var(--ink-faint);
+    letter-spacing:0.04em;
+    line-height:1.6;
+    text-align:justify;
+  }
+  @media (max-width:480px){
+    .wrap{
+      padding:0 16px;
+    }
+    section{
+      padding:50px 0;
+    }
+    .typewriter-text{
+      font-size:12px;
+      line-height:24px;
+    }
+    .hero-inner{
+      padding:30px 16px 40px;
+    }
   }
 </style>
+<base target="_blank">
 </head>
 <body>
+
+<!-- ===== LIGHTBOX ===== -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">✕</button>
+  <button class="lightbox-prev" onclick="event.stopPropagation(); lightboxNav(-1)" aria-label="Previous">‹</button>
+  <img id="lightboxImg" src="" alt="Lightbox view">
+  <button class="lightbox-next" onclick="event.stopPropagation(); lightboxNav(1)" aria-label="Next">›</button>
+  <div class="lightbox-counter" id="lightboxCounter">1 / 1</div>
+</div>
 
 <header>
   <div class="nav">
     <a class="brand" href="#top">Kateryna<span>.</span></a>
     <nav class="navlinks">
-      <a href="#work" class="lang-en">Work</a><a href="#work" class="lang-ua">Роботи</a>
-      <a href="#adcubator" class="lang-en">Writing Samples</a><a href="#adcubator" class="lang-ua">Writing Samples</a>
-      <a href="#about" class="lang-en">About</a><a href="#about" class="lang-ua">Про мене</a>
-      <a href="#services" class="lang-en">Services</a><a href="#services" class="lang-ua">Послуги</a>
-      <a href="#contact" class="lang-en">Contact</a><a href="#contact" class="lang-ua">Контакти</a>
+      <a href="#about" class="lang-en">About</a>
+      <a href="#about" class="lang-ua">Про мене</a>
+      <a href="#expertise" class="lang-en">Expertise</a>
+      <a href="#expertise" class="lang-ua">Експертиза</a>
+      <a href="#work" class="lang-en">Work</a>
+      <a href="#work" class="lang-ua">Роботи</a>
+      <a href="#contact" class="lang-en">Contact</a>
+      <a href="#contact" class="lang-ua">Контакти</a>
     </nav>
     <div class="nav-right">
-      <button id="themeToggle" class="btn" onclick="toggleTheme()" aria-label="Toggle dark mode">🌙</button>
-      <button id="langToggle" class="btn mono" onclick="toggleLang()">UA</button>
-      <a class="btn" href="https://drive.google.com/file/d/13fsltiv0m3Z8KOmk6XApwhfD9qBUF6VP/view?usp=sharing" target="_blank" download>
-        <span class="lang-en">Resume ↓</span><span class="lang-ua">Резюме ↓</span>
+      <button id="themeToggle" class="btn btn-ghost" onclick="toggleTheme()" aria-label="Toggle dark mode">🌙</button>
+      <button id="langToggle" class="btn btn-ghost mono" onclick="toggleLang()">UA</button>
+      <a class="btn btn-solid" href="/Kateryna_Havryliuk_resume.pdf" target="_blank">
+        <span class="lang-en">Resume ↓</span>
+        <span class="lang-ua">Резюме ↓</span>
       </a>
     </div>
   </div>
@@ -217,765 +1504,913 @@
 
 <main id="top">
 
-  <!-- HERO -->
+  <!-- ===== HERO ===== -->
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow lang-en">Copywriter &amp; Content Writer — Tech Background</span>
-        <span class="eyebrow lang-ua">Копірайтерка — з технічним бекграундом</span>
-        <h1 class="lang-en">Words that make complex things make sense.</h1>
-        <h1 class="lang-ua">Слова, що роблять складне зрозумілим.</h1>
-        <p class="lead lang-en">I'm a Computer Science graduate (with Honors, GPA 4.87/5.0) who writes copy, UX text, and content for digital products. Before I studied sentences, I studied systems — that's still how I write them.</p>
-        <p class="lead lang-ua">Я випускниця комп'ютерних наук (з відзнакою, GPA 4.87/5.0), яка пише тексти, UX-текст та контент для технологічних продуктів. Перш ніж вивчати речення, я вивчала системи — і досі пишу так само.</p>
-        <div class="greet mono"><span class="lang-en">Hi in a few languages: </span><span class="lang-ua">Привіт кількома мовами: </span><span id="greetWord">Hello</span></div>
-        <div class="local-time"><span class="dot"></span><span class="lang-en">Lutsk time: </span><span class="lang-ua">Луцьк: </span><span id="clock">--:--</span></div>
+    <div class="deco-rose top-right"></div>
+    <div class="deco-rose bottom-left"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <span class="hero-eyebrow lang-en">AI Product Writer · NLP · UX Writer · Copywriter</span>
+        <span class="hero-eyebrow lang-ua">AI Product Writer · NLP · UX Writer · Копірайтер</span>
+        <h1 class="lang-en">Words that make <em>AI feel human</em>.</h1>
+        <h1 class="lang-ua">Слова, що роблять <em>AI людяним</em>.</h1>
+        <p class="lead lang-en">
+          I write copy, UX text, and system prompts for AI products — chatbots, voice interfaces, emotion-aware systems. Computer Science with Honors. Multimodal emotion recognition research. GCI World — University of Tokyo. Based in Lutsk, working remotely worldwide.
+        </p>
+        <p class="lead lang-ua">
+          Пишу тексти, UX-копі та системні промпти для AI-продуктів — чат-боти, голосові інтерфейси, емоційно-чутливі системи. Computer Science з відзнакою. Дослідження мультимодального розпізнавання емоцій. GCI World — University of Tokyo. Луцьк, віддалено по всьому світу.
+        </p>
         <div class="hero-ctas">
-          <a class="btn btn-solid" href="#work"><span class="lang-en">View work</span><span class="lang-ua">Дивитись роботи</span></a>
-          <a class="btn" href="#contact"><span class="lang-en">Get in touch</span><span class="lang-ua">Написати</span></a>
+          <a class="btn btn-solid" href="#work">
+            <span class="lang-en">View work</span>
+            <span class="lang-ua">Дивитись роботи</span>
+          </a>
+          <a class="btn" href="#contact">
+            <span class="lang-en">Get in touch</span>
+            <span class="lang-ua">Написати</span>
+          </a>
+        </div>
+        <div class="hero-details">
+          <div class="local-time-hero">
+            <span class="dot"></span>
+            <span class="lang-en">Local time (Lutsk): </span>
+            <span class="lang-ua">Місцевий час (Луцьк): </span>
+            <span id="clock">--:--</span>
+          </div>
+          <div class="hero-detail">
+            <span class="dot"></span>
+            <span class="lang-en">Lutsk, Ukraine · Open to remote worldwide</span>
+            <span class="lang-ua">Луцьк, Україна · Віддалено по всьому світу</span>
+          </div>
+          <div class="greeting-machine">
+            <span class="lang-en">Currently greeting in: </span>
+            <span class="lang-ua">Зараз вітаюсь: </span>
+            <span id="greetWord" style="color:var(--gold); font-weight:500;">Hello</span>
+          </div>
         </div>
       </div>
 
-      <div class="redline-card reveal">
-        <span class="redline-label mono lang-en">// from a real project — Safe Place</span>
-        <span class="redline-label mono lang-ua">// з реального проєкту — Safe Place</span>
-        <div class="lang-en">
-          <span class="redline-before">Users interact with an emotionally-aware natural language processing interface that leverages sentiment analysis algorithms.</span>
-          <span class="redline-after">Type how you're feeling. The app listens and gently checks in if something feels heavier than usual.</span>
-        </div>
-        <div class="lang-ua">
-          <span class="redline-before">Користувач взаємодіє з інтерфейсом на основі аналізу тональності природної мови.</span>
-          <span class="redline-after">Напиши, що відчуваєш. Застосунок вислухає і турботливо перевірить, якщо тобі зараз важче, ніж зазвичай.</span>
-        </div>
-        <div class="redline-meta">
-          <span class="lang-en">Same feature. One explains the tech. The other talks to the person using it.</span>
-          <span class="lang-ua">Та сама функція. Перша пояснює технологію. Друга — говорить з людиною.</span>
+      <div class="reveal">
+        <div class="typewriter-paper">
+          <div class="typewriter-text" id="typewriter">
+            <span id="typeContent"></span><span class="typewriter-cursor"></span>
+          </div>
+          <div class="typewriter-meta">
+            <span class="lang-en">words: <span id="twWords">0</span></span>
+            <span class="lang-ua">слів: <span id="twWordsUa">0</span></span>
+            <span>·</span>
+            <span class="lang-en">chars: <span id="twChars">0</span></span>
+            <span class="lang-ua">символів: <span id="twCharsUa">0</span></span>
+            <span style="color:var(--rose-soft);">|</span>
+            <span id="twStatus" class="lang-en">typing...</span>
+            <span id="twStatusUa" class="lang-ua">друк...</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ===== ABOUT ===== -->
   <section id="about">
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="sec-num mono lang-en">About</span>
         <span class="sec-num mono lang-ua">Про мене</span>
-        <h2 class="lang-en">A writer who reads the changelog before the brief.</h2>
-        <h2 class="lang-ua">Авторка, яка читає журнал змін перед написанням брифу.</h2>
+        <h2 class="lang-en">A writer who reads the <em>changelog</em> before the brief.</h2>
+        <h2 class="lang-ua">Авторка, яка читає <em>changelog</em> перед брифом.</h2>
       </div>
-
-      <div class="about-grid">
-        <div class="reveal">
-
-          <div style="display:flex; align-items:flex-start; gap:24px; margin-bottom:16px; flex-wrap:wrap;">
-            <div style="flex-shrink:0; width:120px; height:auto; line-height:0;">
-              <img src="img/avatar.png" alt="Kateryna" 
-                  style="width:100%; height:auto; display:block;"
-                  onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'font-size:28px;font-family:Fraunces,serif;color:var(--ink-soft);\'>KH</span>'">
+      <div class="about-wrap">
+        <div class="about-left reveal">
+          <div class="about-avatar">
+            <img src="img/avatar.png" alt="Kateryna Havryliuk" onerror="this.style.display='none';this.parentElement.textContent='KH';this.parentElement.style.fontSize='42px';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.background='var(--rule)';">
+          </div>
+          <div class="about-avatar-label">KATERYNA HAVRYLIUK</div>
+          <div class="lang-block">
+            <h4 class="lang-en">Multilingual Competence</h4>
+            <h4 class="lang-ua">Багатомовна компетенція</h4>
+            <div class="lang-chips">
+              <span class="lang-chip"><b>UK</b> C2</span>
+              <span class="lang-chip"><b>EN</b> B2</span>
+              <span class="lang-chip"><b>PL</b> B1</span>
+              <span class="lang-chip"><b>KO</b> A1-A2</span>
+              <span class="lang-chip"><b>JP</b> A1-A2</span>
+              <span class="lang-chip"><b>ZH</b> A1-A2</span>
             </div>
-            <div style="flex:1; min-width:200px; text-align:justify;">
-              <div class="lang-en">
-                <p style="margin-top:0;"><strong>Kateryna Havryliuk</strong> — Computer Science graduate (GPA 4.87/5.0, with Honors) from Lesya Ukrainka Volyn National University. Gold Medalist in secondary education. I build software, and increasingly, I write about it.</p>
-              </div>
-              <div class="lang-ua">
-                <p style="margin-top:0;"><strong>Катерина Гаврилюк</strong> — випускниця комп'ютерних наук (GPA 4.87/5.0, з відзнакою), Волинський національний університет. Золота медалістка. Я створюю ПЗ, а тепер дедалі більше — пишу про нього.</p>
-              </div>
-            </div>
           </div>
-
-          <div class="lang-en" style="text-align:justify;">
-            <p>I built <b>Safe Place</b>, a web app for psycho-emotional support that analyzes the emotional tone of text and gently flags when someone might need support. I also designed a 2026 bank budget plan approved with distinction, built <b>KORstudy</b> (a Korean-learning platform), and developed a <b>3D warehouse visualization system</b> integrated with 1C and Excel during my internships.</p>
-            <p>I've published <b>4 research papers</b> at international conferences, won <b>1st place</b> in the University Scientific Research Competition, and presented my work as an <b>oral speaker</b>. I don't have a "copywriter" job title yet — but I've shipped systems real people use, documented them for non-developers, edited real documents under deadlines, and led project teams at university.</p>
-            <p>Outside of code: I read constantly, study languages (seven so far), play guitar, and write poetry. I read interface copy the way others read poetry — closely, and more than once.</p>
-          </div>
-
-          <div class="lang-ua" style="text-align:justify;">
-            <p>Я створила <b>Safe Place</b> — застосунок для психоемоційної підтримки, який аналізує емоційний тон тексту й обережно підказує, коли людині може знадобитись підтримка. Також розробила бюджетний план банку на 2026 рік, який затвердили з відзнакою, побудувала <b>KORstudy</b> (платформу для вивчення корейської), і <b>3D-візуалізацію складу</b> з інтеграцією 1С та Excel під час практик.</p>
-            <p>Я опублікувала <b>4 наукові роботи</b> на міжнародних конференціях, виграла <b>1 місце</b> в університетському конкурсі наукових робіт і виступала з <b>усними доповідями</b>. У мене поки немає запису «копірайтер» у трудовій — але є досвід запуску систем, якими реально користуються люди, документація для нетехнарів, реальне редагування під дедлайн і керівництво командами в університеті.</p>
-            <p>Поза кодом: багато читаю, вивчаю мови (наразі сім), граю на гітарі, пишу вірші. Я читаю інтерфейсні тексти так, як інші читають поезію — уважно й не один раз.</p>
-          </div>
-
         </div>
-
-        <!-- RIGHT COLUMN — UPDATED with all achievements -->
-        <ul class="cred-list reveal">
-          <li class="lang-en"><b>Education</b>B.Sc. Computer Science &amp; IT, with Honors — GPA 4.87/5.0<br><span style="font-size:12px; color:var(--ink-faint);">Gold Medalist (secondary education) · Diploma with Distinction</span></li>
-          <li class="lang-ua"><b>Освіта</b>Бакалавр «Комп'ютерні науки та ІТ», з відзнакою — GPA 4.87/5.0<br><span style="font-size:12px; color:var(--ink-faint);">Золота медаль · Диплом з відзнакою</span></li>
-          <li><b class="lang-en">Research</b><b class="lang-ua">Наука</b><span class="lang-en"><strong>4 peer-reviewed papers</strong> · Oral presentations at international conferences · Winner of University Scientific Competition (1st place)</span><span class="lang-ua"><strong>4 наукові публікації</strong> · Усні доповіді на міжнародних конференціях · Переможниця університетського конкурсу наукових робіт (1 місце)</span></li>
-          <li>
-            <b class="lang-en">Certifications</b>
-            <b class="lang-ua">Сертифікати</b>
-            <span class="lang-en">
-              <strong>GCI World — University of Tokyo</strong> (2026)<br>
-              <span style="font-size:12px; color:var(--ink-faint);">Selected among 25,000+ applicants from 120+ countries · 3-month intensive: Python, Pandas, SQL, ML, Time Series</span><br>
-              HarvardX (Data Science: ML), IBM (Generative AI), Data Engineering Summer School, Git (Linux Foundation), Critical Thinking, Media Literacy, Creative Thinking
-            </span>
-            <span class="lang-ua">
-              <strong>GCI World — University of Tokyo</strong> (2026)<br>
-              <span style="font-size:12px; color:var(--ink-faint);">Відбір серед 25,000+ заявників зі 120+ країн · 3-місячний інтенсив: Python, Pandas, SQL, ML, Time Series</span><br>
-              HarvardX (Data Science: ML), IBM (Generative AI), літня школа Data Engineering, Git (Linux Foundation), критичне мислення, медіаграмотність, креативне мислення
-            </span>
-          </li>
-          <li><b class="lang-en">Languages</b><b class="lang-ua">Мови</b><span class="lang-en">Ukrainian (native), English (B1+), Polish (B1), Korean, Japanese, Chinese, German (A1-A2)</span><span class="lang-ua">Українська (рідна), англійська (B1+), польська (B1), корейська, японська, китайська, німецька (A1-A2)</span></li>
-          <li><b class="lang-en">Awards</b><b class="lang-ua">Нагороди</b><span class="lang-en">🏆 1st place — University Scientific Research Competition · 🥇 Gold Medal (secondary education) · 📜 Letter of Appreciation from Faculty</span><span class="lang-ua">🏆 1 місце — університетський конкурс наукових робіт · 🥇 Золота медаль · 📜 Подяка від факультету</span></li>
-          <li><b class="lang-en">Leadership</b><b class="lang-ua">Лідерство</b><span class="lang-en">Team lead on group projects; class monitor (elected group representative)</span><span class="lang-ua">Тімлід у групових проєктах; староста групи</span></li>
-          <li class="lang-en"><b>Builds what she writes about</b>github.com/Kateryna-Havryliuk</li>
-          <li class="lang-ua"><b>Створює те, про що пише</b>github.com/Kateryna-Havryliuk</li>
-        </ul>
+        <div class="reveal">
+          <div class="about-text">
+            <div class="lang-en">
+              <p>
+                <strong>Kateryna Havryliuk</strong> — AI Product Writer, NLP specialist, and UX writer. Computer Science graduate with Honors (GPA 4.87/5.0). Gold Medalist. GCI World — University of Tokyo.
+              </p>
+              <p>
+                I design communication for AI systems — from microcopy and conversational flows to system prompts and crisis protocols. My research in multimodal emotion recognition helps me create AI that understands not just words, but feelings.
+              </p>
+              <p>
+                I built Safe Place, an emotion-aware AI web app that analyzes text and voice. I wrote every string, every technique, every article, and the complete system prompt. I also documented a 3D warehouse system for non-technical staff and published 4 research papers.
+              </p>
+              <p>
+                I read interface copy the way others read poetry — closely, and more than once.
+              </p>
+            </div>
+            <div class="lang-ua">
+              <p>
+                <strong>Катерина Гаврилюк</strong> — AI Product Writer, NLP-спеціалістка та UX-райтерка. Випускниця комп'ютерних наук з відзнакою (GPA 4.87/5.0). Золота медалістка. GCI World — University of Tokyo.
+              </p>
+              <p>
+                Я проєктую комунікацію для AI-систем — від мікрокопі та розмовних флоу до системних промптів і кризових протоколів. Моє дослідження мультимодального розпізнавання емоцій допомагає створювати AI, який розуміє не лише слова, а й почуття.
+              </p>
+              <p>
+                Я створила Safe Place — емоційно-чутливий AI-застосунок, що аналізує текст і голос. Я написала кожен рядок, кожну техніку, кожну статтю та повний системний промпт. Також документувала 3D-систему складу та опублікувала 4 наукові роботи.
+              </p>
+              <p>
+                Я читаю інтерфейсні тексти так, як інші читають поезію — уважно й не один раз.
+              </p>
+            </div>
+          </div>
+          <ul class="cred-list">
+            <li class="cred-item">
+              <h4 class="lang-en">Education</h4>
+              <h4 class="lang-ua">Освіта</h4>
+              <p class="lang-en">B.Sc. Computer Science & IT, with Honors — GPA 4.87/5.0</p>
+              <p class="lang-ua">Бакалавр «Комп'ютерні науки та ІТ», з відзнакою — GPA 4.87/5.0</p>
+              <span class="small lang-en">Gold Medalist · Diploma with Distinction</span>
+              <span class="small lang-ua">Золота медаль · Диплом з відзнакою</span>
+            </li>
+            <li class="cred-item">
+              <h4 class="lang-en">Research</h4>
+              <h4 class="lang-ua">Наука</h4>
+              <p class="lang-en">4 peer-reviewed papers · Oral presentations · 1st place, University Scientific Competition (2026)</p>
+              <p class="lang-ua">4 наукові публікації · Усні доповіді · 1 місце, університетський конкурс (2026)</p>
+            </li>
+            <li class="cred-item">
+              <h4 class="lang-en">Certifications</h4>
+              <h4 class="lang-ua">Сертифікати</h4>
+              <p class="lang-en">GCI World — University of Tokyo · HarvardX (ML) · IBM (Generative AI) · Data Engineering Summer School</p>
+              <p class="lang-ua">GCI World — University of Tokyo · HarvardX (ML) · IBM (Generative AI) · Літня школа Data Engineering</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- WORK -->
+  <!-- ===== EXPERTISE ===== -->
+  <section id="expertise">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num mono lang-en">Expertise</span>
+        <span class="sec-num mono lang-ua">Експертиза</span>
+        <h2 class="lang-en">Where I deliver <em>strong</em> work.</h2>
+        <h2 class="lang-ua">Де я працюю <em>сильно</em>.</h2>
+      </div>
+      <div class="expertise-row reveal">
+        <div class="expertise-cell">
+          <span class="expertise-num">01</span>
+          <h3 class="lang-en">AI Product Writing</h3>
+          <h3 class="lang-ua">AI Product Writing</h3>
+          <p class="lang-en">System prompts, conversational flows, voice UI, and AI microcopy that make machines feel human.</p>
+          <p class="lang-ua">Системні промпти, розмовні флоу, голосові інтерфейси та AI-мікрокопі, що роблять машини людяними.</p>
+        </div>
+        <div class="expertise-cell">
+          <span class="expertise-num">02</span>
+          <h3 class="lang-en">NLP & Emotion Recognition</h3>
+          <h3 class="lang-ua">NLP та розпізнавання емоцій</h3>
+          <p class="lang-en">Multimodal analysis, sentiment detection, and interpretable AI systems grounded in research.</p>
+          <p class="lang-ua">Мультимодальний аналіз, визначення тональності та інтерпретовані AI-системи на основі досліджень.</p>
+        </div>
+        <div class="expertise-cell">
+          <span class="expertise-num">03</span>
+          <h3 class="lang-en">Copywriting & Editing</h3>
+          <h3 class="lang-ua">Копірайтинг і редагування</h3>
+          <p class="lang-en">Email sequences, landing pages, articles, and ruthless editing that cuts jargon and filler.</p>
+          <p class="lang-ua">Email-послідовності, лендінги, статті та безжальне редагування, що прибирає жаргон і воду.</p>
+        </div>
+        <div class="expertise-cell">
+          <span class="expertise-num">04</span>
+          <h3 class="lang-en">Technical Documentation</h3>
+          <h3 class="lang-ua">Технічна документація</h3>
+          <p class="lang-en">User guides, integration instructions, and internal wikis written for non-technical staff.</p>
+          <p class="lang-ua">Посібники, інструкції з інтеграції та внутрішні вікі для нетехнічних працівників.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK ===== -->
   <section id="work">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="sec-num mono lang-en">Selected work</span><span class="sec-num mono lang-ua">Обрані роботи</span>
-        <h2 class="lang-en">Real projects and the writing behind them.</h2>
-        <h2 class="lang-ua">Реальні проєкти і текст, що за ними стоїть.</h2>
-        <p class="dek lang-en">Everything below is clearly labeled: real projects, internship work, research, and original spec writing.</p>
-        <p class="dek lang-ua">Усе нижче чітко позначено: реальні проєкти, практика, наукові роботи та оригінальні демонстраційні тексти.</p>
+        <span class="sec-num mono lang-en">Selected Work</span>
+        <span class="sec-num mono lang-ua">Обрані роботи</span>
+        <h2 class="lang-en">Real projects. Original writing. <em>Clear</em> outcomes.</h2>
+        <h2 class="lang-ua">Реальні проєкти. Оригінальні тексти. <em>Чіткі</em> результати.</h2>
+        <p class="dek lang-en">AI product writing, NLP research, copywriting, editing, and technical documentation — labeled honestly.</p>
+        <p class="dek lang-ua">AI product writing, NLP-дослідження, копірайтинг, редагування та технічна документація — чесно позначено.</p>
       </div>
 
-      <!-- AD CUBATOR-FOCUSED SPEC SAMPLES -->
-      <div id="adcubator" class="spec-intro reveal">
-        <span class="spec-kicker lang-en">Founder &amp; social copy — selected application samples</span>
-        <span class="spec-kicker lang-ua">Founder &amp; social copy — спеціально відібрані роботи для заявки</span>
-        <div class="lang-en">
-          <strong>Three pieces written to show how I approach founder-led content.</strong>
-          <p style="margin:7px 0 0; color:var(--ink-soft); font-size:14.5px;">
-            These are original spec pieces, not client work. I wrote them to demonstrate voice, research-led thinking, direct-response instincts, and the ability to adapt one idea across platforms.
-          </p>
-          <div class="platform-row"><span>LinkedIn</span><span>X / Twitter</span><span>Instagram</span><span>DTC</span><span>Google Ads</span></div>
-          <div class="why-line">Generic content makes me uncomfortable because it usually says what everyone already knows — just with more words.</div>
-        </div>
-        <div class="lang-ua">
-          <strong>Три тексти, що показують мій підхід до founder-led контенту.</strong>
-          <p style="margin:7px 0 0; color:var(--ink-soft); font-size:14.5px;">
-            Це оригінальні демонстраційні роботи, а не клієнтські проєкти. Я написала їх, щоб показати роботу з голосом бренду, дослідницьке мислення, direct-response підхід і вміння адаптувати одну ідею під різні платформи.
-          </p>
-          <div class="platform-row"><span>LinkedIn</span><span>X / Twitter</span><span>Instagram</span><span>DTC</span><span>Google Ads</span></div>
-          <div class="why-line">Мені некомфортний generic content, бо він часто просто говорить те, що всі вже знають, — тільки більшою кількістю слів.</div>
-        </div>
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="all" onclick="filterProjects('all')">All</button>
+        <button class="filter-btn" data-filter="ai" onclick="filterProjects('ai')">AI · NLP</button>
+        <button class="filter-btn" data-filter="copywriting" onclick="filterProjects('copywriting')">Copywriting</button>
+        <button class="filter-btn" data-filter="editing" onclick="filterProjects('editing')">Editing</button>
+        <button class="filter-btn" data-filter="tech" onclick="filterProjects('tech')">Technical</button>
+        <button class="filter-btn" data-filter="journalism" onclick="filterProjects('journalism')">Journalism</button>
       </div>
 
-      <!-- SPEC SAMPLE 1 -->
-      <article class="sample reveal">
-        <div class="sample-head">
-          <span class="tag practice lang-en">Spec — Founder LinkedIn</span>
-          <span class="tag practice lang-ua">Демонстраційна робота — Founder LinkedIn</span>
-          <span class="sample-context lang-en">DTC / Google Ads · 2026</span>
-          <span class="sample-context lang-ua">DTC / Google Ads · 2026</span>
-        </div>
-        <div class="sample-body">
-          <div class="lang-en">
-            <h3>Most ecommerce brands don't have a traffic problem.</h3>
-            <h4 class="sub">Founder-style LinkedIn post · thought leadership</h4>
-            <div class="post-copy">
-              <p class="hook">Most ecommerce brands don't have a traffic problem.</p>
-              <p>They have a “give me more traffic” problem.</p>
-              <p>When sales slow down, the reflex is predictable: increase spend, test another audience, change the campaign, blame the algorithm.</p>
-              <p>Sometimes the account is fine.</p>
-              <p>The offer isn't.</p>
-              <p>Google can put your product in front of someone who is already looking for it. It can't make a weak reason to buy suddenly feel compelling.</p>
-              <p>So before I touch bids or budgets, I want to know:</p>
-              <p>Would I stop for this ad?<br>
-              Would I understand the offer in five seconds?<br>
-              Would I know why this product instead of the ten sitting next to it?</p>
-              <p>If the answer is no, another 20% in ad spend isn't a growth strategy.</p>
-              <p>It's a more expensive way to find the same problem.</p>
-              <div class="spec-note">Spec work — an original sample created for this application. Not client work or claimed ghostwriting experience.</div>
+      <div class="work-list" id="projectGrid">
+
+        <!-- 7. Safe Place -->
+        <article class="project-card reveal" data-tags="ai,tech">
+          <div class="project-card-inner">
+            <div class="project-carousel" data-project="safe-place">
+              <div class="carousel-track">
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/safe-place-1.png" alt="Safe Place chat interface" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/safe-place-2.png" alt="Safe Place techniques page" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/safe-place-3.png" alt="Safe Place crisis support" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/safe-place-4.png" alt="Safe Place blog article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/safe-place-5.png" alt="Safe Place voice chat" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('safe-place', -1)">‹</button>
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('safe-place', 1)">›</button>
+              </div>
+              <div class="carousel-dots" id="dots-safe-place"></div>
+              <div class="carousel-counter" id="counter-safe-place">1 / 5</div>
             </div>
-          </div>
-          <div class="lang-ua">
-            <h3>У більшості e-commerce брендів проблема не в трафіку.</h3>
-            <h4 class="sub">Пост від імені засновника · thought leadership</h4>
-            <div class="post-copy">
-              <p class="hook">У більшості e-commerce брендів проблема не в трафіку.</p>
-              <p>Проблема в постійному «дайте нам більше трафіку».</p>
-              <p>Коли продажі падають, реакція зазвичай передбачувана: збільшити бюджет, протестувати іншу аудиторію, змінити кампанію, звинуватити алгоритм.</p>
-              <p>Іноді з рекламним акаунтом усе гаразд.</p>
-              <p>Проблема — у пропозиції.</p>
-              <p>Google може показати ваш продукт людині, яка вже його шукає. Але він не може зробити слабку причину для покупки переконливою.</p>
-              <p>Тому перш ніж змінювати ставки чи бюджети, я хочу знати:</p>
-              <p>Я сам зупинився б на цій рекламі?<br>
-              Я зрозумів би пропозицію за п'ять секунд?<br>
-              Я зрозумів би, чому обрати цей продукт, а не десять інших поруч?</p>
-              <p>Якщо відповідь «ні», ще 20% рекламного бюджету — це не стратегія зростання.</p>
-              <p>Це просто дорожчий спосіб знайти ту саму проблему.</p>
-              <div class="spec-note">Демонстраційна робота — оригінальний текст, створений спеціально для цієї заявки. Не є клієнтською роботою та не видається за досвід ghostwriting.</div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- SPEC SAMPLE 2 -->
-      <article class="sample reveal">
-        <div class="sample-head">
-          <span class="tag practice lang-en">Spec — X / Twitter Thread</span>
-          <span class="tag practice lang-ua">Демонстраційна робота — X / Twitter Thread</span>
-          <span class="sample-context lang-en">DTC / Direct response · 2026</span>
-          <span class="sample-context lang-ua">DTC / Direct response · 2026</span>
-        </div>
-        <div class="sample-body">
-          <div class="lang-en">
-            <h3>Your Google Ads account can be healthy and still lose money.</h3>
-            <h4 class="sub">Founder-style X thread · concise operator perspective</h4>
-            <div class="thread">
-              <div class="thread-post"><div class="thread-num">01 / 08</div><p>Your Google Ads account can be healthy and still lose money.</p></div>
-              <div class="thread-post"><div class="thread-num">02 / 08</div><p>Good CTR. Clean structure. Plenty of conversions. Nothing obviously broken.</p></div>
-              <div class="thread-post"><div class="thread-num">03 / 08</div><p>And the business is still asking, “Where did the margin go?”</p></div>
-              <div class="thread-post"><div class="thread-num">04 / 08</div><p>The mistake is treating the ad account like the business.</p></div>
-              <div class="thread-post"><div class="thread-num">05 / 08</div><p>Ads can optimize for the conversion you give them. They can't decide whether that conversion is actually valuable.</p></div>
-              <div class="thread-post"><div class="thread-num">06 / 08</div><p>If your best-selling product has the worst margin, scaling it harder doesn't make the problem disappear. It scales the problem.</p></div>
-              <div class="thread-post"><div class="thread-num">07 / 08</div><p>The better question isn't “How do we get more conversions?”</p></div>
-              <div class="thread-post"><div class="thread-num">08 / 08</div><p>It's “Which customers, products and offers are worth buying more of — and can the account see the difference?”</p></div>
-            </div>
-            <div class="spec-note">Spec work — an original sample created for this application.</div>
-          </div>
-          <div class="lang-ua">
-            <h3>Ваш Google Ads акаунт може бути в чудовому стані — і все одно втрачати гроші.</h3>
-            <h4 class="sub">Тред від імені засновника · лаконічний операторський підхід</h4>
-            <div class="thread">
-              <div class="thread-post"><div class="thread-num">01 / 08</div><p>Ваш Google Ads акаунт може бути в чудовому стані — і все одно втрачати гроші.</p></div>
-              <div class="thread-post"><div class="thread-num">02 / 08</div><p>Хороший CTR. Чітка структура. Достатньо конверсій. Нічого очевидно не зламано.</p></div>
-              <div class="thread-post"><div class="thread-num">03 / 08</div><p>А бізнес усе одно запитує: «Куди поділася маржа?»</p></div>
-              <div class="thread-post"><div class="thread-num">04 / 08</div><p>Помилка — сприймати рекламний акаунт як сам бізнес.</p></div>
-              <div class="thread-post"><div class="thread-num">05 / 08</div><p>Реклама може оптимізуватися під ту конверсію, яку ви їй дали. Але вона не може вирішити, чи ця конверсія насправді цінна.</p></div>
-              <div class="thread-post"><div class="thread-num">06 / 08</div><p>Якщо ваш товар-бестселер має найгіршу маржу, масштабування не вирішить проблему. Воно просто її масштабує.</p></div>
-              <div class="thread-post"><div class="thread-num">07 / 08</div><p>Краще питання не «Як отримати більше конверсій?»</p></div>
-              <div class="thread-post"><div class="thread-num">08 / 08</div><p>А «Яких клієнтів, які товари й пропозиції нам справді варто купувати більше — і чи бачить це рекламний акаунт?»</p></div>
-            </div>
-            <div class="spec-note">Демонстраційна робота — оригінальний текст, створений спеціально для цієї заявки.</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- SPEC SAMPLE 3 -->
-      <article class="sample reveal">
-        <div class="sample-head">
-          <span class="tag practice lang-en">Spec — Instagram Video Script</span>
-          <span class="tag practice lang-ua">Демонстраційна робота — Instagram Video Script</span>
-          <span class="sample-context lang-en">Founder video · 45–60 sec · 2026</span>
-          <span class="sample-context lang-ua">Founder video · 45–60 с · 2026</span>
-        </div>
-        <div class="sample-body">
-          <div class="lang-en">
-            <h3>If your agency starts with CTR, ask one question.</h3>
-            <h4 class="sub">Short-form script · direct-response thought leadership</h4>
-            <div class="script">
-              <div class="script-row"><div class="script-label">Hook</div><div class="script-text">If your Google Ads agency starts the meeting with CTR, ask them one question: “So what?”</div></div>
-              <div class="script-row"><div class="script-label">Beat 1</div><div class="script-text">CTR is useful. I look at it too. But a click isn't the goal. Revenue is. Profit is. Growth you can actually keep is.</div></div>
-              <div class="script-row"><div class="script-label">Beat 2</div><div class="script-text">You can have a beautiful dashboard full of green numbers while the business underneath it is getting worse.</div></div>
-              <div class="script-row"><div class="script-label">Beat 3</div><div class="script-text">So when someone tells you, “CTR is up 18%,” don't celebrate yet.</div></div>
-              <div class="script-row"><div class="script-label">Payoff</div><div class="script-text">Ask: “Did the extra clicks make us more money?” That's the number I'd rather build a strategy around.</div></div>
-              <div class="script-row"><div class="script-label">Close</div><div class="script-text">Optimize the account, sure. Just don't forget you're running a business, not a spreadsheet.</div></div>
-            </div>
-            <div class="spec-note">Spec work — an original founder-led Instagram concept created for this application.</div>
-          </div>
-          <div class="lang-ua">
-            <h3>Якщо ваше агентство починає розмову з CTR, поставте одне питання.</h3>
-            <h4 class="sub">Сценарій короткого відео · direct-response thought leadership</h4>
-            <div class="script">
-              <div class="script-row"><div class="script-label">Hook</div><div class="script-text">Якщо ваше Google Ads агентство починає зустріч із CTR, поставте одне питання: «І що?»</div></div>
-              <div class="script-row"><div class="script-label">Крок 1</div><div class="script-text">CTR важливий. Я теж на нього дивлюся. Але клік — не мета. Мета — дохід. Прибуток. Зростання, яке можна втримати.</div></div>
-              <div class="script-row"><div class="script-label">Крок 2</div><div class="script-text">У вас може бути красивий дашборд, повний зелених цифр, поки сам бізнес під ним стає слабшим.</div></div>
-              <div class="script-row"><div class="script-label">Крок 3</div><div class="script-text">Тому коли вам кажуть: «CTR виріс на 18%», не поспішайте святкувати.</div></div>
-              <div class="script-row"><div class="script-label">Payoff</div><div class="script-text">Запитайте: «Ці додаткові кліки принесли нам більше грошей?» Саме навколо цієї цифри я б будувала стратегію.</div></div>
-              <div class="script-row"><div class="script-label">Close</div><div class="script-text">Оптимізувати акаунт — так. Просто не забувайте: ви керуєте бізнесом, а не таблицею.</div></div>
-            </div>
-            <div class="spec-note">Демонстраційна робота — оригінальна концепція founder-led відео, створена спеціально для цієї заявки.</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Safe Place -->
-      <article class="sample reveal">
-        <div class="sample-head">
-          <span class="tag lang-en">Product / UX Writing</span><span class="tag lang-ua">Продукт / UX-текст</span>
-          <span class="sample-context lang-en">Own project — 2025–2026</span><span class="sample-context lang-ua">Власний проєкт — 2025–2026</span>
-        </div>
-        <div class="sample-body">
-          <div class="lang-en">
-            <h3>Safe Place — an emotional check-in app</h3>
-            <h4 class="sub">The challenge: write copy for a tool that talks to people about their mental state, without sounding clinical or careless.</h4>
-            <p>Full web app with generative AI backend that reads emotional tone and flags patterns suggesting stress, anxiety, or depression. I wrote every string in the interface — from the daily check-in prompt to the moment it gently suggests reaching out for support.</p>
-            <p class="pull">"Sounds like today's been a lot. Want to write more, or just sit with it for a minute?"</p>
-            <p class="result-line">→ Working prototype with end-to-end system design, data handling, and AI integration.</p>
-            <p class="result-line" style="margin-top:4px;">→ Published research paper &amp; oral presentation at XI Interuniversity Seminar (2026)</p>
-          </div>
-          <div class="lang-ua">
-            <h3>Safe Place — застосунок для емоційного чекіну</h3>
-            <h4 class="sub">Завдання: написати текст для інструменту, що говорить з людьми про їхній стан, не звучачи клінічно чи байдуже.</h4>
-            <p>Повноцінний застосунок з генеративним ШІ, що аналізує емоційний тон і підказує, коли патерн вказує на стрес чи тривожність. Я написала кожен текстовий рядок в інтерфейсі — від щоденного чекіну до моменту, коли застосунок обережно пропонує звернутись по підтримку.</p>
-            <p class="pull">«Схоже, сьогодні було непросто. Хочеш написати більше, чи просто побути з цим хвилинку?»</p>
-            <p class="result-line">→ Робочий прототип з наскрізним дизайном системи, роботою з даними та інтеграцією ШІ.</p>
-            <p class="result-line" style="margin-top:4px;">→ Опубліковано наукову роботу та усну доповідь на XI Міжвузівському семінарі (2026)</p>
-          </div>
-        </div>
-      </article>
-
-      <!-- PRACTICE: Fitness Descriptions -->
-      <article class="sample reveal">
-        <div class="sample-head">
-          <span class="tag practice lang-en">Practice — Fitness Copy</span>
-          <span class="tag practice lang-ua">Практика — Фітнес-тексти</span>
-          <span class="sample-context lang-en">Practice — 2026</span>
-          <span class="sample-context lang-ua">Практика — 2026</span>
-        </div>
-        <div class="sample-body">
-          <div class="lang-en">
-            <h3>Three workout descriptions — Gym, Pilates, Yoga</h3>
-            <h4 class="sub">Warm, human, empowering. No fluff. No fitness jargon.</h4>
-
-            <div style="margin-bottom:24px; padding-bottom:20px; border-bottom:1px solid var(--rule);">
-              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-                <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint);">Gym</span>
-                <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; background:var(--insert-bg); color:var(--insert); padding:2px 8px; border-radius:3px;">Strength &amp; Power</span>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag gold lang-en">AI Product Writing · NLP · Emotion Recognition</span>
+                <span class="tag gold lang-ua">AI Product Writing · NLP · Розпізнавання емоцій</span>
+                <span class="mono" style="color:var(--ink-faint);font-size:9px;">Real Project · 2025–2026</span>
               </div>
-              <p style="font-family:'Fraunces',serif; font-size:18px; color:var(--ink); margin:0 0 4px;">"You're not here to look like someone else. You're here to be stronger than you were last week."</p>
-              <p style="margin:0; color:var(--ink-soft); font-size:14.5px;">This isn't about ego. It's about showing up, picking up something heavy, and putting it down with control. Each set builds more than muscle — it builds discipline. Track your reps. Add a little more weight. Rest 60 seconds. Repeat. By week four, you'll notice the difference in your posture, your energy, and the way you carry yourself.</p>
-              <div style="display:flex; gap:16px; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); flex-wrap:wrap;">
-                <span>⏱ 45–60 min</span>
-                <span>🏋️ Dumbbells or barbell</span>
-                <span>📊 All levels</span>
-              </div>
-            </div>
-
-            <div style="margin-bottom:24px; padding-bottom:20px; border-bottom:1px solid var(--rule);">
-              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-                <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint);">Pilates</span>
-                <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; background:var(--insert-bg); color:var(--insert); padding:2px 8px; border-radius:3px;">Core &amp; Control</span>
-              </div>
-              <p style="font-family:'Fraunces',serif; font-size:18px; color:var(--ink); margin:0 0 4px;">"Move with intention, not momentum."</p>
-              <p style="margin:0; color:var(--ink-soft); font-size:14.5px;">Pilates isn't about how fast you move — it's about how precisely you control each motion. Every inhale prepares you; every exhale engages your deep core. This is where posture improves, back pain fades, and you finally understand what "alignment" actually means. No rushing. No ego. Just you, your mat, and a deeper connection to your body.</p>
-              <div style="display:flex; gap:16px; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); flex-wrap:wrap;">
-                <span>⏱ 30–40 min</span>
-                <span>🧘 Mat</span>
-                <span>📊 All levels</span>
-              </div>
-            </div>
-
-            <div>
-              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-                <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint);">Yoga</span>
-                <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; background:var(--insert-bg); color:var(--insert); padding:2px 8px; border-radius:3px;">Flow &amp; Let Go</span>
-              </div>
-              <p style="font-family:'Fraunces',serif; font-size:18px; color:var(--ink); margin:0 0 4px;">"Your practice, your pace."</p>
-              <p style="margin:0; color:var(--ink-soft); font-size:14.5px;">Step onto the mat, close your eyes, and breathe. This isn't about touching your toes — it's about the journey there. Each pose asks you to be present, patient, and honest with yourself. Some days you'll flow effortlessly; other days you'll rest in child's pose. Both are progress. Both are enough.</p>
-              <div style="display:flex; gap:16px; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); flex-wrap:wrap;">
-                <span>⏱ 30–50 min</span>
-                <span>🧘 Mat</span>
-                <span>📊 All levels</span>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="lang-ua">
-            <h3>Три описи тренувань — Gym, Pilates, Yoga</h3>
-            <h4 class="sub">Тепло, людяно, надихаюче. Без зайвих слів і фітнес-жаргону.</h4>
-
-            <div style="margin-bottom:24px; padding-bottom:20px; border-bottom:1px solid var(--rule);">
-              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-                <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint);">Тренажерний зал</span>
-                <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; background:var(--insert-bg); color:var(--insert); padding:2px 8px; border-radius:3px;">Сила &amp; витривалість</span>
-              </div>
-              <p style="font-family:'Fraunces',serif; font-size:18px; color:var(--ink); margin:0 0 4px;">"Ти тут не для того, щоб стати кимось іншим. Ти тут, щоб стати сильнішим, ніж минулого тижня."</p>
-              <p style="margin:0; color:var(--ink-soft); font-size:14.5px;">Це не про его. Це про те, щоб прийти, взяти щось важке й контролювати кожен рух. Кожен підхід будує не лише м'язи — він будує дисципліну. Відстежуй повторення. Додавай трохи більше ваги. Відпочивай 60 секунд. Повторюй. Через чотири тижні ти помітиш різницю в поставі, енергії та тому, як ти тримаєш себе.</p>
-              <div style="display:flex; gap:16px; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); flex-wrap:wrap;">
-                <span>⏱ 45–60 хв</span>
-                <span>🏋️ Гантелі або штанга</span>
-                <span>📊 Будь-який рівень</span>
-              </div>
-            </div>
-
-            <div style="margin-bottom:24px; padding-bottom:20px; border-bottom:1px solid var(--rule);">
-              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-                <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint);">Пілатес</span>
-                <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; background:var(--insert-bg); color:var(--insert); padding:2px 8px; border-radius:3px;">Кор &amp; контроль</span>
-              </div>
-              <p style="font-family:'Fraunces',serif; font-size:18px; color:var(--ink); margin:0 0 4px;">"Рухайся з наміром, а не з інерцією."</p>
-              <p style="margin:0; color:var(--ink-soft); font-size:14.5px;">Пілатес — це не про швидкість, а про точність кожного руху. Кожен вдих готує тебе; кожен видих активує глибокі м'язи кора. Саме тут покращується постава, зникає біль у спині, і ти нарешті розумієш, що таке «правильне вирівнювання». Без поспіху. Без его. Лише ти, килимок і глибший зв'язок із власним тілом.</p>
-              <div style="display:flex; gap:16px; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); flex-wrap:wrap;">
-                <span>⏱ 30–40 хв</span>
-                <span>🧘 Килимок</span>
-                <span>📊 Будь-який рівень</span>
-              </div>
-            </div>
-
-            <div>
-              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-                <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint);">Йога</span>
-                <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; background:var(--insert-bg); color:var(--insert); padding:2px 8px; border-radius:3px;">Потік &amp; відпускання</span>
-              </div>
-              <p style="font-family:'Fraunces',serif; font-size:18px; color:var(--ink); margin:0 0 4px;">"Твоя практика — твій темп."</p>
-              <p style="margin:0; color:var(--ink-soft); font-size:14.5px;">Стань на килимок, заплющ очі й дихай. Це не про те, щоб дотягнутися до пальців ніг — це про сам шлях. Кожна поза запрошує тебе бути присутнім, терплячим і чесним із собою. Одного дня ти плинеш легко; іншого — відпочиваєш у дитячій позі. Обидва варіанти — це прогрес. Обидва достатні.</p>
-              <div style="display:flex; gap:16px; margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); flex-wrap:wrap;">
-                <span>⏱ 30–50 хв</span>
-                <span>🧘 Килимок</span>
-                <span>📊 Будь-який рівень</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </article>
-
-      <!-- 3D Warehouse -->
-      <article class="sample reveal">
-        <div class="sample-head">
-          <span class="tag lang-en">Technical Documentation</span><span class="tag lang-ua">Технічна документація</span>
-          <span class="sample-context lang-en">Internship — private manufacturing company</span><span class="sample-context lang-ua">Практика — приватне виробниче підприємство</span>
-        </div>
-        <div class="sample-body">
-          <div class="lang-en">
-            <h3>3D Warehouse Visualization System</h3>
-            <h4 class="sub">The challenge: build a tool non-technical warehouse staff could actually use, then write the instructions that made that true.</h4>
-            <p>During my internship at a company manufacturing trailers, car carriers, and auto parts, I designed a 3D visualization of the warehouse integrated with 1C and Excel — so staff could search, edit, and take inventory quickly. I wrote the accompanying documentation and user guide myself.</p>
-            <p class="result-line">→ Working internal tool + documentation written for people who'd never opened 1C's back end.</p><p style="font-size:13px; color:var(--ink-faint);">The documentation was prepared as part of the internship and reviewed during the practical work.</p>
-          </div>
-          <div class="lang-ua">
-            <h3>3D-візуалізація складу</h3>
-            <h4 class="sub">Завдання: створити систему, якою реально користуватимуться нетехнічні працівники складу, а тоді написати інструкцію.</h4>
-            <p>Під час практики на підприємстві з виготовлення лавет, автопричепів і продажу автозапчастин я розробила 3D-візуалізацію складу з інтеграцією 1С та Excel — щоб працівники могли швидко шукати, редагувати позиції та проводити інвентаризацію. Супровідну документацію та інструкцію написала сама.</p>
-            <p class="result-line">→ Робочий внутрішній інструмент + документація для людей, які раніше не відкривали 1С зсередини.</p>
-          </div>
-        </div>
-      </article>
-
-      <!-- Bank Budget -->
-      <article class="sample reveal">
-        <div class="sample-head">
-          <span class="tag lang-en">Business / Analytical Writing</span><span class="tag lang-ua">Ділове / аналітичне письмо</span>
-          <span class="sample-context lang-en">Academic project — 2025</span><span class="sample-context lang-ua">Навчальний проєкт — 2025</span>
-        </div>
-        <div class="sample-body">
-          <div class="lang-en">
-            <h3>2026 Bank Budget Plan</h3>
-            <h4 class="sub">The challenge: turn a dense financial model into a document clear enough for industry experts to follow in one read.</h4>
-            <p>Built a full 2026 budget plan covering income, expenses, inventory, and supply chain, applying optimization methods. The modeling was the technical half; structuring the narrative for non-specialists was the writing half.</p>
-            <p class="result-line">→ Approved with distinction, presented to invited industry experts.</p>
-          </div>
-          <div class="lang-ua">
-            <h3>Бюджетний план банку на 2026 рік</h3>
-            <h4 class="sub">Завдання: перетворити щільну фінансову модель на документ, зрозумілий для експертів галузі за одне прочитання.</h4>
-            <p>Розробила повний бюджетний план на 2026 рік — доходи, витрати, запаси, ланцюг постачання — із застосуванням методів оптимізації. Моделювання було технічною частиною; структурування розповіді для нефахівців — текстовою.</p>
-            <p class="result-line">→ Затверджено з відзнакою, презентовано запрошеним експертам галузі.</p>
-          </div>
-        </div>
-      </article>
-
-      <!-- KORstudy -->
-      <article class="sample reveal">
-        <div class="sample-head">
-          <span class="tag lang-en">Educational Content</span><span class="tag lang-ua">Освітній контент</span>
-          <span class="sample-context lang-en">Personal project — 2024</span><span class="sample-context lang-ua">Особистий проєкт — 2024</span>
-        </div>
-        <div class="sample-body">
-          <div class="lang-en">
-            <h3>KORstudy — a Korean-learning platform</h3>
-            <h4 class="sub">Started as fandom, became a real teaching tool.</h4>
-            <p>Designed and built a full educational website — structured courses, pricing tiers, lesson content — for people learning Korean at any level. Writing the course descriptions and onboarding copy taught me that UX writing is teaching: anticipate the question, answer it before it's asked.</p>
-          </div>
-          <div class="lang-ua">
-            <h3>KORstudy — платформа для вивчення корейської</h3>
-            <h4 class="sub">Почалось із фандому, стало повноцінним навчальним інструментом.</h4>
-            <p>Розробила повноцінний освітній сайт — структуровані курси, тарифні плани, навчальний контент — для людей, що вивчають корейську на будь-якому рівні. Написання описів курсів навчило мене, що UX-текст — це переважно навчання: передбачити питання і відповісти на нього раніше, ніж воно виникне.</p>
-          </div>
-        </div>
-      </article>
-
-      <!-- Library editing -->
-      <article class="sample reveal">
-        <div class="sample-head">
-          <span class="tag lang-en">Real Editing Experience</span><span class="tag lang-ua">Реальний досвід редагування</span>
-          <span class="sample-context lang-en">Internship — Volyn Youth Library</span><span class="sample-context lang-ua">Практика — Волинська бібліотека для юнацтва</span>
-        </div>
-        <div class="sample-body">
-          <div class="lang-en">
-            <h3>Reviewing visitor applications and letters</h3>
-            <h4 class="sub">Part of my library internship — alongside registering users and cataloging the book database.</h4>
-            <p>I regularly checked and rewrote applications and letters submitted by visitors — fixing unclear wording before they were processed. It's real editing under a deadline, for readers who weren't going to read a second draft.</p>
-            <p style="font-size:13px; color:var(--ink-faint);">(For privacy, I'm not reproducing a specific visitor document here — this describes the task.)</p><p style="font-size:13px; color:var(--ink-faint);">The work was completed and checked during the internship; original visitor documents are not reproduced for privacy.</p>
-          </div>
-          <div class="lang-ua">
-            <h3>Перевірка заяв і листів від відвідувачів</h3>
-            <h4 class="sub">Частина бібліотечної практики — поряд з реєстрацією користувачів і веденням бази книг.</h4>
-            <p>Я регулярно перевіряла і переписувала заяви та листи від відвідувачів — виправляла нечіткі формулювання перед тим, як документи йшли в обробку. Це реальне редагування під дедлайн, для читачів, які не збиралися читати другий чернетковий варіант.</p>
-            <p style="font-size:13px; color:var(--ink-faint);">(З міркувань приватності я не наводжу тут конкретний документ відвідувача — це опис завдання.)</p>
-          </div>
-        </div>
-      </article>
-
-      <!-- PRACTICE: UX Microcopy -->
-      <article class="sample reveal">
-        <div class="sample-head">
-          <span class="tag practice lang-en">Practice — UX Microcopy</span><span class="tag practice lang-ua">Практика — UX-мікрокопі</span>
-          <span class="sample-context lang-en">Revisiting my own 2023 project</span><span class="sample-context lang-ua">Повернення до проєкту 2023 року</span>
-        </div>
-        <div class="sample-body">
-          <div class="lang-en">
-            <h3>Rewriting my own to-do list app</h3>
-            <h4 class="sub">Self-directed practice, not a client project.</h4>
-            <div class="before-after">
-              <div class="ba-col before">
-                <span class="ba-label">Before (2023, beginner labels)</span>
-                <div class="ba-item">"Task 1"</div>
-                <div class="ba-item">"Save" / "Delete"</div>
-                <div class="ba-item">"No tasks."</div>
-              </div>
-              <div class="ba-col after">
-                <span class="ba-label">After (today)</span>
-                <div class="ba-item">"Cook dinner — 7:00 PM"</div>
-                <div class="ba-item">"Add to today" / "Done, remove it"</div>
-                <div class="ba-item">"Nothing on your list yet. Add your first task."</div>
+              <h3 class="lang-en">Safe Place — <em>emotion-aware AI</em> from scratch</h3>
+              <h3 class="lang-ua">Safe Place — <em>емоційно-чутливий AI</em> з нуля</h3>
+              <p class="sub lang-en">Designed, built, and wrote the full text layer for an emotion-aware AI web app that analyzes text and voice.</p>
+              <p class="sub lang-ua">Спроєктувала, розробила та написала повний текстовий шар для емоційно-чутливого AI-застосунку, що аналізує текст і голос.</p>
+              
+              <button class="read-toggle" onclick="toggleReadMore(this)"><span class="lang-en">Read full case</span><span class="lang-ua">Читати повністю</span></button>
+              
+              <div class="expandable">
+                
+                <div class="guide-box">
+                  <span class="guide-title lang-en">Development</span>
+                  <span class="guide-title lang-ua">Розробка</span>
+                  <p class="lang-en">• Full-stack web app: Flask backend, responsive frontend, Google Gemini API<br>
+                  • Multimodal emotion recognition: text sentiment analysis + voice tone analysis with paralinguistic features<br>
+                  • 18 REST API endpoints with JWT authentication and bcrypt hashing (12 rounds)<br>
+                  • Normalized database schema with 9 interrelated tables<br>
+                  • Rule-based fusion algorithm with adaptive weighting — O(1)<br>
+                  • Validated on 88 messages with zero false positives on critical cases</p>
+                  <p class="lang-ua">• Full-stack застосунок: Flask backend, адаптивний frontend, Google Gemini API<br>
+                  • Мультимодальне розпізнавання емоцій: аналіз тексту + аналіз голосу з паралінгвістичними ознаками<br>
+                  • 18 REST API ендпоінтів з JWT-автентифікацією та bcrypt-хешуванням (12 раундів)<br>
+                  • Нормалізована схема бази даних з 9 таблицями<br>
+                  • Алгоритм злиття на основі правил з адаптивним зважуванням — O(1)<br>
+                  • Валідовано на 88 повідомленнях з нулем хибних спрацювань у критичних випадках</p>
+                </div>
+                
+                <div class="guide-box">
+                  <span class="guide-title lang-en">Writing — UX Strings</span>
+                  <span class="guide-title lang-ua">Тексти — UX-рядки</span>
+                  <table class="strings-table">
+                    <thead><tr><th>Context</th><th>Before</th><th>After</th></tr></thead>
+                    <tbody>
+                      <tr><td>Auth error</td><td class="voice-before">"Authentication failed."</td><td class="voice-after">"That password does not match. Try again."</td></tr>
+                      <tr><td>Daily check-in</td><td class="voice-before">"Begin emotional assessment."</td><td class="voice-after">"How are you feeling right now?"</td></tr>
+                      <tr><td>Heavy tone</td><td class="voice-before">"Depressive sentiment detected."</td><td class="voice-after">"Sounds like today has been a lot. Want to write more?"</td></tr>
+                      <tr><td>Button</td><td class="voice-before">"Submit"</td><td class="voice-after">"Send feedback"</td></tr>
+                      <tr><td>Empty state</td><td class="voice-before">"No data"</td><td class="voice-after">"Nothing here yet. Add your first project."</td></tr>
+                      <tr><td>Action</td><td class="voice-before">"See"</td><td class="voice-after">"Read more"</td></tr>
+                      <tr><td>Button</td><td class="voice-before">"Add"</td><td class="voice-after">"Start a new chat"</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <div class="guide-box">
+                  <span class="guide-title lang-en">Writing — AI System Prompt</span>
+                  <span class="guide-title lang-ua">Тексти — Системний промпт AI</span>
+                  <p class="lang-en">Authored the complete system prompt for the AI assistant:<br>
+                  • Empathetic tone and emotional validation rules<br>
+                  • CBT (Cognitive Behavioral Therapy) principles<br>
+                  • Active listening and constructive questioning<br>
+                  • Crisis protocols with emergency contact integration<br>
+                  • Formatting guidelines (short paragraphs, no jargon, natural language)<br>
+                  • Multilingual support (Ukrainian + adapts to user language)</p>
+                  <p class="lang-ua">Написала повний системний промпт для AI-помічника:<br>
+                  • Емпатійний тон і правила емоційної валідації<br>
+                  • Принципи КПТ (когнітивно-поведінкової терапії)<br>
+                  • Активне слухання та конструктивні питання<br>
+                  • Кризові протоколи з інтеграцією екстрених контактів<br>
+                  • Правила форматування (короткі абзаци, без жаргону, природна мова)<br>
+                  • Багатомовна підтримка (українська + адаптація під мову користувача)</p>
+                </div>
+                
+                <div class="guide-box">
+                  <span class="guide-title lang-en">Writing — Content</span>
+                  <span class="guide-title lang-ua">Тексти — Контент</span>
+                  <p class="lang-en"><strong>10 Self-Help Techniques:</strong><br>
+                  4-7-8 Breathing · 5-4-3-2-1 Grounding · Progressive Relaxation · Emotion Journal · Visualization · Circle of Influence · Reframing · STOP Technique · Cold Water · Music Therapy<br>
+                  — each with step-by-step instructions, duration, and emotional tags.</p>
+                  <p class="lang-ua"><strong>10 технік самодопомоги:</strong><br>
+                  Дихання 4-7-8 · Заземлення 5-4-3-2-1 · Прогресивна релаксація · Журнал емоцій · Візуалізація · Коло впливу · Рефреймінг · Техніка СТОП · Холодна вода · Музикотерапія<br>
+                  — кожна з покроковою інструкцією, тривалістю та емоційними мітками.</p>
+                  <p class="lang-en"><strong>4 Blog Articles:</strong><br>
+                  • How to Talk About Feelings Without "I Feel Awkward" (I-message technique)<br>
+                  • Sleep and Anxiety: The Cycle You Can Break<br>
+                  • Meditation for Beginners: 5 Simple Steps<br>
+                  • Nature as Medicine: How Green Spaces Affect Mental Health</p>
+                  <p class="lang-ua"><strong>4 статті для блогу:</strong><br>
+                  • Як говорити про почуття без «мені незручно» (техніка I-повідомлень)<br>
+                  • Сон і тривога: цикл, який можна розірвати<br>
+                  • Медитація для початківців: 5 простих кроків<br>
+                  • Природа як ліки: як зелені зони впливають на ментальне здоров'я</p>
+                  <p class="lang-en"><strong>Crisis Support Page:</strong><br>
+                  Trust hotlines, emergency services, online support chats, and "What to do in an acute crisis" guides — written with care and clarity.</p>
+                  <p class="lang-ua"><strong>Сторінка екстреної допомоги:</strong><br>
+                  Телефони довіри, екстрені служби, онлайн-чати підтримки та інструкції «Що робити в гострій кризовій ситуації» — написані з турботою і чіткістю.</p>
+                </div>
+                
+                <div class="guide-box">
+                  <span class="guide-title lang-en">Research</span>
+                  <span class="guide-title lang-ua">Дослідження</span>
+                  <p class="lang-en">• Published paper: "Interpreted Rule-Based Multimodal Fusion for Emotion Recognition" — III International Scientific and Practical Conference (2026) — Oral presentation<br>
+                  • Published paper: "Development of a virtual interlocutor web application 'Safe Place' using generative AI" — XI Interuniversity Seminar (2026) — Oral presentation<br>
+                  • 1st place, University Scientific Research Competition (2026)<br>
+                  • Multimodal approach improves emotion classification accuracy by 17% compared to text-only analysis<br>
+                  • 4 critical cases detected (9.1% of user messages) with zero false positives</p>
+                  <p class="lang-ua">• Публікація: «Interpreted Rule-Based Multimodal Fusion for Emotion Recognition» — III Міжнародна науково-практична конференція (2026) — Усна доповідь<br>
+                  • Публікація: «Розробка вебзастосунку віртуального співрозмовника "Safe Place" із використанням генеративного ШІ» — XI Міжвузівський семінар (2026) — Усна доповідь<br>
+                  • 1 місце, університетський конкурс наукових робіт (2026)<br>
+                  • Мультимодальний підхід покращує точність класифікації емоцій на 17% порівняно з текстовим аналізом<br>
+                  • 4 критичні випадки виявлено (9.1% повідомлень) з нулем хибних спрацювань</p>
+                </div>
+                
+                <p class="result-line">→ Full-stack prototype · Google Gemini API · Multimodal emotion recognition · 2 published papers · 1st place research award · 10 self-help techniques · 4 blog articles · Crisis support page</p>
+                
               </div>
             </div>
           </div>
-          <div class="lang-ua">
-            <h3>Переписую власний ToDo List</h3>
-            <h4 class="sub">Самостійна практика, не клієнтський проєкт.</h4>
-            <div class="before-after">
-              <div class="ba-col before">
-                <span class="ba-label">До (2023, підписи новачка)</span>
-                <div class="ba-item">«Завдання 1»</div>
-                <div class="ba-item">«Зберегти» / «Видалити»</div>
-                <div class="ba-item">«Немає завдань.»</div>
+        </article>
+
+        <!-- 1. Coffee Email -->
+        <article class="project-card reveal" data-tags="copywriting">
+          <div class="project-card-inner">
+            <div class="project-carousel" data-project="coffee">
+              <div class="carousel-track">
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/coffee-email-1.png" alt="Coffee email" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/coffee-email-2.png" alt="Coffee email" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
               </div>
-              <div class="ba-col after">
-                <span class="ba-label">Після (сьогодні)</span>
-                <div class="ba-item">«Приготувати вечерю — 19:00»</div>
-                <div class="ba-item">«Додати на сьогодні» / «Готово, прибрати»</div>
-                <div class="ba-item">«Поки що порожньо. Додай перше завдання.»</div>
+              <div class="carousel-controls">
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('coffee', -1)">‹</button>
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('coffee', 1)">›</button>
+              </div>
+              <div class="carousel-dots" id="dots-coffee"></div>
+              <div class="carousel-counter" id="counter-coffee">1 / 2</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag gold lang-en">Email Copywriting</span>
+                <span class="tag gold lang-ua">Email-копірайтинг</span>
+                <span class="mono" style="color:var(--ink-faint);font-size:9px;">Spec · 2026</span>
+              </div>
+              <h3 class="lang-en">Coffee for the office — <em>never</em> runs out again</h3>
+              <h3 class="lang-ua">Кава для офісу — <em>більше</em> ніколи не закінчиться</h3>
+              <button class="read-toggle" onclick="toggleReadMore(this)"><span class="lang-en">Read full email</span><span class="lang-ua">Читати повністю</span></button>
+              <div class="expandable">
+                <div class="email-sequence">
+                  <div class="email-card">
+                    <div class="email-subject lang-en">Subject: Coffee for the office — never runs out again</div>
+                    <div class="email-subject lang-ua">Тема: Кава для офісу — більше ніколи не закінчиться</div>
+                    <p class="email-body lang-en">The office without coffee isn't a working day. We know how it is: checking supplies every morning. That's why we launched a subscription for companies.</p>
+                    <p class="email-body lang-ua">Офіс без кави — це не робочий день. Ми знаємо, як це — щоранку перевіряти запаси. Тому запустили підписку для компаній.</p>
+                    <p class="email-body lang-en">1. You choose the type and amount of coffee.<br>2. We deliver it monthly, automatically.<br>3. You never think about coffee — it's just there.</p>
+                    <p class="email-body lang-ua">1. Ви обираєте сорт і кількість кави.<br>2. Ми доставляємо її щомісяця автоматично.<br>3. Ви ніколи не думаєте про каву — вона просто є.</p>
+                    <span class="email-cta lang-en">Get a consultation →</span>
+                    <span class="email-cta lang-ua">Отримати консультацію →</span>
+                  </div>
+                </div>
+                <div class="spec-note lang-en">Original spec work — written for portfolio.</div>
+                <div class="spec-note lang-ua">Оригінальна демонстраційна робота.</div>
               </div>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <!-- PRACTICE: Essay -->
-      <article class="sample reveal">
-        <div class="sample-head">
-          <span class="tag practice lang-en">Practice — Essay</span><span class="tag practice lang-ua">Практика — есе</span>
-          <span class="sample-context lang-en">Own writing, 2026</span><span class="sample-context lang-ua">Власний текст, 2026</span>
-        </div>
-        <div class="sample-body">
-          <div class="lang-en">
-            <h3>Notes from someone who writes in two languages: code, and everything else</h3>
-            <p>My code reads like it has a personality, and my interface copy has more rhythm than it strictly needs. I think that's because I don't see a line between them — writing a function and writing a sentence are the same problem, stated differently: say exactly what's true, cut what isn't, and leave room for the next person to understand it without you in the room. Seven languages, seven programming languages — each one changes the shape of what you can say.</p>
+        <!-- 2. IT Agency Web Copy -->
+        <article class="project-card reveal" data-tags="copywriting">
+          <div class="project-card-inner">
+            <div class="project-carousel" data-project="it-agency">
+              <div class="carousel-track">
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/it-agency-1.png" alt="Website creation" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/it-agency-2.png" alt="Website creation" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/it-agency-3.png" alt="Website creation" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/it-agency-4.png" alt="Website creation" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('it-agency', -1)">‹</button>
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('it-agency', 1)">›</button>
+              </div>
+              <div class="carousel-dots" id="dots-it-agency"></div>
+              <div class="carousel-counter" id="counter-it-agency">1 / 4</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag lang-en">Web Copy / Landing</span>
+                <span class="tag lang-ua">Веб-текст / Лендінг</span>
+                <span class="mono" style="color:var(--ink-faint);font-size:9px;">Spec · 2026</span>
+              </div>
+              <h3 class="lang-en">Website creation — a unique site for your <em>business</em></h3>
+              <h3 class="lang-ua">Створення вебсайтів — унікальний сайт для вашого <em>бізнесу</em></h3>
+              <button class="read-toggle" onclick="toggleReadMore(this)"><span class="lang-en">Read full copy</span><span class="lang-ua">Читати повністю</span></button>
+              <div class="expandable">
+                <p class="lang-en"><strong>Do you have your own business but still no website?</strong> Or maybe a page that doesn't bring clients?</p>
+                <p class="lang-ua"><strong>У вас є власний бізнес, але досі немає вебсайту?</strong> Або, можливо, сторінка, яка не приводить клієнтів?</p>
+                <p class="lang-en">We develop websites and applications for businesses of any size. Working since 2019. 25+ projects launched.</p>
+                <p class="lang-ua">Ми розробляємо веб-сайти та додатки для бізнесу будь-якого розміру. Працюємо з 2019 року. Запустили 25+ проєктів.</p>
+                <p class="lang-en"><strong>What do you get?</strong><br>1. A website that brings in customers.<br>2. Post-launch support.<br>3. Transparent budget.</p>
+                <p class="lang-ua"><strong>Що ви отримуєте?</strong><br>1. Вебсайт, який приваблює клієнтів.<br>2. Підтримка після запуску.<br>3. Прозорий бюджет.</p>
+                <p class="lang-en"><strong>Free consultation:</strong> +012 34 56 789</p>
+                <p class="lang-ua"><strong>Безкоштовна консультація:</strong> +012 34 56 789</p>
+                <div class="spec-note lang-en">Original spec work — written for portfolio.</div>
+                <div class="spec-note lang-ua">Оригінальна демонстраційна робота.</div>
+              </div>
+            </div>
           </div>
-          <div class="lang-ua">
-            <h3>Нотатки людини, яка пише двома мовами: код і все інше</h3>
-            <p>Мій код читається так, наче має характер, а мій інтерфейсний текст має більше ритму, ніж потрібно. Думаю, це тому, що я не бачу межі між ними — написати функцію і написати речення це та сама задача, сформульована по-різному: сказати точно те, що правда, прибрати зайве і залишити місце, щоб наступна людина зрозуміла це без мене поруч. Сім мов, сім мов програмування — кожна змінює форму того, що можна сказати.</p>
-          </div>
-        </div>
-      </article>
+        </article>
 
-      <!-- PRACTICE: Bookstore -->
-      <article class="sample reveal">
-        <div class="sample-head">
-          <span class="tag practice lang-en">Practice — Social Copy</span><span class="tag practice lang-ua">Практика — соціальний контент</span>
-          <span class="sample-context lang-en">Imaginary client — independent bookstore</span><span class="sample-context lang-ua">Вигаданий клієнт — книгарня</span>
-        </div>
-        <div class="sample-body">
-          <div class="lang-en">
-            <h3>Instagram captions for a small bookstore</h3>
-            <h4 class="sub">Written for practice — no real client involved.</h4>
-            <p>"We restock at 10am. By 11, half this table is gone. Come see what's left."</p>
-            <p>"A staff pick is just a recommendation from someone who read it at 1am and couldn't put it down. This week: three of those."</p>
-            <p>"Not every book needs a plot twist. Some just need you to sit with a good sentence for a while. Aisle 3 has a few."</p>
+        <!-- 3. LinkedIn Post -->
+        <article class="project-card reveal" data-tags="copywriting">
+          <div class="project-card-inner">
+            <div class="project-carousel" data-project="linkedin">
+              <div class="carousel-track">
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/linkedin-post-1.png" alt="LinkedIn post" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/linkedin-post-2.png" alt="LinkedIn post" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('linkedin', -1)">‹</button>
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('linkedin', 1)">›</button>
+              </div>
+              <div class="carousel-dots" id="dots-linkedin"></div>
+              <div class="carousel-counter" id="counter-linkedin">1 / 2</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag gold lang-en">Social Copy — LinkedIn</span>
+                <span class="tag gold lang-ua">Копі для соцмереж — LinkedIn</span>
+                <span class="mono" style="color:var(--ink-faint);font-size:9px;">Spec · 2026</span>
+              </div>
+              <h3 class="lang-en">Why I don't take <em>feedback</em> personally</h3>
+              <h3 class="lang-ua">Чому я не сприймаю <em>правки</em> особисто</h3>
+              <p class="sub lang-en">Short-form LinkedIn post — vulnerability, story, question.</p>
+              <p class="sub lang-ua">Короткий LinkedIn пост — вразливість, історія, питання.</p>
+              <button class="read-toggle" onclick="toggleReadMore(this)"><span class="lang-en">Read full post</span><span class="lang-ua">Читати повністю</span></button>
+              <div class="expandable">
+                <p class="lang-en">«This text doesn't work. Rewrite it.»</p>
+                <p class="lang-en">When I first heard that, it felt like the end. Failure and shame. I thought: «I tried so hard! What's wrong with me?»</p>
+                <p class="lang-en">But then I realized: edits aren't about me. They're about the text.</p>
+                <p class="lang-en">When I worked at the library, I edited visitor documents. I improved the text while keeping its essence. It never crossed my mind that they were incompetent. That's how we should treat our own texts too.</p>
+                <p class="lang-en">Edits are a tool, not a verdict. They're steps toward success and professionalism.</p>
+                <p class="lang-en">How do you react to feedback on your text?</p>
+                <hr style="border:none;border-top:1px solid var(--rule);margin:16px 0;">
+                <p class="lang-ua">«Цей текст не працює. Перепиши.»</p>
+                <p class="lang-ua">Коли я вперше почула це, то здавалося, що це кінець. Провал і ганьба. Подумала: «Я ж старалася! Що зі мною не так?»</p>
+                <p class="lang-ua">Але потім я зрозуміла: правки — це не про мене. Це про текст.</p>
+                <p class="lang-ua">Коли я працювала в бібліотеці, мені доводилося редагувати документи відвідувачів. Я покращувала текст, зберігаючи усю суть. Чомусь не виникало думки, що вони некомпетентні. Так само варто ставитися і до своїх текстів.</p>
+                <p class="lang-ua">Правки — це інструмент, а не вирок. Це сходинки до успіху та професіоналізму.</p>
+                <p class="lang-ua">А як ви реагуєте на фідбек про ваш текст?</p>
+                <div class="spec-note lang-en">Original spec work — written for portfolio.</div>
+                <div class="spec-note lang-ua">Оригінальна демонстраційна робота.</div>
+              </div>
+            </div>
           </div>
-          <div class="lang-ua">
-            <h3>Дописи для Instagram маленької книгарні</h3>
-            <h4 class="sub">Написано для практики — реального клієнта немає.</h4>
-            <p>«Поповнюємо полиці о 10:00. До 11:00 половини цього столу вже нема. Приходь подивитись, що лишилось.»</p>
-            <p>«Вибір продавця — це просто рекомендація від людини, яка читала це о першій ночі й не могла відірватись. Цього тижня таких три.»</p>
-            <p>«Не кожній книжці потрібен твіст. Деяким досить, щоб ти просто посидів з гарним реченням. У третьому ряду є кілька таких.»</p>
-          </div>
-        </div>
-      </article>
+        </article>
 
-      <!-- PRACTICE: Language Exchange / Real Experience -->
-      <article class="sample reveal">
-        <div class="sample-head">
-          <span class="tag practice lang-en">Practice — Community &amp; Language Exchange</span>
-          <span class="tag practice lang-ua">Практика — Спілкування та мовний обмін</span>
-          <span class="sample-context lang-en">Real experience — 2024–2026</span>
-          <span class="sample-context lang-ua">Реальний досвід — 2024–2026</span>
-        </div>
-        <div class="sample-body">
-          <div class="lang-en">
-            <h3>Language exchange &amp; international communication</h3>
-            <h4 class="sub">Real practice: daily conversations with native speakers through apps and social media.</h4>
-            <p>Since 2024, I've been actively practicing foreign languages through real conversations with native speakers from around the world. I use apps like Tandem, HelloTalk, and social media platforms to connect with people, exchange cultures, and improve my speaking and writing skills.</p>
-            <p>These aren't just vocabulary drills — they're real, unscripted conversations. I've discussed everything from daily life to mental health, technology, and AI. This experience taught me to adapt my communication style to different cultural contexts and language levels.</p>
-            <p class="pull">"Every conversation is a chance to understand someone else's world — and to express my own more clearly."</p>
+        <!-- 4. Editing -->
+        <article class="project-card reveal" data-tags="editing">
+          <div class="project-card-inner">
+            <div class="project-carousel" data-project="editing">
+              <div class="carousel-track">
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/editing-1.png" alt="Editing example" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/editing-2.png" alt="Editing example" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('editing', -1)">‹</button>
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('editing', 1)">›</button>
+              </div>
+              <div class="carousel-dots" id="dots-editing"></div>
+              <div class="carousel-counter" id="counter-editing">1 / 2</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag lang-en">Editing & Rewriting</span>
+                <span class="tag lang-ua">Редагування та рерайт</span>
+                <span class="mono" style="color:var(--ink-faint);font-size:9px;">Spec · 2026</span>
+              </div>
+              <h3 class="lang-en">Editing: from corporate jargon to <em>clear copy</em></h3>
+              <h3 class="lang-ua">Редагування: від корпоративного жаргону до <em>чіткого тексту</em></h3>
+              <button class="read-toggle" onclick="toggleReadMore(this)"><span class="lang-en">Read full example</span><span class="lang-ua">Читати повністю</span></button>
+              <div class="expandable">
+                <table class="strings-table">
+                  <thead><tr><th>Before</th><th>After</th></tr></thead>
+                  <tbody>
+                    <tr>
+                      <td class="voice-before">"We are a leading company in the field of providing services for website and app development. We offer our clients high-quality services at affordable prices."</td>
+                      <td class="voice-after">"We develop websites and apps for businesses of any scale — from a coffee shop to an international company. 25+ projects since 2019. Budget from $500 to $1000."</td>
+                    </tr>
+                    <tr>
+                      <td class="voice-before">"Our specialists have many years of experience in the IT sphere."</td>
+                      <td class="voice-after">"Working since 2019. 25+ launched projects."</td>
+                    </tr>
+                    <tr>
+                      <td class="voice-before">"You will be provided with a full range of services for the development, implementation, and support of software products."</td>
+                      <td class="voice-after">"We develop, launch, and support your software."</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="result-line">→ Removed filler · Added specifics · Cut length by 40%</p>
+              </div>
+            </div>
           </div>
-          <div class="lang-ua">
-            <h3>Мовний обмін та міжнародне спілкування</h3>
-            <h4 class="sub">Реальна практика: щоденні розмови з носіями мов у додатках та соцмережах.</h4>
-            <p>З 2024 року я активно практикую іноземні мови через реальні розмови з носіями з усього світу. Я використовую додатки Tandem, HelloTalk та соціальні мережі, щоб спілкуватися, обмінюватися культурами та покращувати свої навички усного й письмового мовлення.</p>
-            <p>Це не просто вправи на словниковий запас — це справжні, незаплановані розмови. Ми говорили про все: від повсякденного життя до ментального здоров'я, технологій та ШІ. Цей досвід навчив мене адаптувати стиль спілкування до різних культурних контекстів і рівнів володіння мовою.</p>
-            <p class="pull">«Кожна розмова — це шанс зрозуміти чийсь світ — і чіткіше висловити свій.»</p>
+        </article>
+
+        <!-- 5. News Rewrite -->
+        <article class="project-card reveal" data-tags="journalism,editing">
+          <div class="project-card-inner">
+            <div class="project-carousel" data-project="news">
+              <div class="carousel-track">
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/news-1.png" alt="News rewrite" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/news-2.png" alt="News rewrite" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/news-3.png" alt="News rewrite" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/news-4.png" alt="News rewrite" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('news', -1)">‹</button>
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('news', 1)">›</button>
+              </div>
+              <div class="carousel-dots" id="dots-news"></div>
+              <div class="carousel-counter" id="counter-news">1 / 4</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag gold lang-en">Journalism / Rewrite</span>
+                <span class="tag gold lang-ua">Журналістика / Рерайт</span>
+                <span class="mono" style="color:var(--ink-faint);font-size:9px;">Spec · 2026</span>
+              </div>
+              <h3 class="lang-en">Meta pays <em>$16B</em> — and denies wrongdoing</h3>
+              <h3 class="lang-ua">Meta виплатить <em>$16 млрд</em> — і заперечує провину</h3>
+              <button class="read-toggle" onclick="toggleReadMore(this)"><span class="lang-en">Read full article</span><span class="lang-ua">Читати повністю</span></button>
+              <div class="expandable">
+                <p class="lang-en">Meta agreed to pay over $16 billion to settle lawsuits with 29 US states over teen safety. The company denies all accusations. An independent auditor will monitor compliance.</p>
+                <p class="lang-ua">Meta погодилася виплатити понад $16 млрд для врегулювання позовів із 29 штатами США. Компанія заперечує всі звинувачення. За виконанням умов стежитиме незалежний аудитор.</p>
+                <p class="result-line">→ Clear headline</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+
+        <!-- 6. Article + Carousel -->
+        <article class="project-card reveal" data-tags="journalism,copywriting">
+          <div class="project-card-inner">
+            <div class="project-carousel" data-project="article">
+              <div class="carousel-track">
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-01.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-1.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-2.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-3.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-4.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-5.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-6.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-7.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-8.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-9.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-10.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-011.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-11.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-12.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-13.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-14.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-15.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-16.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-17.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-18.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-19.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/article-20.png" alt="Article" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('article', -1)">‹</button>
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('article', 1)">›</button>
+              </div>
+              <div class="carousel-dots" id="dots-article"></div>
+              <div class="carousel-counter" id="counter-article">1 / 22</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag lang-en">Article + Social Carousel</span>
+                <span class="tag lang-ua">Стаття + Соціальна карусель</span>
+                <span class="mono" style="color:var(--ink-faint);font-size:9px;">Spec · 2026</span>
+              </div>
+              <h3 class="lang-en">Why a technical education makes you a <em>stronger</em> copywriter</h3>
+              <h3 class="lang-ua">Чому технічна освіта робить тебе <em>сильнішим</em> копірайтером</h3>
+              <p class="sub lang-en">Full 600-word article + 22-slide social carousel adaptation.</p>
+              <p class="sub lang-ua">Повна стаття на 600 слів + адаптація у форматі каруселі на 22 слайди.</p>
+              <button class="read-toggle" onclick="toggleReadMore(this)"><span class="lang-en">Read full article</span><span class="lang-ua">Читати повну статтю</span></button>
+              <div class="expandable">
+                <p class="lang-en"><strong>"You are not a philologist — so you can't write!"</strong></p>
+                <p class="lang-en">Heard that? It's one of the most common stereotypes in copywriting. It makes you doubt yourself before you write the first word. But is technical education really a career killer? No. Here is why.</p>
+                <p class="lang-en"><strong>What copywriting actually is.</strong></p>
+                <p class="lang-en">It is the ability to explain complex things simply. To highlight the main point. To engage and hold attention. Yes, you need to know spelling rules. You need to build sentences well. You need to feel the rhythm of language. That is the base. But if you have these skills — a technical degree becomes not an obstacle, but an advantage.</p>
+                <p class="lang-en"><strong>Technical education is ready-made experience.</strong></p>
+                <p class="lang-en">Wrote code? You already know how to structure text. A program without logic does not work — text is the same. Wrote technical documentation? That is copywriting. Only instead of "this product will help your business" you write "this button does this." Built a website or interface? You know what text belongs on a page so the user does not close the tab in three seconds.</p>
+                <p class="lang-en"><strong>Copywriting is philology + psychology + technology.</strong></p>
+                <p class="lang-en">You need to explain (philology), engage (psychology), and understand what you are writing about (technology). A technical education closes the third point. You do not fear complex topics. You do not waste hours searching for term definitions — you already know them.</p>
+                <p class="lang-en"><strong>Conclusion.</strong></p>
+                <p class="lang-en">Technical education is not a verdict. It is a base on which you can build a strong career in texts. The main thing is to know how to apply it. And remember: the best copywriters are those who understand not only words, but also what they are writing about.</p>
+                <hr style="border:none;border-top:1px solid var(--rule);margin:16px 0;">
+                <p class="lang-ua"><strong>«Ти не філолог — тому писати тобі зась!»</strong></p>
+                <p class="lang-ua">Чули таке? Це один з найпоширеніших стереотипів у копірайтингу. Він змушує сумніватися ще до того, як напишеш перше слово. Але чи справді технічна освіта ставить хрест на кар'єрі? Ні. І ось чому.</p>
+                <p class="lang-ua"><strong>Що таке копірайтинг насправді.</strong></p>
+                <p class="lang-ua">Це вміння пояснити складне простими словами. Виділити головне. Зацікавити й утримати увагу. Так, треба знати правила правопису. Вміти будувати речення. Відчувати ритм мови. Це база. Але якщо у вас є ці навички — технічний диплом стає не перепоною, а перевагою.</p>
+                <p class="lang-ua"><strong>Технічна освіта — це готовий досвід.</strong></p>
+                <p class="lang-ua">Писали код? Ви вже вмієте структурувати текст. Програма без логіки не працює — текст так само. Писали технічну документацію? Це і є копірайтинг. Тільки замість «продукт допоможе вашому бізнесу» ви пишете «ця кнопка робить ось що». Створювали сайт чи інтерфейс? Ви знаєте, який текст потрібен на сторінці, щоб користувач не закрив вкладку за три секунди.</p>
+                <p class="lang-ua"><strong>Копірайтинг — це філологія + психологія + технології.</strong></p>
+                <p class="lang-ua">Треба пояснити (філологія), зацікавити (психологія) і зрозуміти, про що пишеш (технології). Технічна освіта закриває третій пункт. Ви не боїтеся складних тем. Вам не треба витрачати години на пошук значень термінів — ви їх знаєте.</p>
+                <p class="lang-ua"><strong>Висновок.</strong></p>
+                <p class="lang-ua">Технічна освіта — це не вирок. Це база, на якій можна побудувати сильну кар'єру в текстах. Головне — знати, як її застосувати. І пам'ятати: найкращі копірайтери — це ті, хто розуміє не лише слова, а й те, про що пише.</p>
+                <p class="result-line">→ Full article + 22-slide carousel adaptation</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. 3D Warehouse -->
+        <article class="project-card reveal" data-tags="tech">
+          <div class="project-card-inner">
+            <div class="project-carousel" data-project="warehouse">
+              <div class="carousel-track">
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/warehouse-1.png" alt="3D Warehouse" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/warehouse-2.png" alt="3D Warehouse search" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/warehouse-3.png" alt="3D Warehouse" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/warehouse-4.png" alt="3D Warehouse" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('warehouse', -1)">‹</button>
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('warehouse', 1)">›</button>
+              </div>
+              <div class="carousel-dots" id="dots-warehouse"></div>
+              <div class="carousel-counter" id="counter-warehouse">1 / 4</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag lang-en">Technical Documentation</span>
+                <span class="tag lang-ua">Технічна документація</span>
+                <span class="mono" style="color:var(--ink-faint);font-size:9px;">Internship · 2025–2026</span>
+              </div>
+              <h3 class="lang-en">3D Warehouse <em>Visualization</em> System</h3>
+              <h3 class="lang-ua">3D-візуалізація <em>складу</em></h3>
+              <button class="read-toggle" onclick="toggleReadMore(this)"><span class="lang-en">Read full guide</span><span class="lang-ua">Читати повністю</span></button>
+              <div class="expandable">
+                <div class="guide-box">
+                  <span class="guide-title">User Guide: "3D Smart Warehouse"</span>
+                  <div class="guide-step">
+                    <h4>Warehouse Specifications</h4>
+                    <ul><li>Area: 738 m² · Height: 4 m · Racks: 19 · Zones: 5 · Entrances: 3</li></ul>
+                  </div>
+                  <div class="guide-step">
+                    <h4>Functionality</h4>
+                    <ul><li>3D visualization, text search, voice search, barcode scanner, optimal routes</li><li>Goods management: add, edit, move, delete with history</li><li>Roles: Senior Warehouse Worker, Warehouse Worker, View Only</li></ul>
+                  </div>
+                  <div class="guide-step">
+                    <h4>Quick Start</h4>
+                    <ul><li>pip install -r requirements.txt</li><li>python app.py</li><li>http://127.0.0.1:5001</li></ul>
+                  </div>
+                  <div class="callout ok">✅ Result: All changes in 1C sync within 2 minutes.</div>
+                </div>
+                <p class="result-line">→ Working internal tool · Documentation for non-technical staff</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Bank Budget -->
+        <article class="project-card reveal" data-tags="tech">
+          <div class="project-card-inner">
+            <div class="project-carousel" data-project="budget">
+              <div class="carousel-track">
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/budget-1.png" alt="Bank Budget" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/budget-2.png" alt="Bank Budget" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+                <div class="carousel-slide" onclick="openLightbox(this.querySelector('img').src)">
+                  <img src="img/budget-3.png" alt="Bank Budget" onerror="this.style.display='none';this.parentElement.style.background='var(--bg)';">
+                </div>
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('budget', -1)">‹</button>
+                <button class="carousel-btn" onclick="event.stopPropagation(); moveCarousel('budget', 1)">›</button>
+              </div>
+              <div class="carousel-dots" id="dots-budget"></div>
+              <div class="carousel-counter" id="counter-budget">1 / 3</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag lang-en">Analytical Writing</span>
+                <span class="tag lang-ua">Аналітичне письмо</span>
+                <span class="mono" style="color:var(--ink-faint);font-size:9px;">Academic · 2025</span>
+              </div>
+              <h3 class="lang-en">2026 Bank <em>Budget Plan</em></h3>
+              <h3 class="lang-ua">Бюджетний план банку <em>на 2026 рік</em></h3>
+              <button class="read-toggle" onclick="toggleReadMore(this)"><span class="lang-en">Read summary</span><span class="lang-ua">Читати більше</span></button>
+              <div class="expandable">
+                <p class="lang-en">Full budget model covering income, expenses, inventory, and supply chain — with optimization methods applied.</p>
+                <p class="lang-ua">Повна бюджетна модель — доходи, витрати, запаси, ланцюг постачання — із застосуванням методів оптимізації.</p>
+                <p class="result-line">→ 40+ pages · Approved with distinction</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /work-list -->
+
+      <!-- PUBLICATIONS -->
+      <div class="sec-head reveal" style="margin-top:64px; margin-bottom:28px;">
+        <span class="sec-num mono lang-en">Research</span>
+        <span class="sec-num mono lang-ua">Дослідження</span>
+        <h2 class="lang-en">Publications & <em>Presentations</em></h2>
+        <h2 class="lang-ua">Публікації та <em>доповіді</em></h2>
+      </div>
+      <div class="pub-list reveal">
+        <a href="https://apcssm.vnu.edu.ua/index.php/conf/article/view/315/291" class="pub-item" target="_blank">
+          <span class="pub-num">01</span>
+          <div class="pub-content">
+            <h4 class="lang-en">Interpreted Rule-Based Multimodal Fusion for Emotion Recognition</h4>
+            <h4 class="lang-ua">Інтерпретоване мультимодальне злиття на основі правил для розпізнавання емоцій</h4>
+            <p class="lang-en">III International Scientific and Practical Conference — Lesya Ukrainka Volyn National University, 2026 — Oral presentation</p>
+            <p class="lang-ua">III Міжнародна науково-практична конференція — Волинський національний університет імені Лесі Українки, 2026 — Усна доповідь</p>
+          </div>
+          <span class="pub-link-arrow">→</span>
+        </a>
+        <a href="https://drive.google.com/file/d/1nAe56pwT36FMiKqnUPzNuluV2roA7xFT/view?usp=sharing" class="pub-item" target="_blank">
+          <span class="pub-num">02</span>
+          <div class="pub-content">
+            <h4 class="lang-en">Development of a virtual interlocutor web application "Safe Place" using generative AI</h4>
+            <h4 class="lang-ua">Розробка вебзастосунку віртуального співрозмовника «Safe Place» із використанням генеративного ШІ</h4>
+            <p class="lang-en">XI Interuniversity Seminar — Lutsk Institute of Human Development, 2026 — Oral presentation</p>
+            <p class="lang-ua">XI Міжвузівський семінар — Луцький інститут розвитку людини, 2026 — Усна доповідь</p>
+          </div>
+          <span class="pub-link-arrow">→</span>
+        </a>
+        <a href="https://apcssm.vnu.edu.ua/index.php/conf/article/view/301/305" class="pub-item" target="_blank">
+          <span class="pub-num">03</span>
+          <div class="pub-content">
+            <h4 class="lang-en">Analysis of Dark Mode and Brutalism Aesthetics Impact on Emotional State and Cognitive Perception of Users</h4>
+            <h4 class="lang-ua">Аналіз впливу dark mode та естетики brutalism на емоційний стан і когнітивне сприйняття користувачів</h4>
+            <p class="lang-en">III International Scientific Conference, 2026</p>
+            <p class="lang-ua">III Міжнародна наукова конференція, 2026</p>
+          </div>
+          <span class="pub-link-arrow">→</span>
+        </a>
+        <a href="https://apcssm.vnu.edu.ua/index.php/conf/article/view/219/160" class="pub-item" target="_blank">
+          <span class="pub-num">04</span>
+          <div class="pub-content">
+            <h4 class="lang-en">The Impact of Cyber Hackathons on Cybersecurity and Computer Networks Specialists Training</h4>
+            <h4 class="lang-ua">Вплив кіберхакатонів на навчання фахівців з кібербезпеки та комп'ютерних мереж</h4>
+            <p class="lang-en">II International Scientific and Practical Conference — Volyn National University, 2025</p>
+            <p class="lang-ua">II Міжнародна науково-практична конференція — Волинський національний університет імені Лесі Українки, 2025</p>
+          </div>
+          <span class="pub-link-arrow">→</span>
+        </a>
+      </div>
 
     </div>
   </section>
 
-  <!-- PLAYGROUND -->
+  <!-- ===== PLAYGROUND ===== -->
   <section id="playground">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="sec-num mono lang-en">Try it</span><span class="sec-num mono lang-ua">Спробуй сам</span>
-        <h2 class="lang-en">Drop in a sentence you're stuck on.</h2>
-        <h2 class="lang-ua">Встав речення, з яким не можеш дати ради.</h2>
-        <p class="dek lang-en">A small, honest toy — not real AI editing, just a few rules of thumb I actually use, applied live.</p>
-        <p class="dek lang-ua">Маленька чесна іграшка — не справжнє AI-редагування, а кілька правил, якими я реально користуюсь, застосовані наживо.</p>
+        <span class="sec-num mono lang-en">Try it</span>
+        <span class="sec-num mono lang-ua">Спробуй</span>
+        <h2 class="lang-en">Drop in a sentence you are <em>stuck</em> on.</h2>
+        <h2 class="lang-ua">Встав речення, з яким не можеш дати <em>ради</em>.</h2>
       </div>
       <div class="playground reveal">
-        <textarea id="pgInput" class="lang-en" placeholder="e.g. Our solution leverages best-in-class technology to deliver synergistic value to enterprise stakeholders."></textarea>
-        <textarea id="pgInputUa" class="lang-ua" placeholder="напр. Наше рішення використовує найкращі технології для надання синергетичної цінності корпоративним стейкхолдерам."></textarea>
+        <textarea id="pgInput" class="lang-en" placeholder="e.g. Our solution leverages best-in-class technology..."></textarea>
+        <textarea id="pgInputUa" class="lang-ua" placeholder="напр. Наше рішення використовує найкращі технології..."></textarea>
         <div class="playground-row">
           <span class="wc"><span id="wcCount">0</span> <span class="lang-en">words</span><span class="lang-ua">слів</span></span>
           <button class="btn btn-solid" onclick="editIt()"><span class="lang-en">Get a note</span><span class="lang-ua">Отримати нотатку</span></button>
         </div>
-        <div id="pgNote" class="playground-note mono"></div>
+        <div id="pgNote" class="playground-note"></div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="sec-num mono lang-en">Skills</span><span class="sec-num mono lang-ua">Навички</span>
-        <h2 class="lang-en">Technical fluency, human fluency.</h2>
-        <h2 class="lang-ua">Технічна вправність, людська вправність.</h2>
-      </div>
-      <div class="skills-grid reveal">
-        <div class="skill-col">
-          <h3 class="lang-en">Writing &amp; content</h3><h3 class="lang-ua">Письмо і контент</h3>
-          <div class="skill-tags">
-            <span class="lang-en">UX &amp; microcopy</span><span class="lang-ua">UX і мікрокопі</span>
-            <span class="lang-en">Product copy</span><span class="lang-ua">Продуктовий текст</span>
-            <span class="lang-en">Educational content</span><span class="lang-ua">Освітній контент</span>
-            <span class="lang-en">Technical documentation</span><span class="lang-ua">Технічна документація</span>
-            <span class="lang-en">Analytical writing</span><span class="lang-ua">Аналітичне письмо</span>
-            <span class="lang-en">Academic writing</span><span class="lang-ua">Академічне письмо</span>
-          </div>
-        </div>
-        <div class="skill-col">
-          <h3 class="lang-en">Technical</h3><h3 class="lang-ua">Технічне</h3>
-          <div class="skill-tags">
-            <span>Python</span><span>JavaScript</span><span>HTML/CSS</span><span>SQL</span>
-            <span>Flask</span><span>Git</span><span>1C</span><span>Excel</span>
-          </div>
-        </div>
-        <div class="skill-col">
-          <h3 class="lang-en">Languages</h3><h3 class="lang-ua">Мови</h3>
-          <div class="skill-tags">
-            <span>Ukrainian <span class="lang-level">C2</span></span>
-            <span>English <span class="lang-level">B1+</span></span>
-            <span>Polish <span class="lang-level">B1</span></span>
-            <span>Korean <span class="lang-level">A1-A2</span></span>
-            <span>Japanese <span class="lang-level">A1-A2</span></span>
-            <span>Chinese <span class="lang-level">A1-A2</span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- METERS + AVATAR -->
-  <section id="meters">
-    <div class="wrap meters-grid">
-      <div>
-        <div class="sec-head reveal">
-          <span class="sec-num mono lang-en">Self-assessment</span><span class="sec-num mono lang-ua">Самооцінка</span>
-          <h2 class="lang-en">Where I'd rate myself today.</h2>
-          <h2 class="lang-ua">Як я оцінюю себе сьогодні.</h2>
-        </div>
-        <div class="meters reveal">
-          <div class="meter-row">
-            <div class="meter-label"><span class="lang-en">Programming</span><span class="lang-ua">Програмування</span><span>91%</span></div>
-            <div class="meter-track"><div class="meter-fill" data-value="91"></div></div>
-          </div>
-          <div class="meter-row">
-            <div class="meter-label"><span class="lang-en">Writing &amp; editing</span><span class="lang-ua">Письмо і редагування</span><span>87%</span></div>
-            <div class="meter-track"><div class="meter-fill" data-value="87"></div></div>
-          </div>
-          <div class="meter-row">
-            <div class="meter-label"><span class="lang-en">Web design</span><span class="lang-ua">Веб-дизайн</span><span>81%</span></div>
-            <div class="meter-track"><div class="meter-fill" data-value="81"></div></div>
-          </div>
-          <div class="meter-row">
-            <div class="meter-label"><span class="lang-en">Languages</span><span class="lang-ua">Мови</span><span>73%</span></div>
-            <div class="meter-track"><div class="meter-fill" data-value="73"></div></div>
-          </div>
-        </div>
-      </div>
-      <div class="avatar-scene reveal" aria-hidden="true">
-        <img src="img/me.png" alt="Avatar of Kateryna" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'font-size:14px;color:var(--ink-faint);text-align:center;\'>My avatar...</div>'">
-      </div>
-    </div>
-  </section>
-
-  <!-- FACTS -->
-  <section id="facts">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="sec-num mono lang-en">A few things worth knowing</span>
-        <span class="sec-num mono lang-ua">Кілька фактів про мене</span>
-        <h2 class="lang-en">Not on most resumes, but true.</h2>
-        <h2 class="lang-ua">Про це не пишуть у резюме — але це правда.</h2>
-      </div>
-      <div class="facts-grid reveal">
-
-        <div class="fact">
-          <h4 class="lang-en">Poet of bytes and words</h4>
-          <h4 class="lang-ua">Поет байтів і слів</h4>
-          <p class="pull lang-en">"I like writing poems after 100 lines of code. Both are about building worlds from nothing."</p>
-          <p class="pull lang-ua">«Я люблю писати вірші після 100 рядків коду. І те, і те — про створення світів з нуля.»</p>
-        </div>
-
-        <div class="fact">
-          <h4 class="lang-en">Studies psychology, informally</h4>
-          <h4 class="lang-ua">Вивчає психологію — неформально</h4>
-          <p class="pull lang-en">"I study people as carefully as API documentation — to find the right interface for talking to them."</p>
-          <p class="pull lang-ua">«Вивчаю людей так само ретельно, як документацію до API — щоб знайти ідеальний інтерфейс для спілкування.»</p>
-        </div>
-
-        <div class="fact">
-          <h4 class="lang-en">Plays guitar, writes poetry</h4>
-          <h4 class="lang-ua">Грає на гітарі, пише вірші</h4>
-          <p class="pull lang-en">"Music and poetry taught me rhythm — the same rhythm I look for in every sentence I write."</p>
-          <p class="pull lang-ua">«Музика й поезія навчили мене ритму — того ж ритму, який я шукаю в кожному реченні.»</p>
-        </div>
-
-        <div class="fact">
-          <h4 class="lang-en">7 languages, 7 ways to think</h4>
-          <h4 class="lang-ua">7 мов — 7 способів мислити</h4>
-          <p class="pull lang-en">"Every language I learn changes the shape of what I can say — and how I connect with people."</p>
-          <p class="pull lang-ua">«Кожна мова, яку я вивчаю, змінює форму того, що я можу сказати — і як я спілкуюся з людьми.»</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
+  <!-- ===== CONTACT ===== -->
   <section id="contact">
-    <div class="wrap contact-wrap reveal">
-      <h2 class="lang-en">Let's write something clear together.</h2>
-      <h2 class="lang-ua">Напишімо щось чітке разом.</h2>
+    <div class="wrap contact-grid reveal">
+      <div>
+        <h2 class="lang-en">Let us write something <em>clear</em> together.</h2>
+        <h2 class="lang-ua">Напишімо щось <em>чітке</em> разом.</h2>
+      </div>
       <div class="contact-links">
         <a href="mailto:katyagko2004@gmail.com">katyagko2004@gmail.com</a>
         <a href="https://github.com/Kateryna-Havryliuk">github.com/Kateryna-Havryliuk</a>
-        <a href="https://www.linkedin.com/in/kateryna-havryliuk-link" target="_blank">linkedin.com/in/kateryna-havryliuk-link</a>
-        <a href="https://github.com/Kateryna-Havryliuk/copywriting-portfolio" target="_blank">Copywriting Portfolio</a>
+        <a href="https://www.linkedin.com/in/kateryna-havryliuk-link/" target="_blank">linkedin.com/in/kateryna-havryliuk-link</a>
+        <a href="https://github.com/Kateryna-Havryliuk/AI-Product-Writing-Copywriting-Portfolio" target="_blank">AI Product Writing & Copywriting Portfolio</a>
       </div>
     </div>
   </section>
@@ -984,134 +2419,358 @@
 
 <footer>
   <div class="wrap">
-    <p class="lang-en">© <span class="yr"></span> Kateryna Havryliuk. Built by hand, edited by hand.</p>
-    <p class="lang-ua">© <span class="yr"></span> Катерина Гаврилюк. Зроблено вручну, відредаговано вручну.</p>
-    <p class="lang-en">Based in Lutsk, Ukraine · Available for remote work</p>
-    <p class="lang-ua">Луцьк, Україна · Доступна для віддаленої роботи</p>
+    <p class="lang-en">© <span class="yr"></span> Kateryna Havryliuk · Built by hand, edited by hand · Available for remote worldwide</p>
+    <p class="lang-ua">© <span class="yr"></span> Катерина Гаврилюк · Зроблено вручну, відредаговано вручну · Доступна для віддаленої роботи в Україні та закордоном</p>
   </div>
 </footer>
 
-<script>
-  document.querySelectorAll('.yr').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+<div class="disclaimer lang-en">Spec work is clearly labeled. Real internship work is presented as internship experience; no client relationship is implied where there was none.</div>
+<div class="disclaimer lang-ua">Демонстраційні роботи чітко позначені. Реальні роботи з практики подані саме як досвід практики; там, де клієнтських відносин не було, вони не заявляються.</div>
 
+<script>
+  // ===== YEAR =====
+  document.querySelectorAll('.yr').forEach(el => el.textContent = new Date().getFullYear());
+
+  // ===== LANGUAGE =====
   function toggleLang(){
-    var html = document.documentElement;
-    var current = html.getAttribute('data-lang');
-    var next = current === 'en' ? 'ua' : 'en';
+    const html = document.documentElement;
+    const next = html.getAttribute('data-lang') === 'en' ? 'ua' : 'en';
     html.setAttribute('data-lang', next);
     html.setAttribute('lang', next === 'en' ? 'en' : 'uk');
     document.getElementById('langToggle').textContent = next === 'en' ? 'UA' : 'EN';
+    startTypewriter();
   }
 
-  var greetings = ['Hello','Привіт','안녕하세요','こんにちは','你好','Hallo','Cześć'];
-  var gi = 0;
-  var greetEl = document.getElementById('greetWord');
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(!reduceMotion){
-    setInterval(function(){
-      gi = (gi + 1) % greetings.length;
-      greetEl.style.opacity = 0;
-      setTimeout(function(){
-        greetEl.textContent = greetings[gi];
-        greetEl.style.transition = 'opacity .3s ease';
-        greetEl.style.opacity = 1;
-      }, 250);
-    }, 1900);
-  }
-
-  function meterFillCallback(el){
-    var fills = el.querySelectorAll('.meter-fill');
-    fills.forEach(function(f){ f.style.width = f.getAttribute('data-value') + '%'; });
-  }
-
-  if('IntersectionObserver' in window){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if(e.isIntersecting){
-          e.target.classList.add('in-view');
-          if(e.target.querySelector('.meter-fill')){ meterFillCallback(e.target); }
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
-  } else {
-    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in-view'); });
-    document.querySelectorAll('.meter-fill').forEach(function(f){ f.style.width = f.getAttribute('data-value') + '%'; });
-  }
-
+  // ===== THEME =====
   function toggleTheme(){
-    var html = document.documentElement;
-    var isDark = html.getAttribute('data-theme') === 'dark';
+    const html = document.documentElement;
+    const isDark = html.getAttribute('data-theme') === 'dark';
     html.setAttribute('data-theme', isDark ? 'light' : 'dark');
     document.getElementById('themeToggle').textContent = isDark ? '🌙' : '☀️';
     localStorage.setItem('theme', isDark ? 'light' : 'dark');
   }
-
   (function(){
-    var saved = localStorage.getItem('theme');
+    const saved = localStorage.getItem('theme');
     if(saved === 'dark'){
-      document.documentElement.setAttribute('data-theme', 'dark');
-      document.getElementById('themeToggle').textContent = '☀️';
+      document.documentElement.setAttribute('data-theme','dark');
+      document.getElementById('themeToggle').textContent='☀️';
     }
   })();
 
+  // ===== CLOCK =====
   function updateClock(){
-    var el = document.getElementById('clock');
+    const el = document.getElementById('clock');
     if(!el) return;
-    var fmt = new Intl.DateTimeFormat('en-GB', { timeZone:'Europe/Kyiv', hour:'2-digit', minute:'2-digit', second:'2-digit' });
-    el.textContent = fmt.format(new Date());
+    el.textContent = new Intl.DateTimeFormat('en-GB', { timeZone:'Europe/Kyiv', hour:'2-digit', minute:'2-digit', second:'2-digit' }).format(new Date());
   }
   updateClock();
   setInterval(updateClock, 1000);
 
-  var pgTipsEn = [
+  // ===== TYPEWRITER =====
+  const typewriterTexts = {
+    en: [
+      "Most ecommerce brands do not have a traffic problem. They have a 'give me more traffic' problem. When sales slow down, the reflex is predictable: increase spend, test another audience, blame the algorithm. Sometimes the account is fine. The offer isn't. Google can put your product in front of someone who is already looking for it. It cannot make a weak reason to buy suddenly feel compelling. If the answer is no, another 20% in ad spend isn't a growth strategy. It is a more expensive way to find the same problem.",
+      "Your Google Ads account can be healthy and still lose money. Good CTR. Clean structure. Plenty of conversions. Nothing obviously broken. And the business is still asking, 'Where did the margin go?' The mistake is treating the ad account like the business. Ads can optimize for the conversion you give them. They cannot decide whether that conversion is actually valuable.",
+      "If your Google Ads agency starts the meeting with CTR, ask them one question: 'So what?' CTR is useful. I look at it too. But a click isn't the goal. Revenue is. Profit is. Growth you can actually keep is. Optimize the account, sure. Just don't forget you're running a business, not a spreadsheet."
+    ],
+    ua: [
+      "У більшості e-commerce брендів проблема не в трафіку. Проблема в постійному 'дайте нам більше трафіку'. Коли продажі падають, реакція передбачувана: збільшити бюджет, протестувати іншу аудиторію, звинуватити алгоритм. Іноді з рекламним акаунтом усе гаразд. Проблема — у пропозиції. Якщо відповідь 'ні', ще 20% рекламного бюджету — це не стратегія зростання. Це просто дорожчий спосіб знайти ту саму проблему.",
+      "Ваш Google Ads акаунт може бути в чудовому стані — і все одно втрачати гроші. Хороший CTR. Чітка структура. Достатньо конверсій. Нічого очевидно не зламано. А бізнес усе одно запитує: 'Куди поділася маржа?' Помилка — сприймати рекламний акаунт як сам бізнес. Реклама може оптимізуватися під ту конверсію, яку ви їй дали. Але вона не може вирішити, чи ця конверсія насправді цінна."
+    ]
+  };
+
+  let twIndex = 0, twCharIndex = 0, twIsDeleting = false, twSpeed = 45, twPause = 2500, twTimeout;
+  const twEl = document.getElementById('typeContent');
+  const twWordsEl = document.getElementById('twWords');
+  const twCharsEl = document.getElementById('twChars');
+  const twWordsUaEl = document.getElementById('twWordsUa');
+  const twCharsUaEl = document.getElementById('twCharsUa');
+  const twStatusEl = document.getElementById('twStatus');
+  const twStatusUaEl = document.getElementById('twStatusUa');
+
+  function startTypewriter(){
+    if(twTimeout) clearTimeout(twTimeout);
+    twIndex = 0;
+    twCharIndex = 0;
+    twIsDeleting = false;
+    typeWriter();
+  }
+
+  function typeWriter(){
+    const lang = document.documentElement.getAttribute('data-lang') || 'en';
+    const texts = typewriterTexts[lang];
+    const currentText = texts[twIndex] || texts[0];
+
+    if(twIsDeleting){
+      twCharIndex--;
+      twSpeed = 18;
+    } else {
+      twCharIndex++;
+      twSpeed = 42 + Math.random() * 30;
+    }
+
+    twEl.textContent = currentText.substring(0, twCharIndex);
+
+    const words = twEl.textContent.trim().split(/\s+/).filter(w => w.length > 0).length;
+    if(twWordsEl) twWordsEl.textContent = words;
+    if(twWordsUaEl) twWordsUaEl.textContent = words;
+    if(twCharsEl) twCharsEl.textContent = twCharIndex;
+    if(twCharsUaEl) twCharsUaEl.textContent = twCharIndex;
+
+    if(!twIsDeleting && twCharIndex === currentText.length){
+      twSpeed = twPause;
+      twIsDeleting = true;
+      if(twStatusEl) twStatusEl.textContent = 'reading...';
+      if(twStatusUaEl) twStatusUaEl.textContent = 'читаємо...';
+    } else if(twIsDeleting && twCharIndex === 0){
+      twIsDeleting = false;
+      twIndex = (twIndex + 1) % texts.length;
+      twSpeed = 500;
+      if(twStatusEl) twStatusEl.textContent = 'typing...';
+      if(twStatusUaEl) twStatusUaEl.textContent = 'друк...';
+    }
+    twTimeout = setTimeout(typeWriter, twSpeed);
+  }
+  setTimeout(startTypewriter, 800);
+
+  // ===== GREETING =====
+  const greetings = [{text:'Hello',lang:'en'},{text:'Привіт',lang:'ua'},{text:'안녕하세요',lang:'ko'},{text:'こんにちは',lang:'jp'},{text:'你好',lang:'zh'},{text:'Hallo',lang:'de'},{text:'Cześć',lang:'pl'}];
+  let gi = 0;
+  const greetEl = document.getElementById('greetWord');
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches && greetEl){
+    setInterval(() => {
+      gi = (gi + 1) % greetings.length;
+      greetEl.style.opacity = 0;
+      greetEl.style.transition = 'opacity .3s ease';
+      setTimeout(() => {
+        greetEl.textContent = greetings[gi].text;
+        greetEl.style.opacity = 1;
+      }, 300);
+    }, 2200);
+  }
+
+  // ===== INTERSECTION OBSERVER =====
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if(e.isIntersecting){
+          e.target.classList.add('in-view');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in-view'));
+  }
+
+  // ===== FILTERS =====
+  function filterProjects(category) {
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.filter === category);
+    });
+    document.querySelectorAll('.project-card').forEach(card => {
+      const tags = card.dataset.tags ? card.dataset.tags.split(',') : [];
+      if (category === 'all' || tags.includes(category)) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  // ===== READ MORE =====
+  function toggleReadMore(btn) {
+    const expandable = btn.nextElementSibling;
+    const isExpanded = btn.classList.contains('expanded');
+    if (isExpanded) {
+      btn.classList.remove('expanded');
+      expandable.classList.remove('expanded');
+      btn.setAttribute('aria-expanded', 'false');
+    } else {
+      btn.classList.add('expanded');
+      expandable.classList.add('expanded');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  // ===== CAROUSEL =====
+  let carouselState = {};
+  function initCarousel(projectId, totalSlides) {
+    carouselState[projectId] = { current: 0, total: totalSlides };
+    const dotsContainer = document.getElementById(`dots-${projectId}`);
+    if (dotsContainer && totalSlides > 1) {
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        dot.onclick = (e) => {
+          e.stopPropagation();
+          carouselState[projectId].current = i;
+          updateCarouselUI(projectId);
+        };
+        dotsContainer.appendChild(dot);
+      }
+    }
+    updateCarouselUI(projectId);
+  }
+  function moveCarousel(projectId, direction) {
+    if (!carouselState[projectId]) return;
+    const state = carouselState[projectId];
+    state.current = (state.current + direction + state.total) % state.total;
+    updateCarouselUI(projectId);
+  }
+  function updateCarouselUI(projectId) {
+    const state = carouselState[projectId];
+    if (!state) return;
+    const track = document.querySelector('[data-project="' + projectId + '"] .carousel-track');
+    const counter = document.getElementById('counter-' + projectId);
+    const dots = document.getElementById('dots-' + projectId);
+    if (track) {
+      track.style.transform = 'translateX(-' + (state.current * 100) + '%)';
+    }
+    if (counter) {
+      counter.textContent = (state.current + 1) + ' / ' + state.total;
+    }
+    if (dots) {
+      const allDots = dots.querySelectorAll('.carousel-dot');
+      allDots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === state.current);
+      });
+    }
+  }
+  function initAllCarousels() {
+    const carousels = document.querySelectorAll('.project-carousel');
+    carousels.forEach(carousel => {
+      const projectId = carousel.dataset.project;
+      const slides = carousel.querySelectorAll('.carousel-slide').length;
+      initCarousel(projectId, slides);
+    });
+  }
+  document.addEventListener('DOMContentLoaded', initAllCarousels);
+
+  // ===== LIGHTBOX =====
+  let lightboxImages = [];
+  let lightboxIndex = 0;
+
+  function openLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const img = document.getElementById('lightboxImg');
+
+    const allSlides = document.querySelectorAll('.carousel-slide');
+    let clickedSlide = null;
+    for (let slide of allSlides) {
+      const slideImg = slide.querySelector('img');
+      if (slideImg && slideImg.src === src) {
+        clickedSlide = slide;
+        break;
+      }
+    }
+
+    if (clickedSlide) {
+      const parentCarousel = clickedSlide.closest('.project-carousel');
+      const slides = parentCarousel.querySelectorAll('.carousel-slide');
+      lightboxImages = [];
+      slides.forEach(slide => {
+        const slideImg = slide.querySelector('img');
+        if (slideImg && slideImg.src) {
+          lightboxImages.push(slideImg.src);
+        }
+      });
+    } else {
+      lightboxImages = [src];
+    }
+
+    lightboxIndex = lightboxImages.indexOf(src);
+    if (lightboxIndex === -1) {
+      lightboxImages = [src];
+      lightboxIndex = 0;
+    }
+
+    img.src = src;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    updateLightboxCounter();
+  }
+
+  function closeLightbox(event) {
+    if (event && event.target !== event.currentTarget && event.target.tagName !== 'IMG') return;
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function lightboxNav(direction) {
+    if (lightboxImages.length === 0) return;
+    lightboxIndex = (lightboxIndex + direction + lightboxImages.length) % lightboxImages.length;
+    const img = document.getElementById('lightboxImg');
+    img.src = lightboxImages[lightboxIndex];
+    updateLightboxCounter();
+  }
+
+  function updateLightboxCounter() {
+    const counter = document.getElementById('lightboxCounter');
+    if (counter && lightboxImages.length > 0) {
+      counter.textContent = (lightboxIndex + 1) + ' / ' + lightboxImages.length;
+    }
+  }
+
+  document.addEventListener('keydown', function(e) {
+    const lightbox = document.getElementById('lightbox');
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') {
+      closeLightbox();
+    }
+    if (e.key === 'ArrowLeft') {
+      lightboxNav(-1);
+    }
+    if (e.key === 'ArrowRight') {
+      lightboxNav(1);
+    }
+  });
+
+  // ===== PLAYGROUND =====
+  const pgTipsEn = [
     "Cut the adverbs — most of them are apologizing for a weak verb.",
-    "Read it out loud. If you run out of breath, it's two sentences, not one.",
+    "Read it out loud. If you run out of breath, it is two sentences, not one.",
     "Find the noun doing the least work and delete it.",
-    "Say what it does, not what it's 'designed to' do.",
+    "Say what it does, not what it is 'designed to' do.",
     "If a robot could have written this line, rewrite it.",
     "Shorter subject, shorter verb, shorter sentence. Try again."
   ];
-  var pgTipsUa = [
+  const pgTipsUa = [
     "Прибери прислівники — більшість із них виправдовує слабке дієслово.",
     "Прочитай уголос. Якщо забракло повітря — це два речення, а не одне.",
     "Знайди іменник, який працює найменше, і викресли його.",
     "Скажи, що це робить, а не що воно 'покликане робити'.",
-    "Якщо цей рядок міг написати робот — перепиши його.",
-    "Коротший підмет, коротше дієслово, коротше речення. Спробуй ще раз."
+    "Якщо цей рядок міг написати робот — перепиши його."
   ];
+
   function currentLang(){ return document.documentElement.getAttribute('data-lang') || 'en'; }
   function countWords(str){ return (str.trim().match(/\S+/g) || []).length; }
   function updateWordCount(){
-    var lang = currentLang();
-    var val = lang === 'en' ? document.getElementById('pgInput').value : document.getElementById('pgInputUa').value;
+    const lang = currentLang();
+    const val = lang === 'en' ? document.getElementById('pgInput').value : document.getElementById('pgInputUa').value;
     document.getElementById('wcCount').textContent = countWords(val);
   }
   document.getElementById('pgInput').addEventListener('input', updateWordCount);
   document.getElementById('pgInputUa').addEventListener('input', updateWordCount);
+
   function editIt(){
-    var lang = currentLang();
-    var val = lang === 'en' ? document.getElementById('pgInput').value : document.getElementById('pgInputUa').value;
-    var words = countWords(val);
-    var note = document.getElementById('pgNote');
-    var tips = lang === 'en' ? pgTipsEn : pgTipsUa;
-    var pick = tips[Math.floor(Math.random() * tips.length)];
-    var prefix = lang === 'en'
+    const lang = currentLang();
+    const val = lang === 'en' ? document.getElementById('pgInput').value : document.getElementById('pgInputUa').value;
+    const words = countWords(val);
+    const note = document.getElementById('pgNote');
+    const tips = lang === 'en' ? pgTipsEn : pgTipsUa;
+    const pick = tips[Math.floor(Math.random() * tips.length)];
+    const prefix = lang === 'en'
       ? (words === 0 ? "Type something first — even a bad sentence." : words + ' words. ' + pick)
       : (words === 0 ? "Спершу щось напиши — хоч невдале речення." : words + ' слів. ' + pick);
     note.textContent = prefix;
     note.classList.add('show');
   }
 </script>
-
-
-  <div class="lang-en" style="max-width:1100px;margin:20px auto 0;padding:0 24px 30px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-faint);">
-    Spec work is clearly labeled. Real internship work is presented as internship experience; no client relationship is implied where there was none.
-  </div>
-  <div class="lang-ua" style="max-width:1100px;margin:20px auto 0;padding:0 24px 30px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-faint);">
-    Демонстраційні роботи чітко позначені. Реальні роботи з практики подані саме як досвід практики; там, де клієнтських відносин не було, вони не заявляються.
-  </div>
 
 </body>
 </html>
