@@ -114,7 +114,7 @@ Safe Place is an emotion-aware AI web app that analyzes text and voice to unders
 ### Analytical Writing
 
 #### 2026 Bank Budget Plan
-- [View summary](./analytical/bank-budget.md)
+- [View summary](./analytical/bank-budget-plan.md)
 - Approved with distinction · Presented to industry experts
 
 ---
